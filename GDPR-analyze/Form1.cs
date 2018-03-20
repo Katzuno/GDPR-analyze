@@ -22,7 +22,7 @@ namespace GDPR_analyze
             //SADASDASDAD
             //CACAT
 
-			//mersi erik
+			//mersi erik 
         }
     }
 }
