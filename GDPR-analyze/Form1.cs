@@ -19,6 +19,9 @@ namespace GDPR_analyze
         public Form1()
         {
             InitializeComponent();
+			panelChoice.Height = btnAudit.Height;
+			panelChoice.Top = btnAudit.Top;
+
 
 			MaterialSkinManager managerSkinManager = MaterialSkinManager.Instance;
 			managerSkinManager.AddFormToManage(this);
@@ -43,6 +46,24 @@ namespace GDPR_analyze
 		private void Form1_Load(object sender, EventArgs e)
 		{
 
+		}
+
+		private void btnAudit_Click(object sender, EventArgs e)
+		{
+			panelChoice.Height = btnAudit.Height;
+			panelChoice.Top = btnAudit.Top;
+		}
+
+		private void btnFormulare_Click(object sender, EventArgs e)
+		{
+			panelChoice.Height = btnFormulare.Height;
+			panelChoice.Top = btnFormulare.Top;
+		}
+
+		private void btnReqAccess_Click(object sender, EventArgs e)
+		{
+			panelChoice.Height = btnReqAccess.Height;
+			panelChoice.Top = btnReqAccess.Top;
 		}
 	}
 }
