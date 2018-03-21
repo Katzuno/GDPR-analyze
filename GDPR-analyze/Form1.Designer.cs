@@ -31,6 +31,7 @@
 			this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
 			this.materialCheckBox1 = new MaterialSkin.Controls.MaterialCheckBox();
 			this.materialCheckBox2 = new MaterialSkin.Controls.MaterialCheckBox();
+			this.panel1 = new System.Windows.Forms.Panel();
 			this.SuspendLayout();
 			// 
 			// materialLabel1
@@ -39,7 +40,7 @@
 			this.materialLabel1.Depth = 0;
 			this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
 			this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.materialLabel1.Location = new System.Drawing.Point(148, 202);
+			this.materialLabel1.Location = new System.Drawing.Point(309, 205);
 			this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
 			this.materialLabel1.Name = "materialLabel1";
 			this.materialLabel1.Size = new System.Drawing.Size(136, 24);
@@ -51,7 +52,7 @@
 			this.materialCheckBox1.AutoSize = true;
 			this.materialCheckBox1.Depth = 0;
 			this.materialCheckBox1.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox1.Location = new System.Drawing.Point(152, 144);
+			this.materialCheckBox1.Location = new System.Drawing.Point(313, 128);
 			this.materialCheckBox1.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox1.MouseLocation = new System.Drawing.Point(-1, -1);
 			this.materialCheckBox1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -67,7 +68,7 @@
 			this.materialCheckBox2.AutoSize = true;
 			this.materialCheckBox2.Depth = 0;
 			this.materialCheckBox2.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox2.Location = new System.Drawing.Point(140, 275);
+			this.materialCheckBox2.Location = new System.Drawing.Point(313, 287);
 			this.materialCheckBox2.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox2.MouseLocation = new System.Drawing.Point(-1, -1);
 			this.materialCheckBox2.MouseState = MaterialSkin.MouseState.HOVER;
@@ -78,11 +79,19 @@
 			this.materialCheckBox2.Text = "materialCheckBox2";
 			this.materialCheckBox2.UseVisualStyleBackColor = true;
 			// 
+			// panel1
+			// 
+			this.panel1.Location = new System.Drawing.Point(-3, 128);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(257, 479);
+			this.panel1.TabIndex = 3;
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(534, 408);
+			this.ClientSize = new System.Drawing.Size(1107, 604);
+			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.materialCheckBox2);
 			this.Controls.Add(this.materialCheckBox1);
 			this.Controls.Add(this.materialLabel1);
@@ -99,6 +108,7 @@
 		private MaterialSkin.Controls.MaterialLabel materialLabel1;
 		private MaterialSkin.Controls.MaterialCheckBox materialCheckBox1;
 		private MaterialSkin.Controls.MaterialCheckBox materialCheckBox2;
+		private System.Windows.Forms.Panel panel1;
 	}
 }
 

@@ -25,9 +25,9 @@ namespace GDPR_analyze
 			managerSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
 
 			managerSkinManager.ColorScheme = new ColorScheme(
-				Primary.Blue400, Primary.Blue700,
-				Primary.Blue600,Accent.Cyan400,
-				TextShade.WHITE
+				Primary.Lime400, Primary.Cyan400,
+				Primary.Lime200,Accent.Cyan700,
+				TextShade.BLACK
 				);
 
 		}
