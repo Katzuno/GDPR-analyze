@@ -14,13 +14,13 @@ using MaterialSkin.Controls;
 
 namespace GDPR_analyze
 {
-    public partial class Form1 : MaterialForm
+    public partial class MainMenu : MaterialForm
     {
-        public Form1()
+        public MainMenu()
         {
             InitializeComponent();
-			panelChoice.Height = btnAudit.Height;
-			panelChoice.Top = btnAudit.Top;
+			//panelChoice.Height = btnAudit.Height;
+			//panelChoice.Top = btnAudit.Top;
 
 
 			MaterialSkinManager managerSkinManager = MaterialSkinManager.Instance;
@@ -50,20 +50,20 @@ namespace GDPR_analyze
 
 		private void btnAudit_Click(object sender, EventArgs e)
 		{
-			panelChoice.Height = btnAudit.Height;
-			panelChoice.Top = btnAudit.Top;
+			//panelChoice.Height = btnAudit.Height;
+			//panelChoice.Top = btnAudit.Top;
 		}
 
 		private void btnFormulare_Click(object sender, EventArgs e)
 		{
-			panelChoice.Height = btnFormulare.Height;
-			panelChoice.Top = btnFormulare.Top;
+			//panelChoice.Height = btnFormulare.Height;
+			//panelChoice.Top = btnFormulare.Top;
 		}
 
 		private void btnReqAccess_Click(object sender, EventArgs e)
 		{
-			panelChoice.Height = btnReqAccess.Height;
-			panelChoice.Top = btnReqAccess.Top;
+			//panelChoice.Height = btnReqAccess.Height;
+			//panelChoice.Top = btnReqAccess.Top;
 		}
 	}
 }

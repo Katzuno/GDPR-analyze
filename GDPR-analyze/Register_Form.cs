@@ -39,5 +39,19 @@ namespace GDPR_analyze
         {
 
         }
-    }
+
+		private void register_bck_btn_Click(object sender, EventArgs e)
+		{
+			Start_Form start_form = new Start_Form();
+			this.Hide();
+			start_form.ShowDialog();
+			this.Close();
+		}
+
+		private void submit_register_btn_Click(object sender, EventArgs e)
+		{
+
+		}
+
+	}
 }

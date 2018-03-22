@@ -40,5 +40,22 @@ namespace GDPR_analyze
         {
 
         }
-    }
+
+		private void submit_login_btn_Click(object sender, EventArgs e)
+		{
+			MainMenu main_menu = new MainMenu();
+			this.Hide();
+			main_menu.ShowDialog();
+			this.Close();
+		}
+
+		private void login_bck_btn_Click(object sender, EventArgs e)
+		{
+			Start_Form start_form = new Start_Form();
+			this.Hide();
+			start_form.ShowDialog();
+			this.Close();
+		}
+
+	}
 }
