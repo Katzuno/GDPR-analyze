@@ -30,6 +30,7 @@
         {
 			this.Login_Btn = new System.Windows.Forms.Button();
 			this.Register = new System.Windows.Forms.Button();
+			this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
 			this.SuspendLayout();
 			// 
 			// Login_Btn
@@ -58,17 +59,32 @@
 			this.Register.UseVisualStyleBackColor = true;
 			this.Register.Click += new System.EventHandler(this.Register_Click);
 			// 
+			// materialLabel1
+			// 
+			this.materialLabel1.AutoSize = true;
+			this.materialLabel1.Depth = 0;
+			this.materialLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+			this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.materialLabel1.Location = new System.Drawing.Point(414, 135);
+			this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialLabel1.Name = "materialLabel1";
+			this.materialLabel1.Size = new System.Drawing.Size(295, 24);
+			this.materialLabel1.TabIndex = 2;
+			this.materialLabel1.Text = "Bine ati venit in aplicatia GIGI APP!";
+			// 
 			// Start_Form
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1139, 610);
+			this.Controls.Add(this.materialLabel1);
 			this.Controls.Add(this.Register);
 			this.Controls.Add(this.Login_Btn);
 			this.Name = "Start_Form";
 			this.Text = "Home_Menu";
 			this.Load += new System.EventHandler(this.Start_Form_Load);
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
         }
 
@@ -76,5 +92,6 @@
 
         private System.Windows.Forms.Button Login_Btn;
         private System.Windows.Forms.Button Register;
-    }
+		private MaterialSkin.Controls.MaterialLabel materialLabel1;
+	}
 }

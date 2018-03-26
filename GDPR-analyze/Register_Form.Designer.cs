@@ -107,7 +107,7 @@
 			// 
 			this.register_Pass2_field.Depth = 0;
 			this.register_Pass2_field.Hint = "";
-			this.register_Pass2_field.Location = new System.Drawing.Point(476, 316);
+			this.register_Pass2_field.Location = new System.Drawing.Point(476, 303);
 			this.register_Pass2_field.MaxLength = 32767;
 			this.register_Pass2_field.MouseState = MaterialSkin.MouseState.HOVER;
 			this.register_Pass2_field.Name = "register_Pass2_field";
@@ -126,7 +126,7 @@
 			this.register_Pass2_label.Depth = 0;
 			this.register_Pass2_label.Font = new System.Drawing.Font("Roboto", 11F);
 			this.register_Pass2_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.register_Pass2_label.Location = new System.Drawing.Point(234, 316);
+			this.register_Pass2_label.Location = new System.Drawing.Point(234, 303);
 			this.register_Pass2_label.MouseState = MaterialSkin.MouseState.HOVER;
 			this.register_Pass2_label.Name = "register_Pass2_label";
 			this.register_Pass2_label.Size = new System.Drawing.Size(127, 24);
@@ -137,7 +137,7 @@
 			// 
 			this.register_Email_field.Depth = 0;
 			this.register_Email_field.Hint = "";
-			this.register_Email_field.Location = new System.Drawing.Point(476, 381);
+			this.register_Email_field.Location = new System.Drawing.Point(476, 368);
 			this.register_Email_field.MaxLength = 32767;
 			this.register_Email_field.MouseState = MaterialSkin.MouseState.HOVER;
 			this.register_Email_field.Name = "register_Email_field";
@@ -156,7 +156,7 @@
 			this.register_Email_label.Depth = 0;
 			this.register_Email_label.Font = new System.Drawing.Font("Roboto", 11F);
 			this.register_Email_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.register_Email_label.Location = new System.Drawing.Point(234, 381);
+			this.register_Email_label.Location = new System.Drawing.Point(234, 368);
 			this.register_Email_label.MouseState = MaterialSkin.MouseState.HOVER;
 			this.register_Email_label.Name = "register_Email_label";
 			this.register_Email_label.Size = new System.Drawing.Size(63, 24);
@@ -167,7 +167,7 @@
 			// 
 			this.register_Company_field.Depth = 0;
 			this.register_Company_field.Hint = "";
-			this.register_Company_field.Location = new System.Drawing.Point(476, 439);
+			this.register_Company_field.Location = new System.Drawing.Point(476, 426);
 			this.register_Company_field.MaxLength = 32767;
 			this.register_Company_field.MouseState = MaterialSkin.MouseState.HOVER;
 			this.register_Company_field.Name = "register_Company_field";
@@ -186,7 +186,7 @@
 			this.register_Company_label.Depth = 0;
 			this.register_Company_label.Font = new System.Drawing.Font("Roboto", 11F);
 			this.register_Company_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.register_Company_label.Location = new System.Drawing.Point(234, 439);
+			this.register_Company_label.Location = new System.Drawing.Point(234, 426);
 			this.register_Company_label.MouseState = MaterialSkin.MouseState.HOVER;
 			this.register_Company_label.Name = "register_Company_label";
 			this.register_Company_label.Size = new System.Drawing.Size(150, 24);
