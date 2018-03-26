@@ -52,12 +52,15 @@ namespace GDPR_analyze
 		{
 			//panelChoice.Height = btnAudit.Height;
 			//panelChoice.Top = btnAudit.Top;
+
+			materialTabControl1.SelectTab("tabPageAudit");
 		}
 
 		private void btnFormulare_Click(object sender, EventArgs e)
 		{
 			//panelChoice.Height = btnFormulare.Height;
 			//panelChoice.Top = btnFormulare.Top;
+			materialTabControl1.SelectTab("tabPageForm");
 		}
 
 		private void btnReqAccess_Click(object sender, EventArgs e)
@@ -65,5 +68,6 @@ namespace GDPR_analyze
 			//panelChoice.Height = btnReqAccess.Height;
 			//panelChoice.Top = btnReqAccess.Top;
 		}
+
 	}
 }
