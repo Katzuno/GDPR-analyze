@@ -36,13 +36,17 @@
 			this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
 			this.tabPageAudit = new System.Windows.Forms.TabPage();
 			this.tabPageForm = new System.Windows.Forms.TabPage();
-			this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-			this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+			this.panel3 = new System.Windows.Forms.Panel();
+			this.panel4 = new System.Windows.Forms.Panel();
+			this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+			this.materialRadioButton1 = new MaterialSkin.Controls.MaterialRadioButton();
+			this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
 			this.materialTabControl1.SuspendLayout();
 			this.tabPageAudit.SuspendLayout();
 			this.tabPageForm.SuspendLayout();
+			this.panel3.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// panel1
@@ -115,63 +119,102 @@
 			this.materialTabControl1.Controls.Add(this.tabPageAudit);
 			this.materialTabControl1.Controls.Add(this.tabPageForm);
 			this.materialTabControl1.Depth = 0;
-			this.materialTabControl1.Location = new System.Drawing.Point(-11, -10);
+			this.materialTabControl1.Location = new System.Drawing.Point(-6, -7);
 			this.materialTabControl1.Margin = new System.Windows.Forms.Padding(0);
 			this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
 			this.materialTabControl1.Name = "materialTabControl1";
 			this.materialTabControl1.Padding = new System.Drawing.Point(0, 0);
 			this.materialTabControl1.SelectedIndex = 0;
-			this.materialTabControl1.Size = new System.Drawing.Size(883, 563);
+			this.materialTabControl1.Size = new System.Drawing.Size(862, 554);
 			this.materialTabControl1.TabIndex = 0;
 			// 
 			// tabPageAudit
 			// 
 			this.tabPageAudit.BackColor = System.Drawing.Color.LightGray;
-			this.tabPageAudit.Controls.Add(this.flowLayoutPanel1);
+			this.tabPageAudit.Controls.Add(this.panel4);
 			this.tabPageAudit.Font = new System.Drawing.Font("Bahnschrift", 8.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.tabPageAudit.Location = new System.Drawing.Point(4, 42);
 			this.tabPageAudit.Name = "tabPageAudit";
 			this.tabPageAudit.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPageAudit.Size = new System.Drawing.Size(636, 374);
+			this.tabPageAudit.Size = new System.Drawing.Size(854, 508);
 			this.tabPageAudit.TabIndex = 0;
 			this.tabPageAudit.Text = "Audit";
 			// 
 			// tabPageForm
 			// 
 			this.tabPageForm.BackColor = System.Drawing.Color.Silver;
-			this.tabPageForm.Controls.Add(this.flowLayoutPanel2);
+			this.tabPageForm.Controls.Add(this.panel3);
 			this.tabPageForm.Font = new System.Drawing.Font("Bahnschrift", 8.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.tabPageForm.Location = new System.Drawing.Point(4, 42);
 			this.tabPageForm.Name = "tabPageForm";
 			this.tabPageForm.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPageForm.Size = new System.Drawing.Size(875, 517);
+			this.tabPageForm.Size = new System.Drawing.Size(854, 508);
 			this.tabPageForm.TabIndex = 1;
 			this.tabPageForm.Text = "Form";
 			// 
-			// flowLayoutPanel1
+			// panel3
 			// 
-			this.flowLayoutPanel1.AutoSize = true;
-			this.flowLayoutPanel1.BackColor = System.Drawing.Color.SandyBrown;
-			this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.flowLayoutPanel1.ForeColor = System.Drawing.Color.DarkOrange;
-			this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
-			this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-			this.flowLayoutPanel1.Size = new System.Drawing.Size(630, 368);
-			this.flowLayoutPanel1.TabIndex = 1;
+			this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
+			this.panel3.Controls.Add(this.vScrollBar1);
+			this.panel3.Controls.Add(this.materialRadioButton1);
+			this.panel3.Controls.Add(this.materialLabel1);
+			this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.panel3.Location = new System.Drawing.Point(3, 3);
+			this.panel3.Name = "panel3";
+			this.panel3.Size = new System.Drawing.Size(848, 502);
+			this.panel3.TabIndex = 0;
 			// 
-			// flowLayoutPanel2
+			// panel4
 			// 
-			this.flowLayoutPanel2.AutoSize = true;
-			this.flowLayoutPanel2.BackColor = System.Drawing.Color.LightCoral;
-			this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 3);
-			this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-			this.flowLayoutPanel2.Size = new System.Drawing.Size(869, 511);
-			this.flowLayoutPanel2.TabIndex = 0;
+			this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+			this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.panel4.Location = new System.Drawing.Point(3, 3);
+			this.panel4.Name = "panel4";
+			this.panel4.Size = new System.Drawing.Size(848, 502);
+			this.panel4.TabIndex = 0;
+			// 
+			// materialLabel1
+			// 
+			this.materialLabel1.AutoSize = true;
+			this.materialLabel1.Depth = 0;
+			this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+			this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.materialLabel1.Location = new System.Drawing.Point(71, 236);
+			this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialLabel1.Name = "materialLabel1";
+			this.materialLabel1.Size = new System.Drawing.Size(136, 24);
+			this.materialLabel1.TabIndex = 0;
+			this.materialLabel1.Text = "materialLabel1";
+			// 
+			// materialRadioButton1
+			// 
+			this.materialRadioButton1.AutoSize = true;
+			this.materialRadioButton1.Depth = 0;
+			this.materialRadioButton1.Font = new System.Drawing.Font("Roboto", 10F);
+			this.materialRadioButton1.Location = new System.Drawing.Point(334, 236);
+			this.materialRadioButton1.Margin = new System.Windows.Forms.Padding(0);
+			this.materialRadioButton1.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.materialRadioButton1.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialRadioButton1.Name = "materialRadioButton1";
+			this.materialRadioButton1.Ripple = true;
+			this.materialRadioButton1.Size = new System.Drawing.Size(198, 30);
+			this.materialRadioButton1.TabIndex = 2;
+			this.materialRadioButton1.TabStop = true;
+			this.materialRadioButton1.Text = "materialRadioButton1";
+			this.materialRadioButton1.UseVisualStyleBackColor = true;
+			// 
+			// vScrollBar1
+			// 
+			this.vScrollBar1.Dock = System.Windows.Forms.DockStyle.Right;
+			this.vScrollBar1.Location = new System.Drawing.Point(827, 0);
+			this.vScrollBar1.Name = "vScrollBar1";
+			this.vScrollBar1.Size = new System.Drawing.Size(21, 502);
+			this.vScrollBar1.TabIndex = 3;
 			// 
 			// MainMenu
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+			this.AutoScroll = true;
 			this.ClientSize = new System.Drawing.Size(1107, 604);
 			this.Controls.Add(this.panel2);
 			this.Controls.Add(this.panel1);
@@ -183,9 +226,9 @@
 			this.panel2.ResumeLayout(false);
 			this.materialTabControl1.ResumeLayout(false);
 			this.tabPageAudit.ResumeLayout(false);
-			this.tabPageAudit.PerformLayout();
 			this.tabPageForm.ResumeLayout(false);
-			this.tabPageForm.PerformLayout();
+			this.panel3.ResumeLayout(false);
+			this.panel3.PerformLayout();
 			this.ResumeLayout(false);
 
         }
@@ -199,8 +242,11 @@
 		private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
 		private System.Windows.Forms.TabPage tabPageAudit;
 		private System.Windows.Forms.TabPage tabPageForm;
-		private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-		private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+		private System.Windows.Forms.Panel panel3;
+		private System.Windows.Forms.Panel panel4;
+		private MaterialSkin.Controls.MaterialRadioButton materialRadioButton1;
+		private MaterialSkin.Controls.MaterialLabel materialLabel1;
+		private System.Windows.Forms.VScrollBar vScrollBar1;
 	}
 }
 
