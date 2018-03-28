@@ -7,28 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 using MaterialSkin;
-using MaterialSkin.Animations;
 using MaterialSkin.Controls;
 
 namespace GDPR_analyze
 {
-    public partial class Login_Form : MaterialForm
+    public partial class Login_Form : Form
     {
         public Login_Form()
         {
             InitializeComponent();
-
-            MaterialSkinManager managerSkinManager = MaterialSkinManager.Instance;
-            managerSkinManager.AddFormToManage(this);
-            managerSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-
-            managerSkinManager.ColorScheme = new ColorScheme(
-                Primary.Lime400, Primary.Cyan400,
-                Primary.Lime200, Accent.Cyan700,
-                TextShade.BLACK
-                );
+            panel1.Visible = false;
+            bunifuCustomLabel1.Visible = true;
+            bunifuCustomLabel3.Visible = true;
+          
         }
 
         private void Login_Form_Load(object sender, EventArgs e)
@@ -36,26 +28,38 @@ namespace GDPR_analyze
 
         }
 
-        private void materialSingleLineTextField1_Click(object sender, EventArgs e)
+        private void Login_panel_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-		private void submit_login_btn_Click(object sender, EventArgs e)
-		{
-			MainMenu main_menu = new MainMenu();
-			this.Hide();
-			main_menu.ShowDialog();
-			this.Close();
-		}
+        private void materialLabel1_Click(object sender, EventArgs e)
+        {
 
-		private void login_bck_btn_Click(object sender, EventArgs e)
-		{
-			Start_Form start_form = new Start_Form();
-			this.Hide();
-			start_form.ShowDialog();
-			this.Close();
-		}
+        }
 
-	}
+        private void materialLabel3_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void bunifuMetroTextbox1_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuCustomLabel1_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+            bunifuCustomLabel1.Visible = false;
+            bunifuCustomLabel3.Visible = false;
+        }
+
+        private void bunifuCustomLabel2_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+            bunifuCustomLabel1.Visible = true;
+            bunifuCustomLabel3.Visible = true;
+        }
+    }
 }
