@@ -17,6 +17,9 @@ namespace GDPR_analyze
         public Login_Form()
         {
             InitializeComponent();
+            panel1.Visible = false;
+            bunifuCustomLabel1.Visible = true;
+            bunifuCustomLabel3.Visible = true;
           
         }
 
@@ -40,39 +43,23 @@ namespace GDPR_analyze
             Application.Exit();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void bunifuMetroTextbox1_OnValueChanged(object sender, EventArgs e)
         {
 
         }
-        bool focus = false;
-        private void Login_Form_Paint(object sender, PaintEventArgs e)
+
+        private void bunifuCustomLabel1_Click(object sender, EventArgs e)
         {
-            if (focus)
-            {
-                textBox1.BorderStyle = BorderStyle.None;
-                Pen p = new Pen(Color.DarkOrange);
-                Graphics g = e.Graphics;
-                int variance = 3;
-                g.DrawRectangle(p, new Rectangle(textBox1.Location.X - variance, textBox1.Location.Y - variance, textBox1.Width + variance, textBox1.Height + variance));
-            }
-            else
-            {
-                textBox1.BorderStyle = BorderStyle.Fixed3D;
-            }
+            panel1.Visible = true;
+            bunifuCustomLabel1.Visible = false;
+            bunifuCustomLabel3.Visible = false;
         }
 
-        private void textBox1_Enter(object sender, EventArgs e)
+        private void bunifuCustomLabel2_Click(object sender, EventArgs e)
         {
-            this.Text = "";
-            focus = true;
-            this.Refresh();
-        }
-
-        private void textBox1_Leave(object sender, EventArgs e)
-        {
-            this.Text = "";
-            focus = false;
-            this.Refresh();
+            panel1.Visible = false;
+            bunifuCustomLabel1.Visible = true;
+            bunifuCustomLabel3.Visible = true;
         }
     }
 }
