@@ -50,6 +50,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -75,6 +76,7 @@
             this.bunifuFlatButton1.BackColor = System.Drawing.Color.DarkOrange;
             this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton1.BorderRadius = 0;
+            this.bunifuFlatButton1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.bunifuFlatButton1.ButtonText = "Logheaza-te";
             this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
@@ -158,6 +160,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel1.Controls.Add(this.bunifuCustomLabel6);
             this.panel1.Controls.Add(this.bunifuCustomLabel5);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.bunifuCustomLabel2);
@@ -170,7 +173,7 @@
             this.panel1.Controls.Add(this.bunifuMetroTextbox2);
             this.panel1.Controls.Add(this.bunifuMetroTextbox1);
             this.panel1.ForeColor = System.Drawing.Color.Snow;
-            this.panel1.Location = new System.Drawing.Point(1, 29);
+            this.panel1.Location = new System.Drawing.Point(1, 28);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(404, 573);
             this.panel1.TabIndex = 10;
@@ -232,6 +235,7 @@
             this.bunifuThinButton21.Size = new System.Drawing.Size(255, 58);
             this.bunifuThinButton21.TabIndex = 18;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
             // bunifuCustomLabel4
             // 
@@ -395,12 +399,22 @@
             this.bunifuCustomLabel3.TabIndex = 16;
             this.bunifuCustomLabel3.Text = "Ai uitat parola?";
             // 
+            // bunifuCustomLabel6
+            // 
+            this.bunifuCustomLabel6.AutoSize = true;
+            this.bunifuCustomLabel6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel6.ForeColor = System.Drawing.Color.Red;
+            this.bunifuCustomLabel6.Location = new System.Drawing.Point(41, 421);
+            this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
+            this.bunifuCustomLabel6.Size = new System.Drawing.Size(0, 23);
+            this.bunifuCustomLabel6.TabIndex = 19;
+            // 
             // Login_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(404, 603);
+            this.ClientSize = new System.Drawing.Size(407, 603);
             this.Controls.Add(this.bunifuCustomLabel3);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Controls.Add(this.panel1);
@@ -448,5 +462,6 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
     }
 }
