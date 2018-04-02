@@ -15,7 +15,8 @@ namespace GDPR_analyze
 	{
 		int panelWidth;
 		int panelHeigth;
-		
+		int meniuPanel;
+		string text = "";
 
 		public NewMainForm()
 		{
@@ -23,6 +24,12 @@ namespace GDPR_analyze
 
 			panelWidth = panel5.Width;
 			panelHeigth = panel5.Height;
+			meniuPanel = panel5.Width;
+			panel5.Height = panelHeigth;
+			panel5.Width = 0;
+			panel6.Width = panel6.Width + meniuPanel;
+
+			text = textBox1.Text;
 			//Hidden = false;
 		}
 
@@ -98,5 +105,30 @@ namespace GDPR_analyze
 
 		}
 
+		private void textBox1_Enter(object sender, EventArgs e)
+		{
+			if (textBox1.Text.Trim() != "" || textBox1.Text != null)
+			{
+				textBox1.Text = "";
+			}
+		}
+
+		private void textBox1_Leave(object sender, EventArgs e)
+		{
+			textBox1.Text = text;
+		}
+
+		private void button9_Click(object sender, EventArgs e)
+		{
+			if (panel5.Height == panelHeigth && panel5.Width == panelWidth)
+			{
+				
+				panel5.Height = panelHeigth;
+				panel5.Width = 0;
+
+				panel6.Width = panel6.Width + meniuPanel;
+			}
+
+		}
 	}
 }

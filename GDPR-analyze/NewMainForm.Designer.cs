@@ -49,18 +49,24 @@
 			this.button8 = new System.Windows.Forms.Button();
 			this.button9 = new System.Windows.Forms.Button();
 			this.button10 = new System.Windows.Forms.Button();
+			this.button11 = new System.Windows.Forms.Button();
+			this.Logo_panel = new System.Windows.Forms.Panel();
+			this.main_ = new System.Windows.Forms.Panel();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.panel1.SuspendLayout();
+			this.panel4.SuspendLayout();
 			this.panel5.SuspendLayout();
 			this.panel7.SuspendLayout();
 			this.panel6.SuspendLayout();
 			this.panel8.SuspendLayout();
+			this.main_.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// panel1
 			// 
 			this.panel1.BackColor = System.Drawing.Color.DarkOrange;
 			this.panel1.Controls.Add(this.button10);
-			this.panel1.Controls.Add(this.button9);
 			this.panel1.Controls.Add(this.button2);
 			this.panel1.Controls.Add(this.button1);
 			this.panel1.Controls.Add(this.panel4);
@@ -101,6 +107,7 @@
 			// panel4
 			// 
 			this.panel4.BackColor = System.Drawing.Color.OrangeRed;
+			this.panel4.Controls.Add(this.button9);
 			this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
 			this.panel4.Location = new System.Drawing.Point(0, 0);
 			this.panel4.Name = "panel4";
@@ -178,6 +185,7 @@
 			// 
 			// panel7
 			// 
+			this.panel7.Controls.Add(this.button11);
 			this.panel7.Controls.Add(this.textBox1);
 			this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
 			this.panel7.Location = new System.Drawing.Point(0, 0);
@@ -191,15 +199,18 @@
 			this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-			this.textBox1.Location = new System.Drawing.Point(25, 18);
+			this.textBox1.Location = new System.Drawing.Point(6, 15);
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(229, 29);
 			this.textBox1.TabIndex = 7;
 			this.textBox1.Text = "Search ...";
+			this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
+			this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
 			// 
 			// panel6
 			// 
 			this.panel6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.panel6.Controls.Add(this.main_);
 			this.panel6.Controls.Add(this.panel8);
 			this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.panel6.Location = new System.Drawing.Point(367, 0);
@@ -209,6 +220,7 @@
 			// 
 			// panel8
 			// 
+			this.panel8.Controls.Add(this.Logo_panel);
 			this.panel8.Controls.Add(this.button7);
 			this.panel8.Controls.Add(this.button6);
 			this.panel8.Controls.Add(this.button5);
@@ -280,15 +292,16 @@
 			// button9
 			// 
 			this.button9.BackColor = System.Drawing.Color.DarkOrange;
-			this.button9.Dock = System.Windows.Forms.DockStyle.Top;
+			this.button9.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.button9.FlatAppearance.BorderSize = 0;
 			this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-			this.button9.Location = new System.Drawing.Point(0, 137);
+			this.button9.Location = new System.Drawing.Point(0, 0);
 			this.button9.Name = "button9";
-			this.button9.Size = new System.Drawing.Size(76, 72);
+			this.button9.Size = new System.Drawing.Size(76, 65);
 			this.button9.TabIndex = 4;
 			this.button9.UseVisualStyleBackColor = false;
+			this.button9.Click += new System.EventHandler(this.button9_Click);
 			// 
 			// button10
 			// 
@@ -302,6 +315,47 @@
 			this.button10.Size = new System.Drawing.Size(76, 72);
 			this.button10.TabIndex = 5;
 			this.button10.UseVisualStyleBackColor = false;
+			// 
+			// button11
+			// 
+			this.button11.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.button11.Dock = System.Windows.Forms.DockStyle.Right;
+			this.button11.FlatAppearance.BorderSize = 0;
+			this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
+			this.button11.Location = new System.Drawing.Point(226, 0);
+			this.button11.Name = "button11";
+			this.button11.Size = new System.Drawing.Size(65, 65);
+			this.button11.TabIndex = 7;
+			this.button11.UseVisualStyleBackColor = false;
+			// 
+			// Logo_panel
+			// 
+			this.Logo_panel.Dock = System.Windows.Forms.DockStyle.Right;
+			this.Logo_panel.Location = new System.Drawing.Point(306, 0);
+			this.Logo_panel.Name = "Logo_panel";
+			this.Logo_panel.Size = new System.Drawing.Size(246, 65);
+			this.Logo_panel.TabIndex = 7;
+			// 
+			// main_
+			// 
+			this.main_.Controls.Add(this.pictureBox1);
+			this.main_.Dock = System.Windows.Forms.DockStyle.Right;
+			this.main_.Location = new System.Drawing.Point(-291, 65);
+			this.main_.Name = "main_";
+			this.main_.Size = new System.Drawing.Size(1038, 596);
+			this.main_.TabIndex = 1;
+			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+			this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+			this.pictureBox1.Location = new System.Drawing.Point(123, 52);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(757, 525);
+			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox1.TabIndex = 0;
+			this.pictureBox1.TabStop = false;
 			// 
 			// NewMainForm
 			// 
@@ -317,11 +371,14 @@
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "NewMainForm";
 			this.panel1.ResumeLayout(false);
+			this.panel4.ResumeLayout(false);
 			this.panel5.ResumeLayout(false);
 			this.panel7.ResumeLayout(false);
 			this.panel7.PerformLayout();
 			this.panel6.ResumeLayout(false);
 			this.panel8.ResumeLayout(false);
+			this.main_.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -348,5 +405,9 @@
 		private System.Windows.Forms.Button button8;
 		private System.Windows.Forms.Button button10;
 		private System.Windows.Forms.Button button9;
+		private System.Windows.Forms.Button button11;
+		private System.Windows.Forms.Panel Logo_panel;
+		private System.Windows.Forms.Panel main_;
+		private System.Windows.Forms.PictureBox pictureBox1;
 	}
 }
