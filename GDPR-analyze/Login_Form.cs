@@ -61,5 +61,10 @@ namespace GDPR_analyze
             bunifuCustomLabel1.Visible = true;
             bunifuCustomLabel3.Visible = true;
         }
-    }
+
+		private void bunifuThinButton21_Click(object sender, EventArgs e)
+		{
+			//de verificat daca exista user-ul si apoi catre home page
+		}
+	}
 }

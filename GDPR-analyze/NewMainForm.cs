@@ -18,6 +18,9 @@ namespace GDPR_analyze
 		int meniuPanel;
 		string text = "";
 
+		int panelWidthmin;
+		int panelWidthmax;
+
 		public NewMainForm()
 		{
 			InitializeComponent();
@@ -25,9 +28,11 @@ namespace GDPR_analyze
 			panelWidth = panel5.Width;
 			panelHeigth = panel5.Height;
 			meniuPanel = panel5.Width;
+			panelWidthmax = panelWidthmin = meniuPanel;
+
 			panel5.Height = panelHeigth;
 			panel5.Width = 0;
-			panel6.Width = panel6.Width + meniuPanel;
+			main_pnl.Width = main_pnl.Width + meniuPanel;
 
 			text = textBox1.Text;
 			//Hidden = false;
@@ -72,18 +77,24 @@ namespace GDPR_analyze
 				this.WindowState = FormWindowState.Maximized;
 				panelWidth = panel5.Width;
 				panelHeigth = panel5.Height;
+
+				//panelWidthmax = panel5.Width;
 			}
 			else
 			{
 				this.WindowState = FormWindowState.Normal;
-				panelWidth = panel5.Width;
+				//panelWidth = panel5.Width;
 				panelHeigth = panel5.Height;
+
+				panelWidthmin = panelWidthmax;
 			}
 		}
 
 		private void button7_Click(object sender, EventArgs e)
 		{
 			this.WindowState = FormWindowState.Minimized;
+
+			
 		}
 
 		private void button1_Click(object sender, EventArgs e)
@@ -99,7 +110,7 @@ namespace GDPR_analyze
 			else
 			{
 				panel5.Height = panelHeigth;
-				panel5.Width = panelWidth;
+				panel5.Width = panelWidthmax;
 
 			}
 
@@ -126,8 +137,13 @@ namespace GDPR_analyze
 				panel5.Height = panelHeigth;
 				panel5.Width = 0;
 
-				panel6.Width = panel6.Width + meniuPanel;
+				main_pnl.Width = main_pnl.Width + meniuPanel;
 			}
+
+		}
+
+		private void button3_Click(object sender, EventArgs e)
+		{
 
 		}
 	}
