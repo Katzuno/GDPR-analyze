@@ -35,7 +35,9 @@ namespace GDPR_analyze
 			main_pnl.Width = main_pnl.Width + meniuPanel;
 
 			text = textBox1.Text;
-			//Hidden = false;
+            //Hidden = false;
+
+            
 		}
 
 
@@ -144,7 +146,38 @@ namespace GDPR_analyze
 
 		private void button3_Click(object sender, EventArgs e)
 		{
+            foreach (Control ctrl in panel2.Controls)
+            {
+                ctrl.Dispose();//Inchide controale deja existente
+            }
+            //Buton Audit
+            Control audit = new Audit();
+            panel2.Controls.Add(audit);
+        }
 
-		}
-	}
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            foreach (Control ctrl in panel2.Controls)
+            {
+                ctrl.Dispose();//Inchide controale deja existente
+            }
+            Control formulare = new Formulare();
+            panel2.Controls.Add(formulare);
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            foreach (Control ctrl in panel2.Controls)
+            {
+                ctrl.Dispose();//Inchide controale deja existente
+            }
+            Control acces = new Solicita_acces();
+            panel2.Controls.Add(acces);
+        }
+    }
 }
