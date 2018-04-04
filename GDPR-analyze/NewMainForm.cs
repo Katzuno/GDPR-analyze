@@ -43,26 +43,26 @@ namespace GDPR_analyze
 
 		private void button3_MouseEnter(object sender, EventArgs e)
 		{
-			button3.UseVisualStyleBackColor = false;
-			button3.BackColor = Color.DarkOrange;
+			btn_audit.UseVisualStyleBackColor = false;
+			btn_audit.BackColor = Color.DarkOrange;
 		}
 
 		private void button3_MouseLeave(object sender, EventArgs e)
 		{
-			button3.UseVisualStyleBackColor = true;
-			button3.BackColor = Color.DimGray;
+			btn_audit.UseVisualStyleBackColor = true;
+			btn_audit.BackColor = Color.DimGray;
 		}
 
 		private void button4_MouseEnter(object sender, EventArgs e)
 		{
-			button4.UseVisualStyleBackColor = false;
-			button4.BackColor = Color.DarkOrange;
+			btn_form.UseVisualStyleBackColor = false;
+			btn_form.BackColor = Color.DarkOrange;
 		}
 
 		private void button4_MouseLeave(object sender, EventArgs e)
 		{
-			button4.UseVisualStyleBackColor = true;
-			button4.BackColor = Color.DimGray;
+			btn_form.UseVisualStyleBackColor = true;
+			btn_form.BackColor = Color.DimGray;
 		}
 
 		private void button5_Click(object sender, EventArgs e)
@@ -146,19 +146,18 @@ namespace GDPR_analyze
 
 		private void button3_Click(object sender, EventArgs e)
 		{
-            foreach (Control ctrl in main_pnl.Controls)
-            {
-                ctrl.Dispose();//Inchide controale deja existente
-            }
-            //Buton Audit
-            Control audit = new Audit();
-            main_pnl.Controls.Add(audit);
-        }
+			foreach (Control ctrl in main_pnl.Controls)
+			{
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
+				ctrl.Dispose();//Inchide controale deja existente
+
+			}
+			//Buton Audit
+			panel5.Width = 0;
+			Control audit = new Audit();
+            main_pnl.Controls.Add(audit);
+			
+		}
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -166,7 +165,8 @@ namespace GDPR_analyze
             {
                 ctrl.Dispose();//Inchide controale deja existente
             }
-            Control formulare = new Formulare();
+			panel5.Width = 0;
+			Control formulare = new Formulare();
             main_pnl.Controls.Add(formulare);
         }
 
