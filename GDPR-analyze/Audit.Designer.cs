@@ -85,13 +85,9 @@
 			this.materialCheckBox41 = new MaterialSkin.Controls.MaterialCheckBox();
 			this.materialCheckBox42 = new MaterialSkin.Controls.MaterialCheckBox();
 			this.bunifuCustomLabel14 = new Bunifu.Framework.UI.BunifuCustomLabel();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// bunifuCustomLabel1
@@ -988,28 +984,6 @@
 			this.bunifuCustomLabel14.TabIndex = 62;
 			this.bunifuCustomLabel14.Text = resources.GetString("bunifuCustomLabel14.Text");
 			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-			this.pictureBox1.Location = new System.Drawing.Point(201, 249);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(30, 30);
-			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox1.TabIndex = 67;
-			this.pictureBox1.TabStop = false;
-			// 
-			// pictureBox2
-			// 
-			this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-			this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
-			this.pictureBox2.Location = new System.Drawing.Point(3, 72);
-			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.Size = new System.Drawing.Size(30, 30);
-			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox2.TabIndex = 68;
-			this.pictureBox2.TabStop = false;
-			// 
 			// contextMenuStrip1
 			// 
 			this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -1041,8 +1015,6 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoSize = true;
 			this.Controls.Add(this.textBox1);
-			this.Controls.Add(this.pictureBox2);
-			this.Controls.Add(this.pictureBox1);
 			this.Controls.Add(this.materialCheckBox39);
 			this.Controls.Add(this.materialCheckBox40);
 			this.Controls.Add(this.materialCheckBox41);
@@ -1101,8 +1073,6 @@
 			this.Name = "Audit";
 			this.Size = new System.Drawing.Size(1797, 1554);
 			this.Load += new System.EventHandler(this.Audit_Load);
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -1165,8 +1135,6 @@
         private MaterialSkin.Controls.MaterialCheckBox materialCheckBox41;
         private MaterialSkin.Controls.MaterialCheckBox materialCheckBox42;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel14;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;

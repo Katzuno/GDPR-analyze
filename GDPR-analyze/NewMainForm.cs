@@ -176,8 +176,10 @@ namespace GDPR_analyze
             {
                 ctrl.Dispose();//Inchide controale deja existente
             }
-            Control acces = new Solicita_acces();
+			panel5.Width = 0;
+			Control acces = new Solicita_acces();
             main_pnl.Controls.Add(acces);
         }
-    }
+
+	}
 }
