@@ -178,6 +178,7 @@ namespace GDPR_analyze
             }
 			panel5.Width = 0;
 			Control acces = new Solicita_acces();
+            
             main_pnl.Controls.Add(acces);
         }
 
