@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Audit));
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -63,7 +64,6 @@
             this.materialCheckBox24 = new MaterialSkin.Controls.MaterialCheckBox();
             this.materialCheckBox25 = new MaterialSkin.Controls.MaterialCheckBox();
             this.materialCheckBox26 = new MaterialSkin.Controls.MaterialCheckBox();
-            this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.materialCheckBox27 = new MaterialSkin.Controls.MaterialCheckBox();
             this.materialCheckBox28 = new MaterialSkin.Controls.MaterialCheckBox();
@@ -87,6 +87,9 @@
             this.bunifuCustomLabel14 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -116,7 +119,7 @@
             this.materialCheckBox1.AutoSize = true;
             this.materialCheckBox1.BackColor = System.Drawing.Color.DarkOrange;
             this.materialCheckBox1.Depth = 0;
-            this.materialCheckBox1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.materialCheckBox1.Font = new System.Drawing.Font("Roboto", 10F);
             this.materialCheckBox1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.materialCheckBox1.Location = new System.Drawing.Point(35, 121);
             this.materialCheckBox1.Margin = new System.Windows.Forms.Padding(0);
@@ -580,7 +583,7 @@
             this.materialCheckBox23.Depth = 0;
             this.materialCheckBox23.Font = new System.Drawing.Font("Roboto", 10F);
             this.materialCheckBox23.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialCheckBox23.Location = new System.Drawing.Point(347, 958);
+            this.materialCheckBox23.Location = new System.Drawing.Point(347, 1029);
             this.materialCheckBox23.Margin = new System.Windows.Forms.Padding(0);
             this.materialCheckBox23.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialCheckBox23.MouseState = MaterialSkin.MouseState.HOVER;
@@ -598,7 +601,7 @@
             this.materialCheckBox24.Depth = 0;
             this.materialCheckBox24.Font = new System.Drawing.Font("Roboto", 10F);
             this.materialCheckBox24.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialCheckBox24.Location = new System.Drawing.Point(35, 958);
+            this.materialCheckBox24.Location = new System.Drawing.Point(35, 1029);
             this.materialCheckBox24.Margin = new System.Windows.Forms.Padding(0);
             this.materialCheckBox24.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialCheckBox24.MouseState = MaterialSkin.MouseState.HOVER;
@@ -616,7 +619,7 @@
             this.materialCheckBox25.Depth = 0;
             this.materialCheckBox25.Font = new System.Drawing.Font("Roboto", 10F);
             this.materialCheckBox25.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialCheckBox25.Location = new System.Drawing.Point(347, 928);
+            this.materialCheckBox25.Location = new System.Drawing.Point(347, 999);
             this.materialCheckBox25.Margin = new System.Windows.Forms.Padding(0);
             this.materialCheckBox25.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialCheckBox25.MouseState = MaterialSkin.MouseState.HOVER;
@@ -634,7 +637,7 @@
             this.materialCheckBox26.Depth = 0;
             this.materialCheckBox26.Font = new System.Drawing.Font("Roboto", 10F);
             this.materialCheckBox26.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialCheckBox26.Location = new System.Drawing.Point(35, 928);
+            this.materialCheckBox26.Location = new System.Drawing.Point(35, 999);
             this.materialCheckBox26.Margin = new System.Windows.Forms.Padding(0);
             this.materialCheckBox26.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialCheckBox26.MouseState = MaterialSkin.MouseState.HOVER;
@@ -644,16 +647,6 @@
             this.materialCheckBox26.TabIndex = 42;
             this.materialCheckBox26.Text = "NU";
             this.materialCheckBox26.UseVisualStyleBackColor = false;
-            // 
-            // bunifuCustomLabel9
-            // 
-            this.bunifuCustomLabel9.AutoSize = true;
-            this.bunifuCustomLabel9.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel9.Location = new System.Drawing.Point(31, 888);
-            this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
-            this.bunifuCustomLabel9.Size = new System.Drawing.Size(1801, 21);
-            this.bunifuCustomLabel9.TabIndex = 41;
-            this.bunifuCustomLabel9.Text = resources.GetString("bunifuCustomLabel9.Text");
             // 
             // bunifuCustomLabel10
             // 
@@ -672,7 +665,7 @@
             this.materialCheckBox27.Depth = 0;
             this.materialCheckBox27.Font = new System.Drawing.Font("Roboto", 10F);
             this.materialCheckBox27.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialCheckBox27.Location = new System.Drawing.Point(347, 1082);
+            this.materialCheckBox27.Location = new System.Drawing.Point(347, 1153);
             this.materialCheckBox27.Margin = new System.Windows.Forms.Padding(0);
             this.materialCheckBox27.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialCheckBox27.MouseState = MaterialSkin.MouseState.HOVER;
@@ -690,7 +683,7 @@
             this.materialCheckBox28.Depth = 0;
             this.materialCheckBox28.Font = new System.Drawing.Font("Roboto", 10F);
             this.materialCheckBox28.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialCheckBox28.Location = new System.Drawing.Point(35, 1082);
+            this.materialCheckBox28.Location = new System.Drawing.Point(35, 1153);
             this.materialCheckBox28.Margin = new System.Windows.Forms.Padding(0);
             this.materialCheckBox28.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialCheckBox28.MouseState = MaterialSkin.MouseState.HOVER;
@@ -708,7 +701,7 @@
             this.materialCheckBox29.Depth = 0;
             this.materialCheckBox29.Font = new System.Drawing.Font("Roboto", 10F);
             this.materialCheckBox29.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialCheckBox29.Location = new System.Drawing.Point(347, 1052);
+            this.materialCheckBox29.Location = new System.Drawing.Point(347, 1123);
             this.materialCheckBox29.Margin = new System.Windows.Forms.Padding(0);
             this.materialCheckBox29.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialCheckBox29.MouseState = MaterialSkin.MouseState.HOVER;
@@ -726,7 +719,7 @@
             this.materialCheckBox30.Depth = 0;
             this.materialCheckBox30.Font = new System.Drawing.Font("Roboto", 10F);
             this.materialCheckBox30.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialCheckBox30.Location = new System.Drawing.Point(35, 1052);
+            this.materialCheckBox30.Location = new System.Drawing.Point(35, 1123);
             this.materialCheckBox30.Margin = new System.Windows.Forms.Padding(0);
             this.materialCheckBox30.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialCheckBox30.MouseState = MaterialSkin.MouseState.HOVER;
@@ -741,7 +734,7 @@
             // 
             this.bunifuCustomLabel11.AutoSize = true;
             this.bunifuCustomLabel11.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel11.Location = new System.Drawing.Point(31, 1012);
+            this.bunifuCustomLabel11.Location = new System.Drawing.Point(31, 1083);
             this.bunifuCustomLabel11.Name = "bunifuCustomLabel11";
             this.bunifuCustomLabel11.Size = new System.Drawing.Size(1100, 21);
             this.bunifuCustomLabel11.TabIndex = 47;
@@ -755,7 +748,7 @@
             this.materialCheckBox31.Depth = 0;
             this.materialCheckBox31.Font = new System.Drawing.Font("Roboto", 10F);
             this.materialCheckBox31.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialCheckBox31.Location = new System.Drawing.Point(347, 1206);
+            this.materialCheckBox31.Location = new System.Drawing.Point(347, 1277);
             this.materialCheckBox31.Margin = new System.Windows.Forms.Padding(0);
             this.materialCheckBox31.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialCheckBox31.MouseState = MaterialSkin.MouseState.HOVER;
@@ -773,7 +766,7 @@
             this.materialCheckBox32.Depth = 0;
             this.materialCheckBox32.Font = new System.Drawing.Font("Roboto", 10F);
             this.materialCheckBox32.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialCheckBox32.Location = new System.Drawing.Point(35, 1206);
+            this.materialCheckBox32.Location = new System.Drawing.Point(35, 1277);
             this.materialCheckBox32.Margin = new System.Windows.Forms.Padding(0);
             this.materialCheckBox32.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialCheckBox32.MouseState = MaterialSkin.MouseState.HOVER;
@@ -791,7 +784,7 @@
             this.materialCheckBox33.Depth = 0;
             this.materialCheckBox33.Font = new System.Drawing.Font("Roboto", 10F);
             this.materialCheckBox33.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialCheckBox33.Location = new System.Drawing.Point(347, 1176);
+            this.materialCheckBox33.Location = new System.Drawing.Point(347, 1247);
             this.materialCheckBox33.Margin = new System.Windows.Forms.Padding(0);
             this.materialCheckBox33.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialCheckBox33.MouseState = MaterialSkin.MouseState.HOVER;
@@ -809,7 +802,7 @@
             this.materialCheckBox34.Depth = 0;
             this.materialCheckBox34.Font = new System.Drawing.Font("Roboto", 10F);
             this.materialCheckBox34.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialCheckBox34.Location = new System.Drawing.Point(35, 1176);
+            this.materialCheckBox34.Location = new System.Drawing.Point(35, 1247);
             this.materialCheckBox34.Margin = new System.Windows.Forms.Padding(0);
             this.materialCheckBox34.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialCheckBox34.MouseState = MaterialSkin.MouseState.HOVER;
@@ -824,7 +817,7 @@
             // 
             this.bunifuCustomLabel12.AutoSize = true;
             this.bunifuCustomLabel12.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel12.Location = new System.Drawing.Point(31, 1136);
+            this.bunifuCustomLabel12.Location = new System.Drawing.Point(31, 1207);
             this.bunifuCustomLabel12.Name = "bunifuCustomLabel12";
             this.bunifuCustomLabel12.Size = new System.Drawing.Size(1749, 21);
             this.bunifuCustomLabel12.TabIndex = 52;
@@ -837,7 +830,7 @@
             this.materialCheckBox35.Depth = 0;
             this.materialCheckBox35.Font = new System.Drawing.Font("Roboto", 10F);
             this.materialCheckBox35.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialCheckBox35.Location = new System.Drawing.Point(347, 1329);
+            this.materialCheckBox35.Location = new System.Drawing.Point(347, 1400);
             this.materialCheckBox35.Margin = new System.Windows.Forms.Padding(0);
             this.materialCheckBox35.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialCheckBox35.MouseState = MaterialSkin.MouseState.HOVER;
@@ -855,7 +848,7 @@
             this.materialCheckBox36.Depth = 0;
             this.materialCheckBox36.Font = new System.Drawing.Font("Roboto", 10F);
             this.materialCheckBox36.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialCheckBox36.Location = new System.Drawing.Point(35, 1329);
+            this.materialCheckBox36.Location = new System.Drawing.Point(35, 1400);
             this.materialCheckBox36.Margin = new System.Windows.Forms.Padding(0);
             this.materialCheckBox36.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialCheckBox36.MouseState = MaterialSkin.MouseState.HOVER;
@@ -873,7 +866,7 @@
             this.materialCheckBox37.Depth = 0;
             this.materialCheckBox37.Font = new System.Drawing.Font("Roboto", 10F);
             this.materialCheckBox37.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialCheckBox37.Location = new System.Drawing.Point(347, 1299);
+            this.materialCheckBox37.Location = new System.Drawing.Point(347, 1370);
             this.materialCheckBox37.Margin = new System.Windows.Forms.Padding(0);
             this.materialCheckBox37.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialCheckBox37.MouseState = MaterialSkin.MouseState.HOVER;
@@ -891,7 +884,7 @@
             this.materialCheckBox38.Depth = 0;
             this.materialCheckBox38.Font = new System.Drawing.Font("Roboto", 10F);
             this.materialCheckBox38.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialCheckBox38.Location = new System.Drawing.Point(35, 1299);
+            this.materialCheckBox38.Location = new System.Drawing.Point(35, 1370);
             this.materialCheckBox38.Margin = new System.Windows.Forms.Padding(0);
             this.materialCheckBox38.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialCheckBox38.MouseState = MaterialSkin.MouseState.HOVER;
@@ -906,7 +899,7 @@
             // 
             this.bunifuCustomLabel13.AutoSize = true;
             this.bunifuCustomLabel13.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel13.Location = new System.Drawing.Point(31, 1259);
+            this.bunifuCustomLabel13.Location = new System.Drawing.Point(31, 1330);
             this.bunifuCustomLabel13.Name = "bunifuCustomLabel13";
             this.bunifuCustomLabel13.Size = new System.Drawing.Size(941, 21);
             this.bunifuCustomLabel13.TabIndex = 57;
@@ -920,7 +913,7 @@
             this.materialCheckBox39.Depth = 0;
             this.materialCheckBox39.Font = new System.Drawing.Font("Roboto", 10F);
             this.materialCheckBox39.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialCheckBox39.Location = new System.Drawing.Point(347, 1453);
+            this.materialCheckBox39.Location = new System.Drawing.Point(347, 1524);
             this.materialCheckBox39.Margin = new System.Windows.Forms.Padding(0);
             this.materialCheckBox39.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialCheckBox39.MouseState = MaterialSkin.MouseState.HOVER;
@@ -938,7 +931,7 @@
             this.materialCheckBox40.Depth = 0;
             this.materialCheckBox40.Font = new System.Drawing.Font("Roboto", 10F);
             this.materialCheckBox40.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialCheckBox40.Location = new System.Drawing.Point(35, 1453);
+            this.materialCheckBox40.Location = new System.Drawing.Point(35, 1524);
             this.materialCheckBox40.Margin = new System.Windows.Forms.Padding(0);
             this.materialCheckBox40.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialCheckBox40.MouseState = MaterialSkin.MouseState.HOVER;
@@ -956,7 +949,7 @@
             this.materialCheckBox41.Depth = 0;
             this.materialCheckBox41.Font = new System.Drawing.Font("Roboto", 10F);
             this.materialCheckBox41.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialCheckBox41.Location = new System.Drawing.Point(347, 1423);
+            this.materialCheckBox41.Location = new System.Drawing.Point(347, 1494);
             this.materialCheckBox41.Margin = new System.Windows.Forms.Padding(0);
             this.materialCheckBox41.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialCheckBox41.MouseState = MaterialSkin.MouseState.HOVER;
@@ -974,7 +967,7 @@
             this.materialCheckBox42.Depth = 0;
             this.materialCheckBox42.Font = new System.Drawing.Font("Roboto", 10F);
             this.materialCheckBox42.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialCheckBox42.Location = new System.Drawing.Point(35, 1423);
+            this.materialCheckBox42.Location = new System.Drawing.Point(35, 1494);
             this.materialCheckBox42.Margin = new System.Windows.Forms.Padding(0);
             this.materialCheckBox42.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialCheckBox42.MouseState = MaterialSkin.MouseState.HOVER;
@@ -989,7 +982,7 @@
             // 
             this.bunifuCustomLabel14.AutoSize = true;
             this.bunifuCustomLabel14.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel14.Location = new System.Drawing.Point(31, 1383);
+            this.bunifuCustomLabel14.Location = new System.Drawing.Point(31, 1454);
             this.bunifuCustomLabel14.Name = "bunifuCustomLabel14";
             this.bunifuCustomLabel14.Size = new System.Drawing.Size(1763, 21);
             this.bunifuCustomLabel14.TabIndex = 62;
@@ -1017,12 +1010,37 @@
             this.pictureBox2.TabIndex = 68;
             this.pictureBox2.TabStop = false;
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(35, 930);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(1030, 66);
+            this.textBox1.TabIndex = 71;
+            this.textBox1.Text = resources.GetString("textBox1.Text");
+            // 
+            // contextMenuStrip2
+            // 
+            this.contextMenuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip2.Name = "contextMenuStrip2";
+            this.contextMenuStrip2.Size = new System.Drawing.Size(61, 4);
+            // 
             // Audit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
             this.AutoSize = true;
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.materialCheckBox39);
@@ -1050,7 +1068,6 @@
             this.Controls.Add(this.materialCheckBox24);
             this.Controls.Add(this.materialCheckBox25);
             this.Controls.Add(this.materialCheckBox26);
-            this.Controls.Add(this.bunifuCustomLabel9);
             this.Controls.Add(this.materialCheckBox21);
             this.Controls.Add(this.materialCheckBox22);
             this.Controls.Add(this.bunifuCustomLabel8);
@@ -1082,7 +1099,7 @@
             this.Controls.Add(this.bunifuCustomLabel2);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Name = "Audit";
-            this.Size = new System.Drawing.Size(1835, 1483);
+            this.Size = new System.Drawing.Size(1835, 1554);
             this.Load += new System.EventHandler(this.Audit_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -1127,7 +1144,6 @@
         private MaterialSkin.Controls.MaterialCheckBox materialCheckBox24;
         private MaterialSkin.Controls.MaterialCheckBox materialCheckBox25;
         private MaterialSkin.Controls.MaterialCheckBox materialCheckBox26;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel9;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel10;
         private MaterialSkin.Controls.MaterialCheckBox materialCheckBox27;
         private MaterialSkin.Controls.MaterialCheckBox materialCheckBox28;
@@ -1151,5 +1167,8 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel14;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
     }
 }

@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="bunifuCustomLabel9.Text" xml:space="preserve">
-    <value>6) Aveti implementata o procedura pentru a raspunde solicitarilor de informare primite din partea operatorilor (ca urmare a exercitarii de catre persoanele fizice a dreptului de acces la datele cu caracter personal)?</value>
-  </data>
   <data name="bunifuCustomLabel12.Text" xml:space="preserve">
     <value>8) Aveti o procedura pentru a dispune/sterge in mod sigur datele cu caracter personal care nu va mai sunt necesare sau in cazul in care o persoana fizica va solicita sa stergeti datele ei cu caracter personal?</value>
   </data>
@@ -371,6 +368,15 @@
         Cr8+3wq/Pn+7wij6P8O4sGihr8l1AAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>6) Aveti implementata o procedura pentru a raspunde solicitarilor de informare primite din partea operatorilor (ca urmare a exercitarii de catre persoanele fizice a dreptului de acces la datele cu caracter personal)?</value>
+  </data>
+  <metadata name="contextMenuStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>203, 17</value>
+  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>34</value>
   </metadata>

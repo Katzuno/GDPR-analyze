@@ -44,11 +44,11 @@
             this.button11 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.main_pnl = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel_up = new System.Windows.Forms.Panel();
             this.btn_minimize = new System.Windows.Forms.Button();
             this.btn_maximize = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -244,9 +244,9 @@
             // 
             // main_pnl
             // 
+            this.main_pnl.AutoScroll = true;
             this.main_pnl.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.main_pnl.Controls.Add(this.panel2);
-            this.main_pnl.Controls.Add(this.panel_up);
             this.main_pnl.Controls.Add(this.panel5);
             this.main_pnl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.main_pnl.Location = new System.Drawing.Point(76, 0);
@@ -254,15 +254,26 @@
             this.main_pnl.Size = new System.Drawing.Size(1038, 726);
             this.main_pnl.TabIndex = 3;
             // 
+            // panel2
+            // 
+            this.panel2.AutoScroll = true;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(300, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(738, 726);
+            this.panel2.TabIndex = 3;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
             // panel_up
             // 
+            this.panel_up.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel_up.Controls.Add(this.btn_minimize);
             this.panel_up.Controls.Add(this.btn_maximize);
             this.panel_up.Controls.Add(this.btn_exit);
             this.panel_up.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_up.Location = new System.Drawing.Point(300, 0);
+            this.panel_up.Location = new System.Drawing.Point(76, 0);
             this.panel_up.Name = "panel_up";
-            this.panel_up.Size = new System.Drawing.Size(738, 65);
+            this.panel_up.Size = new System.Drawing.Size(1038, 65);
             this.panel_up.TabIndex = 0;
             // 
             // btn_minimize
@@ -272,7 +283,7 @@
             this.btn_minimize.FlatAppearance.BorderSize = 0;
             this.btn_minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_minimize.Image = ((System.Drawing.Image)(resources.GetObject("btn_minimize.Image")));
-            this.btn_minimize.Location = new System.Drawing.Point(543, 0);
+            this.btn_minimize.Location = new System.Drawing.Point(843, 0);
             this.btn_minimize.Name = "btn_minimize";
             this.btn_minimize.Size = new System.Drawing.Size(65, 65);
             this.btn_minimize.TabIndex = 6;
@@ -286,7 +297,7 @@
             this.btn_maximize.FlatAppearance.BorderSize = 0;
             this.btn_maximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_maximize.Image = ((System.Drawing.Image)(resources.GetObject("btn_maximize.Image")));
-            this.btn_maximize.Location = new System.Drawing.Point(608, 0);
+            this.btn_maximize.Location = new System.Drawing.Point(908, 0);
             this.btn_maximize.Name = "btn_maximize";
             this.btn_maximize.Size = new System.Drawing.Size(65, 65);
             this.btn_maximize.TabIndex = 5;
@@ -300,27 +311,19 @@
             this.btn_exit.FlatAppearance.BorderSize = 0;
             this.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_exit.Image = ((System.Drawing.Image)(resources.GetObject("btn_exit.Image")));
-            this.btn_exit.Location = new System.Drawing.Point(673, 0);
+            this.btn_exit.Location = new System.Drawing.Point(973, 0);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Size = new System.Drawing.Size(65, 65);
             this.btn_exit.TabIndex = 4;
             this.btn_exit.UseVisualStyleBackColor = false;
             this.btn_exit.Click += new System.EventHandler(this.button5_Click);
             // 
-            // panel2
-            // 
-            this.panel2.AutoScroll = true;
-            this.panel2.Location = new System.Drawing.Point(300, 67);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(737, 659);
-            this.panel2.TabIndex = 3;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
             // NewMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1114, 726);
+            this.Controls.Add(this.panel_up);
             this.Controls.Add(this.main_pnl);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

@@ -146,13 +146,13 @@ namespace GDPR_analyze
 
 		private void button3_Click(object sender, EventArgs e)
 		{
-            foreach (Control ctrl in panel2.Controls)
+            foreach (Control ctrl in main_pnl.Controls)
             {
                 ctrl.Dispose();//Inchide controale deja existente
             }
             //Buton Audit
             Control audit = new Audit();
-            panel2.Controls.Add(audit);
+            main_pnl.Controls.Add(audit);
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -162,22 +162,22 @@ namespace GDPR_analyze
 
         private void button4_Click(object sender, EventArgs e)
         {
-            foreach (Control ctrl in panel2.Controls)
+            foreach (Control ctrl in main_pnl.Controls)
             {
                 ctrl.Dispose();//Inchide controale deja existente
             }
             Control formulare = new Formulare();
-            panel2.Controls.Add(formulare);
+            main_pnl.Controls.Add(formulare);
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            foreach (Control ctrl in panel2.Controls)
+            foreach (Control ctrl in main_pnl.Controls)
             {
                 ctrl.Dispose();//Inchide controale deja existente
             }
             Control acces = new Solicita_acces();
-            panel2.Controls.Add(acces);
+            main_pnl.Controls.Add(acces);
         }
     }
 }

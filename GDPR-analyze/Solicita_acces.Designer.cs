@@ -47,7 +47,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Name = "Solicita_acces";
-            this.Size = new System.Drawing.Size(737, 659);
+            this.Size = new System.Drawing.Size(1038, 726);
             this.ResumeLayout(false);
             this.PerformLayout();
 
