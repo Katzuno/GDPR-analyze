@@ -95,23 +95,11 @@
     <Compile Include="NewMainForm.Designer.cs">
       <DependentUpon>NewMainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Register_Form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Register_Form.Designer.cs">
-      <DependentUpon>Register_Form.cs</DependentUpon>
-    </Compile>
     <Compile Include="Solicita_acces.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Solicita_acces.Designer.cs">
       <DependentUpon>Solicita_acces.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Start_Form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Start_Form.Designer.cs">
-      <DependentUpon>Start_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -130,14 +118,8 @@
     <EmbeddedResource Include="NewMainForm.resx">
       <DependentUpon>NewMainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Register_Form.resx">
-      <DependentUpon>Register_Form.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Solicita_acces.resx">
       <DependentUpon>Solicita_acces.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Start_Form.resx">
-      <DependentUpon>Start_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
