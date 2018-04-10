@@ -26,7 +26,7 @@ namespace GDPR_analyze
 
         private void materialCheckBox1_CheckedChanged(object sender, EventArgs e)
         {
-          
+          //test
         }
 
         private void materialCheckBox2_CheckedChanged(object sender, EventArgs e)
