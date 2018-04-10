@@ -117,15 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="textBox1.Text" xml:space="preserve">
     <value>6) Aveti implementata o procedura pentru a raspunde solicitarilor de informare primite din partea operatorilor (ca urmare a exercitarii de catre persoanele fizice a dreptului de acces la datele cu caracter personal)?</value>
   </data>
-  <metadata name="contextMenuStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>203, 17</value>
-  </metadata>
   <data name="textBox3.Text" xml:space="preserve">
     <value>8) Aveti o procedura pentru a dispune/sterge in mod sigur datele cu caracter personal care nu va mai sunt necesare sau in cazul in care o persoana fizica va solicita sa stergeti datele ei cu caracter personal?</value>
   </data>
@@ -135,17 +129,17 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAIgSURBVGhD7ZnLShxBFIbHGy68YDYREsG8hC58jYB5kCyyyDqIu0hUFHyAIJosxVXyCpFsswi5
-        EBIUXCR4WYxfVf9TDEKZnjrtdBf0B//mzDlflWBTM12dlpYWO91ud5Qsk+fkLTkhZ7fyibjPXM8SGdV4
-        fbCJBbJOvpNB+UbWyGPphgeLPiBvyAWx4hwbZE76+4WFVslvUjW/yFMtUz3IJ8iuW+me2SITWrYaEE6T
-        Y2cfEkdkSsvbQDRJPjrrkPlAJrWNdJBse109bGgbaSB4VnhqJe3BZvAROfeKejklD7Wt8jC058cTkSag
-        cio70pSDgSfk2o8mIlVA5VSuyKJU/4dmd8SbkCqgsoVXUt0NjePEnYompAuobOEHGZMuDk0rvr2ZLGub
-        cWh6WfQ2khfaZhya3he9jeRA24xD0+eit5GcaJtxaHIHhxnpAipb+SNdHJoui14b0gVUtnIhXRya3KFh
-        RrqAylZK/QHZ/wtV8hBLF1DZSqmH+KDotSFdQGUr+9LFoamSg0y6gMpWSh1klXyVkC6gspVSXyXcW7av
-        vt2AdAGVLXwhI9LdDY35fp120DxP/vmxRKQKqJzKXzLYz0oGNv1oItIEVE7ltTTlYWiW/PTj9eJ+yMxo
-        W4PBYL6vVXogyPfFlgPJGHnndcPlkFRzCYIo35e7PRDm+3q9H+R5XnD0w0L5XjH1w6J5XvLdhk3Erll7
-        NPOataUlezqdGxaWWEY02iiVAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAiBJREFUaEPt
+        mctKHEEUhscbLrxgNhESwbyELnyNgHmQLLLIOoi7SFQUfIAgmizFVfIKkWyzCLkQEhRcJHhZjF9V/1MM
+        QpmeOu10F/QH/+bMOV+VYFMzXZ2WlhY73W53lCyT5+QtOSFnt/KJuM9czxIZ1Xh9sIkFsk6+k0H5RtbI
+        Y+mGB4s+IG/IBbHiHBtkTvr7hYVWyW9SNb/IUy1TPcgnyK5b6Z7ZIhNathoQTpNjZx8SR2RKy9tANEk+
+        OuuQ+UAmtY10kGx7XT1saBtpIHhWeGol7cFm8BE594p6OSUPta3yMLTnxxORJqByKjvSlIOBJ+TajyYi
+        VUDlVK7IolT/h2Z3xJuQKqCyhVdS3Q2N48SdiiakC6hs4QcZky4OTSu+vZksa5txaHpZ9DaSF9pmHJre
+        F72N5EDbjEPT56K3kZxom3FocgeHGekCKlv5I10cmi6LXhvSBVS2ciFdHJrcoWFGuoDKVkr9Adn/C1Xy
+        EEsXUNlKqYf4oOi1IV1AZSv70sWhqZKDTLqAylZKHWSVfJWQLqCylVJfJdxbtq++3YB0AZUtfCEj0t0N
+        jfl+nXbQPE/++bFEpAqonMpfMtjPSgY2/Wgi0gRUTuW1NOVhaJb89OP14n7IzGhbg8Fgvq9VeiDI98WW
+        A8kYeed1w+WQVHMJgijfl7s9EOb7er0f5HlecPTDQvleMfXDonle8t2GTcSuWXs085q1pSV7Op0bFpZY
+        RjTaKJUAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -302,6 +296,147 @@
     <value>12) Va monitorizati propria conformitate cu politicile de protectie a datelor cu caracter personale si verificati in mod regulat eficienta gestionarii datelor cu caracter personale si a controalelor de securitate?</value>
   </data>
   <data name="pictureBox12.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAiBJREFUaEPt
+        mctKHEEUhscbLrxgNhESwbyELnyNgHmQLLLIOoi7SFQUfIAgmizFVfIKkWyzCLkQEhRcJHhZjF9V/1MM
+        QpmeOu10F/QH/+bMOV+VYFMzXZ2WlhY73W53lCyT5+QtOSFnt/KJuM9czxIZ1Xh9sIkFsk6+k0H5RtbI
+        Y+mGB4s+IG/IBbHiHBtkTvr7hYVWyW9SNb/IUy1TPcgnyK5b6Z7ZIhNathoQTpNjZx8SR2RKy9tANEk+
+        OuuQ+UAmtY10kGx7XT1saBtpIHhWeGol7cFm8BE594p6OSUPta3yMLTnxxORJqByKjvSlIOBJ+TajyYi
+        VUDlVK7IolT/h2Z3xJuQKqCyhVdS3Q2N48SdiiakC6hs4QcZky4OTSu+vZksa5txaHpZ9DaSF9pmHJre
+        F72N5EDbjEPT56K3kZxom3FocgeHGekCKlv5I10cmi6LXhvSBVS2ciFdHJrcoWFGuoDKVkr9Adn/C1Xy
+        EEsXUNlKqYf4oOi1IV1AZSv70sWhqZKDTLqAylZKHWSVfJWQLqCylVJfJdxbtq++3YB0AZUtfCEj0t0N
+        jfl+nXbQPE/++bFEpAqonMpfMtjPSgY2/Wgi0gRUTuW1NOVhaJb89OP14n7IzGhbg8Fgvq9VeiDI98WW
+        A8kYeed1w+WQVHMJgijfl7s9EOb7er0f5HlecPTDQvleMfXDonle8t2GTcSuWXs085q1pSV7Op0bFpZY
+        RjTaKJUAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="pictureBox13.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAiBJREFUaEPt
+        mctKHEEUhscbLrxgNhESwbyELnyNgHmQLLLIOoi7SFQUfIAgmizFVfIKkWyzCLkQEhRcJHhZjF9V/1MM
+        QpmeOu10F/QH/+bMOV+VYFMzXZ2WlhY73W53lCyT5+QtOSFnt/KJuM9czxIZ1Xh9sIkFsk6+k0H5RtbI
+        Y+mGB4s+IG/IBbHiHBtkTvr7hYVWyW9SNb/IUy1TPcgnyK5b6Z7ZIhNathoQTpNjZx8SR2RKy9tANEk+
+        OuuQ+UAmtY10kGx7XT1saBtpIHhWeGol7cFm8BE594p6OSUPta3yMLTnxxORJqByKjvSlIOBJ+TajyYi
+        VUDlVK7IolT/h2Z3xJuQKqCyhVdS3Q2N48SdiiakC6hs4QcZky4OTSu+vZksa5txaHpZ9DaSF9pmHJre
+        F72N5EDbjEPT56K3kZxom3FocgeHGekCKlv5I10cmi6LXhvSBVS2ciFdHJrcoWFGuoDKVkr9Adn/C1Xy
+        EEsXUNlKqYf4oOi1IV1AZSv70sWhqZKDTLqAylZKHWSVfJWQLqCylVJfJdxbtq++3YB0AZUtfCEj0t0N
+        jfl+nXbQPE/++bFEpAqonMpfMtjPSgY2/Wgi0gRUTuW1NOVhaJb89OP14n7IzGhbg8Fgvq9VeiDI98WW
+        A8kYeed1w+WQVHMJgijfl7s9EOb7er0f5HlecPTDQvleMfXDonle8t2GTcSuWXs085q1pSV7Op0bFpZY
+        RjTaKJUAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="pictureBox14.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAiBJREFUaEPt
+        mctKHEEUhscbLrxgNhESwbyELnyNgHmQLLLIOoi7SFQUfIAgmizFVfIKkWyzCLkQEhRcJHhZjF9V/1MM
+        QpmeOu10F/QH/+bMOV+VYFMzXZ2WlhY73W53lCyT5+QtOSFnt/KJuM9czxIZ1Xh9sIkFsk6+k0H5RtbI
+        Y+mGB4s+IG/IBbHiHBtkTvr7hYVWyW9SNb/IUy1TPcgnyK5b6Z7ZIhNathoQTpNjZx8SR2RKy9tANEk+
+        OuuQ+UAmtY10kGx7XT1saBtpIHhWeGol7cFm8BE594p6OSUPta3yMLTnxxORJqByKjvSlIOBJ+TajyYi
+        VUDlVK7IolT/h2Z3xJuQKqCyhVdS3Q2N48SdiiakC6hs4QcZky4OTSu+vZksa5txaHpZ9DaSF9pmHJre
+        F72N5EDbjEPT56K3kZxom3FocgeHGekCKlv5I10cmi6LXhvSBVS2ciFdHJrcoWFGuoDKVkr9Adn/C1Xy
+        EEsXUNlKqYf4oOi1IV1AZSv70sWhqZKDTLqAylZKHWSVfJWQLqCylVJfJdxbtq++3YB0AZUtfCEj0t0N
+        jfl+nXbQPE/++bFEpAqonMpfMtjPSgY2/Wgi0gRUTuW1NOVhaJb89OP14n7IzGhbg8Fgvq9VeiDI98WW
+        A8kYeed1w+WQVHMJgijfl7s9EOb7er0f5HlecPTDQvleMfXDonle8t2GTcSuWXs085q1pSV7Op0bFpZY
+        RjTaKJUAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="pictureBox15.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAiBJREFUaEPt
+        mctKHEEUhscbLrxgNhESwbyELnyNgHmQLLLIOoi7SFQUfIAgmizFVfIKkWyzCLkQEhRcJHhZjF9V/1MM
+        QpmeOu10F/QH/+bMOV+VYFMzXZ2WlhY73W53lCyT5+QtOSFnt/KJuM9czxIZ1Xh9sIkFsk6+k0H5RtbI
+        Y+mGB4s+IG/IBbHiHBtkTvr7hYVWyW9SNb/IUy1TPcgnyK5b6Z7ZIhNathoQTpNjZx8SR2RKy9tANEk+
+        OuuQ+UAmtY10kGx7XT1saBtpIHhWeGol7cFm8BE594p6OSUPta3yMLTnxxORJqByKjvSlIOBJ+TajyYi
+        VUDlVK7IolT/h2Z3xJuQKqCyhVdS3Q2N48SdiiakC6hs4QcZky4OTSu+vZksa5txaHpZ9DaSF9pmHJre
+        F72N5EDbjEPT56K3kZxom3FocgeHGekCKlv5I10cmi6LXhvSBVS2ciFdHJrcoWFGuoDKVkr9Adn/C1Xy
+        EEsXUNlKqYf4oOi1IV1AZSv70sWhqZKDTLqAylZKHWSVfJWQLqCylVJfJdxbtq++3YB0AZUtfCEj0t0N
+        jfl+nXbQPE/++bFEpAqonMpfMtjPSgY2/Wgi0gRUTuW1NOVhaJb89OP14n7IzGhbg8Fgvq9VeiDI98WW
+        A8kYeed1w+WQVHMJgijfl7s9EOb7er0f5HlecPTDQvleMfXDonle8t2GTcSuWXs085q1pSV7Op0bFpZY
+        RjTaKJUAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="textBox13.Text" xml:space="preserve">
+    <value>16) Afacerea dvs. gestioneaza riscurile de informare intr-un mod structurat, astfel incat conducerea sa inteleaga riscul si impactul legat de datele cu caracter personal asupra afacerilor si sa le gestioneze in mod eficient?</value>
+  </data>
+  <data name="pictureBox16.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAiBJREFUaEPt
+        mctKHEEUhscbLrxgNhESwbyELnyNgHmQLLLIOoi7SFQUfIAgmizFVfIKkWyzCLkQEhRcJHhZjF9V/1MM
+        QpmeOu10F/QH/+bMOV+VYFMzXZ2WlhY73W53lCyT5+QtOSFnt/KJuM9czxIZ1Xh9sIkFsk6+k0H5RtbI
+        Y+mGB4s+IG/IBbHiHBtkTvr7hYVWyW9SNb/IUy1TPcgnyK5b6Z7ZIhNathoQTpNjZx8SR2RKy9tANEk+
+        OuuQ+UAmtY10kGx7XT1saBtpIHhWeGol7cFm8BE594p6OSUPta3yMLTnxxORJqByKjvSlIOBJ+TajyYi
+        VUDlVK7IolT/h2Z3xJuQKqCyhVdS3Q2N48SdiiakC6hs4QcZky4OTSu+vZksa5txaHpZ9DaSF9pmHJre
+        F72N5EDbjEPT56K3kZxom3FocgeHGekCKlv5I10cmi6LXhvSBVS2ciFdHJrcoWFGuoDKVkr9Adn/C1Xy
+        EEsXUNlKqYf4oOi1IV1AZSv70sWhqZKDTLqAylZKHWSVfJWQLqCylVJfJdxbtq++3YB0AZUtfCEj0t0N
+        jfl+nXbQPE/++bFEpAqonMpfMtjPSgY2/Wgi0gRUTuW1NOVhaJb89OP14n7IzGhbg8Fgvq9VeiDI98WW
+        A8kYeed1w+WQVHMJgijfl7s9EOb7er0f5HlecPTDQvleMfXDonle8t2GTcSuWXs085q1pSV7Op0bFpZY
+        RjTaKJUAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="pictureBox17.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAiBJREFUaEPt
+        mctKHEEUhscbLrxgNhESwbyELnyNgHmQLLLIOoi7SFQUfIAgmizFVfIKkWyzCLkQEhRcJHhZjF9V/1MM
+        QpmeOu10F/QH/+bMOV+VYFMzXZ2WlhY73W53lCyT5+QtOSFnt/KJuM9czxIZ1Xh9sIkFsk6+k0H5RtbI
+        Y+mGB4s+IG/IBbHiHBtkTvr7hYVWyW9SNb/IUy1TPcgnyK5b6Z7ZIhNathoQTpNjZx8SR2RKy9tANEk+
+        OuuQ+UAmtY10kGx7XT1saBtpIHhWeGol7cFm8BE594p6OSUPta3yMLTnxxORJqByKjvSlIOBJ+TajyYi
+        VUDlVK7IolT/h2Z3xJuQKqCyhVdS3Q2N48SdiiakC6hs4QcZky4OTSu+vZksa5txaHpZ9DaSF9pmHJre
+        F72N5EDbjEPT56K3kZxom3FocgeHGekCKlv5I10cmi6LXhvSBVS2ciFdHJrcoWFGuoDKVkr9Adn/C1Xy
+        EEsXUNlKqYf4oOi1IV1AZSv70sWhqZKDTLqAylZKHWSVfJWQLqCylVJfJdxbtq++3YB0AZUtfCEj0t0N
+        jfl+nXbQPE/++bFEpAqonMpfMtjPSgY2/Wgi0gRUTuW1NOVhaJb89OP14n7IzGhbg8Fgvq9VeiDI98WW
+        A8kYeed1w+WQVHMJgijfl7s9EOb7er0f5HlecPTDQvleMfXDonle8t2GTcSuWXs085q1pSV7Op0bFpZY
+        RjTaKJUAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="pictureBox18.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAiBJREFUaEPt
+        mctKHEEUhscbLrxgNhESwbyELnyNgHmQLLLIOoi7SFQUfIAgmizFVfIKkWyzCLkQEhRcJHhZjF9V/1MM
+        QpmeOu10F/QH/+bMOV+VYFMzXZ2WlhY73W53lCyT5+QtOSFnt/KJuM9czxIZ1Xh9sIkFsk6+k0H5RtbI
+        Y+mGB4s+IG/IBbHiHBtkTvr7hYVWyW9SNb/IUy1TPcgnyK5b6Z7ZIhNathoQTpNjZx8SR2RKy9tANEk+
+        OuuQ+UAmtY10kGx7XT1saBtpIHhWeGol7cFm8BE594p6OSUPta3yMLTnxxORJqByKjvSlIOBJ+TajyYi
+        VUDlVK7IolT/h2Z3xJuQKqCyhVdS3Q2N48SdiiakC6hs4QcZky4OTSu+vZksa5txaHpZ9DaSF9pmHJre
+        F72N5EDbjEPT56K3kZxom3FocgeHGekCKlv5I10cmi6LXhvSBVS2ciFdHJrcoWFGuoDKVkr9Adn/C1Xy
+        EEsXUNlKqYf4oOi1IV1AZSv70sWhqZKDTLqAylZKHWSVfJWQLqCylVJfJdxbtq++3YB0AZUtfCEj0t0N
+        jfl+nXbQPE/++bFEpAqonMpfMtjPSgY2/Wgi0gRUTuW1NOVhaJb89OP14n7IzGhbg8Fgvq9VeiDI98WW
+        A8kYeed1w+WQVHMJgijfl7s9EOb7er0f5HlecPTDQvleMfXDonle8t2GTcSuWXs085q1pSV7Op0bFpZY
+        RjTaKJUAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="pictureBox19.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAiBJREFUaEPt
+        mctKHEEUhscbLrxgNhESwbyELnyNgHmQLLLIOoi7SFQUfIAgmizFVfIKkWyzCLkQEhRcJHhZjF9V/1MM
+        QpmeOu10F/QH/+bMOV+VYFMzXZ2WlhY73W53lCyT5+QtOSFnt/KJuM9czxIZ1Xh9sIkFsk6+k0H5RtbI
+        Y+mGB4s+IG/IBbHiHBtkTvr7hYVWyW9SNb/IUy1TPcgnyK5b6Z7ZIhNathoQTpNjZx8SR2RKy9tANEk+
+        OuuQ+UAmtY10kGx7XT1saBtpIHhWeGol7cFm8BE594p6OSUPta3yMLTnxxORJqByKjvSlIOBJ+TajyYi
+        VUDlVK7IolT/h2Z3xJuQKqCyhVdS3Q2N48SdiiakC6hs4QcZky4OTSu+vZksa5txaHpZ9DaSF9pmHJre
+        F72N5EDbjEPT56K3kZxom3FocgeHGekCKlv5I10cmi6LXhvSBVS2ciFdHJrcoWFGuoDKVkr9Adn/C1Xy
+        EEsXUNlKqYf4oOi1IV1AZSv70sWhqZKDTLqAylZKHWSVfJWQLqCylVJfJdxbtq++3YB0AZUtfCEj0t0N
+        jfl+nXbQPE/++bFEpAqonMpfMtjPSgY2/Wgi0gRUTuW1NOVhaJb89OP14n7IzGhbg8Fgvq9VeiDI98WW
+        A8kYeed1w+WQVHMJgijfl7s9EOb7er0f5HlecPTDQvleMfXDonle8t2GTcSuWXs085q1pSV7Op0bFpZY
+        RjTaKJUAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="textBox17.Text" xml:space="preserve">
+    <value>20) Ați implementat măsuri tehnice și organizatorice adecvate pentru a arăta că ați luat în considerare și integrați protecția datelor în activitățile dvs. de procesare (de exemplu, pseudonimizarea, minimizarea datelor colectate)?</value>
+  </data>
+  <data name="pictureBox20.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAiBJREFUaEPt
+        mctKHEEUhscbLrxgNhESwbyELnyNgHmQLLLIOoi7SFQUfIAgmizFVfIKkWyzCLkQEhRcJHhZjF9V/1MM
+        QpmeOu10F/QH/+bMOV+VYFMzXZ2WlhY73W53lCyT5+QtOSFnt/KJuM9czxIZ1Xh9sIkFsk6+k0H5RtbI
+        Y+mGB4s+IG/IBbHiHBtkTvr7hYVWyW9SNb/IUy1TPcgnyK5b6Z7ZIhNathoQTpNjZx8SR2RKy9tANEk+
+        OuuQ+UAmtY10kGx7XT1saBtpIHhWeGol7cFm8BE594p6OSUPta3yMLTnxxORJqByKjvSlIOBJ+TajyYi
+        VUDlVK7IolT/h2Z3xJuQKqCyhVdS3Q2N48SdiiakC6hs4QcZky4OTSu+vZksa5txaHpZ9DaSF9pmHJre
+        F72N5EDbjEPT56K3kZxom3FocgeHGekCKlv5I10cmi6LXhvSBVS2ciFdHJrcoWFGuoDKVkr9Adn/C1Xy
+        EEsXUNlKqYf4oOi1IV1AZSv70sWhqZKDTLqAylZKHWSVfJWQLqCylVJfJdxbtq++3YB0AZUtfCEj0t0N
+        jfl+nXbQPE/++bFEpAqonMpfMtjPSgY2/Wgi0gRUTuW1NOVhaJb89OP14n7IzGhbg8Fgvq9VeiDI98WW
+        A8kYeed1w+WQVHMJgijfl7s9EOb7er0f5HlecPTDQvleMfXDonle8t2GTcSuWXs085q1pSV7Op0bFpZY
+        RjTaKJUAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="pictureBox21.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAiBJREFUaEPt
         mctKHEEUhscbLrxgNhESwbyELnyNgHmQLLLIOoi7SFQUfIAgmizFVfIKkWyzCLkQEhRcJHhZjF9V/1MM

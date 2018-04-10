@@ -32,8 +32,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bunifu_UI_v1.5.3_1">
-      <HintPath>..\packages\Bunifu_UI_v1.5.3_1.dll</HintPath>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\packages\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MaterialSkin.Updated.0.2.2\lib\MaterialSkin.dll</HintPath>
@@ -65,17 +65,17 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Audit_Operator.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Audit_Operator.Designer.cs">
-      <DependentUpon>Audit_Operator.cs</DependentUpon>
-    </Compile>
     <Compile Include="Audit_Procesator.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Audit_Procesator.Designer.cs">
       <DependentUpon>Audit_Procesator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Audit_Operator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Audit_Operator.Designer.cs">
+      <DependentUpon>Audit_Operator.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulare.cs">
       <SubType>UserControl</SubType>
@@ -109,11 +109,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Audit_Operator.resx">
-      <DependentUpon>Audit_Operator.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Audit_Procesator.resx">
       <DependentUpon>Audit_Procesator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Audit_Operator.resx">
+      <DependentUpon>Audit_Operator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulare.resx">
       <DependentUpon>Formulare.cs</DependentUpon>

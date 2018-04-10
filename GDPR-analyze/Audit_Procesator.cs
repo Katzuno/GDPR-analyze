@@ -12,9 +12,9 @@ using MaterialSkin;
 using MaterialSkin.Controls;
 namespace GDPR_analyze
 {
-    public partial class Audit : UserControl
+    public partial class Audit_Procesator : UserControl
     {
-        public Audit()
+        public Audit_Procesator()
         {
             InitializeComponent();
             MaterialSkinManager materialSkin = MaterialSkinManager.Instance;
@@ -26,7 +26,7 @@ namespace GDPR_analyze
 
         private void materialCheckBox1_CheckedChanged(object sender, EventArgs e)
         {
-          
+          //test
         }
 
         private void materialCheckBox2_CheckedChanged(object sender, EventArgs e)
