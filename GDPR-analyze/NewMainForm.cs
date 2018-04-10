@@ -154,7 +154,7 @@ namespace GDPR_analyze
 			}
 			//Buton Audit
 			panel5.Width = 0;
-			Control audit = new Audit();
+			Control audit = new Audit_Procesator();
             main_pnl.Controls.Add(audit);
 			
 		}

@@ -28,28 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.SuspendLayout();
-            // 
-            // bunifuCustomLabel1
-            // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(99, 37);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(139, 30);
-            this.bunifuCustomLabel1.TabIndex = 2;
-            this.bunifuCustomLabel1.Text = "Formulare:";
-            // 
-            // Formulare
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.bunifuCustomLabel1);
-            this.Name = "Formulare";
-            this.Size = new System.Drawing.Size(1038, 726);
-            this.ResumeLayout(false);
-            this.PerformLayout();
+			this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+			this.SuspendLayout();
+			// 
+			// bunifuCustomLabel1
+			// 
+			this.bunifuCustomLabel1.AutoSize = true;
+			this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.bunifuCustomLabel1.Location = new System.Drawing.Point(110, 85);
+			this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+			this.bunifuCustomLabel1.Size = new System.Drawing.Size(139, 30);
+			this.bunifuCustomLabel1.TabIndex = 2;
+			this.bunifuCustomLabel1.Text = "Formulare:";
+			// 
+			// Formulare
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.Controls.Add(this.bunifuCustomLabel1);
+			this.Name = "Formulare";
+			this.Size = new System.Drawing.Size(1038, 726);
+			this.ResumeLayout(false);
+			this.PerformLayout();
 
         }
 

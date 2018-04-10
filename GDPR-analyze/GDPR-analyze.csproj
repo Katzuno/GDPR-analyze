@@ -65,11 +65,17 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Audit.cs">
+    <Compile Include="Audit_Operator.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Audit.Designer.cs">
-      <DependentUpon>Audit.cs</DependentUpon>
+    <Compile Include="Audit_Operator.Designer.cs">
+      <DependentUpon>Audit_Operator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Audit_Procesator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Audit_Procesator.Designer.cs">
+      <DependentUpon>Audit_Procesator.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulare.cs">
       <SubType>UserControl</SubType>
@@ -103,8 +109,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Audit.resx">
-      <DependentUpon>Audit.cs</DependentUpon>
+    <EmbeddedResource Include="Audit_Operator.resx">
+      <DependentUpon>Audit_Operator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Audit_Procesator.resx">
+      <DependentUpon>Audit_Procesator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulare.resx">
       <DependentUpon>Formulare.cs</DependentUpon>

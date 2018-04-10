@@ -1,6 +1,6 @@
 ﻿namespace GDPR_analyze
 {
-    partial class Audit
+    partial class Audit_Procesator
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Audit));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Audit_Procesator));
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.materialCheckBox5 = new MaterialSkin.Controls.MaterialCheckBox();
             this.materialCheckBox6 = new MaterialSkin.Controls.MaterialCheckBox();
