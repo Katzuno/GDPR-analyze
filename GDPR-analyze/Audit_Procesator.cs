@@ -53,5 +53,10 @@ namespace GDPR_analyze
 				"Un inventar al datelor este in mod normal organizat in functie de ciclul de viata al datelor colectate, prelucrate, transferate, stocate, protejate si pastrate."
 				);
 		}
-	}
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
