@@ -38,5 +38,11 @@ namespace GDPR_analyze
         {
 
         }
-    }
+
+		private void pictureBox10_MouseHover(object sender, EventArgs e)
+		{
+			ToolTip ToolTip1 = new ToolTip();
+			ToolTip1.SetToolTip(pictureBox10, "test");
+		}
+	}
 }
