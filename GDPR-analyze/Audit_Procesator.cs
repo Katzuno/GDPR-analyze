@@ -10,6 +10,10 @@ using System.Windows.Forms;
 
 using MaterialSkin;
 using MaterialSkin.Controls;
+using iTextSharp.text;
+using System.IO;
+using iTextSharp.text.pdf;
+
 namespace GDPR_analyze
 {
     public partial class Audit_Procesator : UserControl
@@ -52,6 +56,21 @@ namespace GDPR_analyze
 				Environment.NewLine + 
 				"Un inventar al datelor este in mod normal organizat in functie de ciclul de viata al datelor colectate, prelucrate, transferate, stocate, protejate si pastrate."
 				);
+		}
+
+		private void btnGenerateReport_Click(object sender, EventArgs e)
+		{
+			string Path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop)+"\\testPDF.pdf";
+
+			Document pdfDoc = new Document();
+			FileStream fs = File.Create(Path);
+			PdfWriter.GetInstance(pdfDoc, fs);
+
+			pdfDoc.Open();
+			pdfDoc.Add(new Paragraph("TEST"));
+			pdfDoc.Close();
+
+
 		}
 	}
 }

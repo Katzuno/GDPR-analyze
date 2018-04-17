@@ -118,17 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="bunifuFlatButton2.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAABGdBTUEAALGPC/xhBQAAATBJREFUaEPt
-        mV1qwkAUhbOk1IfSCtpkS+1D6R7cR37WFkFp+9yegTMPXkzrIMi98XxwHpS5cD6HmDFWQgghxB/0ff80
-        DMMHX8YGIi3yjfwgO74dEyOTE1Oq67rmjExMKcp8GQmbGFLjOD6i7MGUn8s7x3xy4c7kTJCvOeoPyXgF
-        5V5Q8j5lsJMPHPVHocxeMrcCBbeIZNzBnwBHU3ouy5LB+hVH/SEZz+A62KDopyk+F9/XTSZ96qmsKT+X
-        Q9pVjvqlUOq4SCmcJp456pdCqXQD3nLUL6VS6dzHUb9IClL4Sm846pd030FZSXHUL5KCFNJy1C+FUum5
-        dwipNYpeekL3/Sg4w52aTPmT4N70yuUx+EfqjctigV2oUd5KxZTJGKnYMhkck5bzp7EQQojrqKpfJHWs
-        Im8QfG8AAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="bunifuFlatButton3.Iconimage_right" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAABGdBTUEAALGPC/xhBQAAAS9JREFUaEPt
@@ -140,7 +129,18 @@
         CL2c6gAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>34</value>
+  <data name="bunifuFlatButton2.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAABGdBTUEAALGPC/xhBQAAATBJREFUaEPt
+        mV1qwkAUhbOk1IfSCtpkS+1D6R7cR37WFkFp+9yegTMPXkzrIMi98XxwHpS5cD6HmDFWQgghxB/0ff80
+        DMMHX8YGIi3yjfwgO74dEyOTE1Oq67rmjExMKcp8GQmbGFLjOD6i7MGUn8s7x3xy4c7kTJCvOeoPyXgF
+        5V5Q8j5lsJMPHPVHocxeMrcCBbeIZNzBnwBHU3ouy5LB+hVH/SEZz+A62KDopyk+F9/XTSZ96qmsKT+X
+        Q9pVjvqlUOq4SCmcJp456pdCqXQD3nLUL6VS6dzHUb9IClL4Sm846pd030FZSXHUL5KCFNJy1C+FUum5
+        dwipNYpeekL3/Sg4w52aTPmT4N70yuUx+EfqjctigV2oUd5KxZTJGKnYMhkck5bzp7EQQojrqKpfJHWs
+        Im8QfG8AAAAASUVORK5CYII=
+</value>
+  </data>
+  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
   </metadata>
 </root>

@@ -77,7 +77,7 @@ namespace GDPR_analyze
 			if (WindowState.ToString() == "Normal")
 			{
 				this.WindowState = FormWindowState.Maximized;
-				panelWidth = panel5.Width;
+				//panelWidth = panel5.Width;
 				panelHeigth = panel5.Height;
 
 				//panelWidthmax = panel5.Width;
@@ -88,7 +88,7 @@ namespace GDPR_analyze
 				//panelWidth = panel5.Width;
 				panelHeigth = panel5.Height;
 
-				panelWidthmin = panelWidthmax;
+				panelWidth = panelWidthmax;
 			}
 		}
 
@@ -154,7 +154,7 @@ namespace GDPR_analyze
 			}
 			//Buton Audit
 			panel5.Width = 0;
-			UserControl audit = new Audit_Procesator();
+			UserControl audit = new AUDIT_SINGLE_PAGE();
 			audit.Anchor = ((AnchorStyles)((((AnchorStyles.Top | AnchorStyles.Bottom) | AnchorStyles.Left) | AnchorStyles.Right)));
 			audit.Dock = DockStyle.Fill;
 			main_pnl.Controls.Add(audit);

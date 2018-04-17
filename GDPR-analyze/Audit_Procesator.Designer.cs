@@ -30,22 +30,6 @@
         {
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Audit_Procesator));
 			this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-			this.materialCheckBox5 = new MaterialSkin.Controls.MaterialCheckBox();
-			this.materialCheckBox6 = new MaterialSkin.Controls.MaterialCheckBox();
-			this.materialCheckBox7 = new MaterialSkin.Controls.MaterialCheckBox();
-			this.materialCheckBox8 = new MaterialSkin.Controls.MaterialCheckBox();
-			this.materialCheckBox9 = new MaterialSkin.Controls.MaterialCheckBox();
-			this.materialCheckBox10 = new MaterialSkin.Controls.MaterialCheckBox();
-			this.materialCheckBox11 = new MaterialSkin.Controls.MaterialCheckBox();
-			this.materialCheckBox12 = new MaterialSkin.Controls.MaterialCheckBox();
-			this.materialCheckBox13 = new MaterialSkin.Controls.MaterialCheckBox();
-			this.materialCheckBox14 = new MaterialSkin.Controls.MaterialCheckBox();
-			this.materialCheckBox15 = new MaterialSkin.Controls.MaterialCheckBox();
-			this.materialCheckBox16 = new MaterialSkin.Controls.MaterialCheckBox();
-			this.materialCheckBox17 = new MaterialSkin.Controls.MaterialCheckBox();
-			this.materialCheckBox18 = new MaterialSkin.Controls.MaterialCheckBox();
-			this.materialCheckBox19 = new MaterialSkin.Controls.MaterialCheckBox();
-			this.materialCheckBox20 = new MaterialSkin.Controls.MaterialCheckBox();
 			this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
 			this.materialCheckBox21 = new MaterialSkin.Controls.MaterialCheckBox();
 			this.materialCheckBox22 = new MaterialSkin.Controls.MaterialCheckBox();
@@ -163,6 +147,25 @@
 			this.textBox21 = new System.Windows.Forms.TextBox();
 			this.textBox22 = new System.Windows.Forms.TextBox();
 			this.pictureBox22 = new System.Windows.Forms.PictureBox();
+			this.btnGenerateReport = new Bunifu.Framework.UI.BunifuFlatButton();
+			this.label1 = new System.Windows.Forms.Label();
+			this.bunifuProgressBar1 = new Bunifu.Framework.UI.BunifuProgressBar();
+			this.materialRadioButton9 = new MaterialSkin.Controls.MaterialRadioButton();
+			this.materialRadioButton10 = new MaterialSkin.Controls.MaterialRadioButton();
+			this.materialRadioButton11 = new MaterialSkin.Controls.MaterialRadioButton();
+			this.materialRadioButton12 = new MaterialSkin.Controls.MaterialRadioButton();
+			this.materialRadioButton13 = new MaterialSkin.Controls.MaterialRadioButton();
+			this.materialRadioButton14 = new MaterialSkin.Controls.MaterialRadioButton();
+			this.materialRadioButton15 = new MaterialSkin.Controls.MaterialRadioButton();
+			this.materialRadioButton16 = new MaterialSkin.Controls.MaterialRadioButton();
+			this.materialRadioButton1 = new MaterialSkin.Controls.MaterialRadioButton();
+			this.materialRadioButton2 = new MaterialSkin.Controls.MaterialRadioButton();
+			this.materialRadioButton3 = new MaterialSkin.Controls.MaterialRadioButton();
+			this.materialRadioButton4 = new MaterialSkin.Controls.MaterialRadioButton();
+			this.materialRadioButton5 = new MaterialSkin.Controls.MaterialRadioButton();
+			this.materialRadioButton6 = new MaterialSkin.Controls.MaterialRadioButton();
+			this.materialRadioButton7 = new MaterialSkin.Controls.MaterialRadioButton();
+			this.materialRadioButton8 = new MaterialSkin.Controls.MaterialRadioButton();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -191,299 +194,11 @@
 			// 
 			this.bunifuCustomLabel2.AutoSize = true;
 			this.bunifuCustomLabel2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.bunifuCustomLabel2.Location = new System.Drawing.Point(30, 7);
+			this.bunifuCustomLabel2.Location = new System.Drawing.Point(30, 37);
 			this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
 			this.bunifuCustomLabel2.Size = new System.Drawing.Size(467, 28);
 			this.bunifuCustomLabel2.TabIndex = 1;
 			this.bunifuCustomLabel2.Text = "LEGALITATE, ECHITATE SI TRANSPARENTA";
-			// 
-			// materialCheckBox5
-			// 
-			this.materialCheckBox5.AutoSize = true;
-			this.materialCheckBox5.BackColor = System.Drawing.Color.DarkOrange;
-			this.materialCheckBox5.Depth = 0;
-			this.materialCheckBox5.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox5.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.materialCheckBox5.Location = new System.Drawing.Point(347, 157);
-			this.materialCheckBox5.Margin = new System.Windows.Forms.Padding(0);
-			this.materialCheckBox5.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialCheckBox5.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialCheckBox5.Name = "materialCheckBox5";
-			this.materialCheckBox5.Ripple = true;
-			this.materialCheckBox5.Size = new System.Drawing.Size(269, 30);
-			this.materialCheckBox5.TabIndex = 21;
-			this.materialCheckBox5.Text = "Partial implementat / planificat";
-			this.materialCheckBox5.UseVisualStyleBackColor = false;
-			// 
-			// materialCheckBox6
-			// 
-			this.materialCheckBox6.AutoSize = true;
-			this.materialCheckBox6.BackColor = System.Drawing.Color.DarkOrange;
-			this.materialCheckBox6.Depth = 0;
-			this.materialCheckBox6.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox6.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.materialCheckBox6.Location = new System.Drawing.Point(35, 157);
-			this.materialCheckBox6.Margin = new System.Windows.Forms.Padding(0);
-			this.materialCheckBox6.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialCheckBox6.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialCheckBox6.Name = "materialCheckBox6";
-			this.materialCheckBox6.Ripple = true;
-			this.materialCheckBox6.Size = new System.Drawing.Size(54, 30);
-			this.materialCheckBox6.TabIndex = 20;
-			this.materialCheckBox6.Text = "DA";
-			this.materialCheckBox6.UseVisualStyleBackColor = false;
-			// 
-			// materialCheckBox7
-			// 
-			this.materialCheckBox7.AutoSize = true;
-			this.materialCheckBox7.BackColor = System.Drawing.Color.DarkOrange;
-			this.materialCheckBox7.Depth = 0;
-			this.materialCheckBox7.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox7.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.materialCheckBox7.Location = new System.Drawing.Point(347, 127);
-			this.materialCheckBox7.Margin = new System.Windows.Forms.Padding(0);
-			this.materialCheckBox7.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialCheckBox7.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialCheckBox7.Name = "materialCheckBox7";
-			this.materialCheckBox7.Ripple = true;
-			this.materialCheckBox7.Size = new System.Drawing.Size(326, 30);
-			this.materialCheckBox7.TabIndex = 19;
-			this.materialCheckBox7.Text = "Nu a fost inca implementat / planificat";
-			this.materialCheckBox7.UseVisualStyleBackColor = false;
-			// 
-			// materialCheckBox8
-			// 
-			this.materialCheckBox8.AutoSize = true;
-			this.materialCheckBox8.BackColor = System.Drawing.Color.DarkOrange;
-			this.materialCheckBox8.Depth = 0;
-			this.materialCheckBox8.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox8.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.materialCheckBox8.Location = new System.Drawing.Point(35, 127);
-			this.materialCheckBox8.Margin = new System.Windows.Forms.Padding(0);
-			this.materialCheckBox8.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialCheckBox8.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialCheckBox8.Name = "materialCheckBox8";
-			this.materialCheckBox8.Ripple = true;
-			this.materialCheckBox8.Size = new System.Drawing.Size(54, 30);
-			this.materialCheckBox8.TabIndex = 18;
-			this.materialCheckBox8.Text = "NU";
-			this.materialCheckBox8.UseVisualStyleBackColor = false;
-			// 
-			// materialCheckBox9
-			// 
-			this.materialCheckBox9.AutoSize = true;
-			this.materialCheckBox9.BackColor = System.Drawing.Color.DarkOrange;
-			this.materialCheckBox9.Depth = 0;
-			this.materialCheckBox9.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox9.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.materialCheckBox9.Location = new System.Drawing.Point(347, 269);
-			this.materialCheckBox9.Margin = new System.Windows.Forms.Padding(0);
-			this.materialCheckBox9.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialCheckBox9.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialCheckBox9.Name = "materialCheckBox9";
-			this.materialCheckBox9.Ripple = true;
-			this.materialCheckBox9.Size = new System.Drawing.Size(269, 30);
-			this.materialCheckBox9.TabIndex = 26;
-			this.materialCheckBox9.Text = "Partial implementat / planificat";
-			this.materialCheckBox9.UseVisualStyleBackColor = false;
-			// 
-			// materialCheckBox10
-			// 
-			this.materialCheckBox10.AutoSize = true;
-			this.materialCheckBox10.BackColor = System.Drawing.Color.DarkOrange;
-			this.materialCheckBox10.Depth = 0;
-			this.materialCheckBox10.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox10.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.materialCheckBox10.Location = new System.Drawing.Point(35, 269);
-			this.materialCheckBox10.Margin = new System.Windows.Forms.Padding(0);
-			this.materialCheckBox10.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialCheckBox10.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialCheckBox10.Name = "materialCheckBox10";
-			this.materialCheckBox10.Ripple = true;
-			this.materialCheckBox10.Size = new System.Drawing.Size(54, 30);
-			this.materialCheckBox10.TabIndex = 25;
-			this.materialCheckBox10.Text = "DA";
-			this.materialCheckBox10.UseVisualStyleBackColor = false;
-			// 
-			// materialCheckBox11
-			// 
-			this.materialCheckBox11.AutoSize = true;
-			this.materialCheckBox11.BackColor = System.Drawing.Color.DarkOrange;
-			this.materialCheckBox11.Depth = 0;
-			this.materialCheckBox11.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox11.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.materialCheckBox11.Location = new System.Drawing.Point(347, 239);
-			this.materialCheckBox11.Margin = new System.Windows.Forms.Padding(0);
-			this.materialCheckBox11.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialCheckBox11.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialCheckBox11.Name = "materialCheckBox11";
-			this.materialCheckBox11.Ripple = true;
-			this.materialCheckBox11.Size = new System.Drawing.Size(326, 30);
-			this.materialCheckBox11.TabIndex = 24;
-			this.materialCheckBox11.Text = "Nu a fost inca implementat / planificat";
-			this.materialCheckBox11.UseVisualStyleBackColor = false;
-			// 
-			// materialCheckBox12
-			// 
-			this.materialCheckBox12.AutoSize = true;
-			this.materialCheckBox12.BackColor = System.Drawing.Color.DarkOrange;
-			this.materialCheckBox12.Depth = 0;
-			this.materialCheckBox12.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox12.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.materialCheckBox12.Location = new System.Drawing.Point(35, 239);
-			this.materialCheckBox12.Margin = new System.Windows.Forms.Padding(0);
-			this.materialCheckBox12.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialCheckBox12.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialCheckBox12.Name = "materialCheckBox12";
-			this.materialCheckBox12.Ripple = true;
-			this.materialCheckBox12.Size = new System.Drawing.Size(54, 30);
-			this.materialCheckBox12.TabIndex = 23;
-			this.materialCheckBox12.Text = "NU";
-			this.materialCheckBox12.UseVisualStyleBackColor = false;
-			// 
-			// materialCheckBox13
-			// 
-			this.materialCheckBox13.AutoSize = true;
-			this.materialCheckBox13.BackColor = System.Drawing.Color.DarkOrange;
-			this.materialCheckBox13.Depth = 0;
-			this.materialCheckBox13.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox13.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.materialCheckBox13.Location = new System.Drawing.Point(347, 388);
-			this.materialCheckBox13.Margin = new System.Windows.Forms.Padding(0);
-			this.materialCheckBox13.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialCheckBox13.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialCheckBox13.Name = "materialCheckBox13";
-			this.materialCheckBox13.Ripple = true;
-			this.materialCheckBox13.Size = new System.Drawing.Size(269, 30);
-			this.materialCheckBox13.TabIndex = 31;
-			this.materialCheckBox13.Text = "Partial implementat / planificat";
-			this.materialCheckBox13.UseVisualStyleBackColor = false;
-			// 
-			// materialCheckBox14
-			// 
-			this.materialCheckBox14.AutoSize = true;
-			this.materialCheckBox14.BackColor = System.Drawing.Color.DarkOrange;
-			this.materialCheckBox14.Depth = 0;
-			this.materialCheckBox14.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox14.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.materialCheckBox14.Location = new System.Drawing.Point(35, 388);
-			this.materialCheckBox14.Margin = new System.Windows.Forms.Padding(0);
-			this.materialCheckBox14.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialCheckBox14.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialCheckBox14.Name = "materialCheckBox14";
-			this.materialCheckBox14.Ripple = true;
-			this.materialCheckBox14.Size = new System.Drawing.Size(54, 30);
-			this.materialCheckBox14.TabIndex = 30;
-			this.materialCheckBox14.Text = "DA";
-			this.materialCheckBox14.UseVisualStyleBackColor = false;
-			// 
-			// materialCheckBox15
-			// 
-			this.materialCheckBox15.AutoSize = true;
-			this.materialCheckBox15.BackColor = System.Drawing.Color.DarkOrange;
-			this.materialCheckBox15.Depth = 0;
-			this.materialCheckBox15.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox15.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.materialCheckBox15.Location = new System.Drawing.Point(347, 358);
-			this.materialCheckBox15.Margin = new System.Windows.Forms.Padding(0);
-			this.materialCheckBox15.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialCheckBox15.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialCheckBox15.Name = "materialCheckBox15";
-			this.materialCheckBox15.Ripple = true;
-			this.materialCheckBox15.Size = new System.Drawing.Size(326, 30);
-			this.materialCheckBox15.TabIndex = 29;
-			this.materialCheckBox15.Text = "Nu a fost inca implementat / planificat";
-			this.materialCheckBox15.UseVisualStyleBackColor = false;
-			// 
-			// materialCheckBox16
-			// 
-			this.materialCheckBox16.AutoSize = true;
-			this.materialCheckBox16.BackColor = System.Drawing.Color.DarkOrange;
-			this.materialCheckBox16.Depth = 0;
-			this.materialCheckBox16.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox16.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.materialCheckBox16.Location = new System.Drawing.Point(35, 358);
-			this.materialCheckBox16.Margin = new System.Windows.Forms.Padding(0);
-			this.materialCheckBox16.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialCheckBox16.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialCheckBox16.Name = "materialCheckBox16";
-			this.materialCheckBox16.Ripple = true;
-			this.materialCheckBox16.Size = new System.Drawing.Size(54, 30);
-			this.materialCheckBox16.TabIndex = 28;
-			this.materialCheckBox16.Text = "NU";
-			this.materialCheckBox16.UseVisualStyleBackColor = false;
-			// 
-			// materialCheckBox17
-			// 
-			this.materialCheckBox17.AutoSize = true;
-			this.materialCheckBox17.BackColor = System.Drawing.Color.DarkOrange;
-			this.materialCheckBox17.Depth = 0;
-			this.materialCheckBox17.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox17.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.materialCheckBox17.Location = new System.Drawing.Point(347, 506);
-			this.materialCheckBox17.Margin = new System.Windows.Forms.Padding(0);
-			this.materialCheckBox17.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialCheckBox17.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialCheckBox17.Name = "materialCheckBox17";
-			this.materialCheckBox17.Ripple = true;
-			this.materialCheckBox17.Size = new System.Drawing.Size(269, 30);
-			this.materialCheckBox17.TabIndex = 36;
-			this.materialCheckBox17.Text = "Partial implementat / planificat";
-			this.materialCheckBox17.UseVisualStyleBackColor = false;
-			// 
-			// materialCheckBox18
-			// 
-			this.materialCheckBox18.AutoSize = true;
-			this.materialCheckBox18.BackColor = System.Drawing.Color.DarkOrange;
-			this.materialCheckBox18.Depth = 0;
-			this.materialCheckBox18.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox18.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.materialCheckBox18.Location = new System.Drawing.Point(35, 506);
-			this.materialCheckBox18.Margin = new System.Windows.Forms.Padding(0);
-			this.materialCheckBox18.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialCheckBox18.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialCheckBox18.Name = "materialCheckBox18";
-			this.materialCheckBox18.Ripple = true;
-			this.materialCheckBox18.Size = new System.Drawing.Size(54, 30);
-			this.materialCheckBox18.TabIndex = 35;
-			this.materialCheckBox18.Text = "DA";
-			this.materialCheckBox18.UseVisualStyleBackColor = false;
-			// 
-			// materialCheckBox19
-			// 
-			this.materialCheckBox19.AutoSize = true;
-			this.materialCheckBox19.BackColor = System.Drawing.Color.DarkOrange;
-			this.materialCheckBox19.Depth = 0;
-			this.materialCheckBox19.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox19.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.materialCheckBox19.Location = new System.Drawing.Point(347, 476);
-			this.materialCheckBox19.Margin = new System.Windows.Forms.Padding(0);
-			this.materialCheckBox19.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialCheckBox19.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialCheckBox19.Name = "materialCheckBox19";
-			this.materialCheckBox19.Ripple = true;
-			this.materialCheckBox19.Size = new System.Drawing.Size(326, 30);
-			this.materialCheckBox19.TabIndex = 34;
-			this.materialCheckBox19.Text = "Nu a fost inca implementat / planificat";
-			this.materialCheckBox19.UseVisualStyleBackColor = false;
-			// 
-			// materialCheckBox20
-			// 
-			this.materialCheckBox20.AutoSize = true;
-			this.materialCheckBox20.BackColor = System.Drawing.Color.DarkOrange;
-			this.materialCheckBox20.Depth = 0;
-			this.materialCheckBox20.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox20.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.materialCheckBox20.Location = new System.Drawing.Point(35, 476);
-			this.materialCheckBox20.Margin = new System.Windows.Forms.Padding(0);
-			this.materialCheckBox20.MouseLocation = new System.Drawing.Point(-1, -1);
-			this.materialCheckBox20.MouseState = MaterialSkin.MouseState.HOVER;
-			this.materialCheckBox20.Name = "materialCheckBox20";
-			this.materialCheckBox20.Ripple = true;
-			this.materialCheckBox20.Size = new System.Drawing.Size(54, 30);
-			this.materialCheckBox20.TabIndex = 33;
-			this.materialCheckBox20.Text = "NU";
-			this.materialCheckBox20.UseVisualStyleBackColor = false;
 			// 
 			// bunifuCustomLabel7
 			// 
@@ -501,7 +216,6 @@
 			this.materialCheckBox21.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox21.Depth = 0;
 			this.materialCheckBox21.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox21.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox21.Location = new System.Drawing.Point(35, 673);
 			this.materialCheckBox21.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox21.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -519,7 +233,6 @@
 			this.materialCheckBox22.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox22.Depth = 0;
 			this.materialCheckBox22.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox22.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox22.Location = new System.Drawing.Point(35, 643);
 			this.materialCheckBox22.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox22.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -537,7 +250,6 @@
 			this.materialCheckBox23.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox23.Depth = 0;
 			this.materialCheckBox23.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox23.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox23.Location = new System.Drawing.Point(347, 915);
 			this.materialCheckBox23.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox23.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -555,7 +267,6 @@
 			this.materialCheckBox24.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox24.Depth = 0;
 			this.materialCheckBox24.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox24.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox24.Location = new System.Drawing.Point(35, 915);
 			this.materialCheckBox24.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox24.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -573,7 +284,6 @@
 			this.materialCheckBox25.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox25.Depth = 0;
 			this.materialCheckBox25.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox25.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox25.Location = new System.Drawing.Point(347, 885);
 			this.materialCheckBox25.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox25.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -591,7 +301,6 @@
 			this.materialCheckBox26.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox26.Depth = 0;
 			this.materialCheckBox26.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox26.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox26.Location = new System.Drawing.Point(35, 885);
 			this.materialCheckBox26.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox26.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -619,7 +328,6 @@
 			this.materialCheckBox27.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox27.Depth = 0;
 			this.materialCheckBox27.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox27.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox27.Location = new System.Drawing.Point(347, 1028);
 			this.materialCheckBox27.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox27.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -637,7 +345,6 @@
 			this.materialCheckBox28.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox28.Depth = 0;
 			this.materialCheckBox28.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox28.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox28.Location = new System.Drawing.Point(35, 1028);
 			this.materialCheckBox28.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox28.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -655,7 +362,6 @@
 			this.materialCheckBox29.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox29.Depth = 0;
 			this.materialCheckBox29.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox29.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox29.Location = new System.Drawing.Point(347, 998);
 			this.materialCheckBox29.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox29.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -673,7 +379,6 @@
 			this.materialCheckBox30.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox30.Depth = 0;
 			this.materialCheckBox30.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox30.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox30.Location = new System.Drawing.Point(35, 998);
 			this.materialCheckBox30.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox30.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -691,7 +396,6 @@
 			this.materialCheckBox31.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox31.Depth = 0;
 			this.materialCheckBox31.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox31.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox31.Location = new System.Drawing.Point(347, 1180);
 			this.materialCheckBox31.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox31.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -709,7 +413,6 @@
 			this.materialCheckBox32.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox32.Depth = 0;
 			this.materialCheckBox32.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox32.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox32.Location = new System.Drawing.Point(35, 1180);
 			this.materialCheckBox32.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox32.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -727,7 +430,6 @@
 			this.materialCheckBox33.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox33.Depth = 0;
 			this.materialCheckBox33.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox33.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox33.Location = new System.Drawing.Point(347, 1150);
 			this.materialCheckBox33.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox33.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -745,7 +447,6 @@
 			this.materialCheckBox34.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox34.Depth = 0;
 			this.materialCheckBox34.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox34.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox34.Location = new System.Drawing.Point(35, 1150);
 			this.materialCheckBox34.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox34.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -763,7 +464,6 @@
 			this.materialCheckBox35.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox35.Depth = 0;
 			this.materialCheckBox35.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox35.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox35.Location = new System.Drawing.Point(347, 1321);
 			this.materialCheckBox35.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox35.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -781,7 +481,6 @@
 			this.materialCheckBox36.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox36.Depth = 0;
 			this.materialCheckBox36.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox36.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox36.Location = new System.Drawing.Point(35, 1321);
 			this.materialCheckBox36.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox36.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -799,7 +498,6 @@
 			this.materialCheckBox37.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox37.Depth = 0;
 			this.materialCheckBox37.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox37.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox37.Location = new System.Drawing.Point(347, 1291);
 			this.materialCheckBox37.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox37.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -817,7 +515,6 @@
 			this.materialCheckBox38.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox38.Depth = 0;
 			this.materialCheckBox38.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox38.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox38.Location = new System.Drawing.Point(35, 1291);
 			this.materialCheckBox38.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox38.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -835,7 +532,6 @@
 			this.materialCheckBox39.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox39.Depth = 0;
 			this.materialCheckBox39.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox39.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox39.Location = new System.Drawing.Point(347, 1458);
 			this.materialCheckBox39.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox39.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -853,7 +549,6 @@
 			this.materialCheckBox40.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox40.Depth = 0;
 			this.materialCheckBox40.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox40.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox40.Location = new System.Drawing.Point(35, 1458);
 			this.materialCheckBox40.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox40.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -871,7 +566,6 @@
 			this.materialCheckBox41.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox41.Depth = 0;
 			this.materialCheckBox41.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox41.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox41.Location = new System.Drawing.Point(347, 1428);
 			this.materialCheckBox41.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox41.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -889,7 +583,6 @@
 			this.materialCheckBox42.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox42.Depth = 0;
 			this.materialCheckBox42.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox42.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox42.Location = new System.Drawing.Point(35, 1428);
 			this.materialCheckBox42.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox42.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -903,7 +596,7 @@
 			// 
 			// textBox1
 			// 
-			this.textBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.textBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox1.Location = new System.Drawing.Point(35, 814);
@@ -916,7 +609,7 @@
 			// 
 			// textBox2
 			// 
-			this.textBox2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.textBox2.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox2.Location = new System.Drawing.Point(35, 950);
@@ -930,7 +623,7 @@
 			// 
 			// textBox3
 			// 
-			this.textBox3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.textBox3.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox3.Location = new System.Drawing.Point(35, 1080);
@@ -943,7 +636,7 @@
 			// 
 			// textBox4
 			// 
-			this.textBox4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.textBox4.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox4.Location = new System.Drawing.Point(35, 1361);
@@ -956,7 +649,7 @@
 			// 
 			// textBox5
 			// 
-			this.textBox5.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.textBox5.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox5.Location = new System.Drawing.Point(35, 1592);
@@ -973,7 +666,6 @@
 			this.materialCheckBox43.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox43.Depth = 0;
 			this.materialCheckBox43.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox43.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox43.Location = new System.Drawing.Point(347, 1671);
 			this.materialCheckBox43.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox43.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -991,7 +683,6 @@
 			this.materialCheckBox44.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox44.Depth = 0;
 			this.materialCheckBox44.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox44.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox44.Location = new System.Drawing.Point(35, 1671);
 			this.materialCheckBox44.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox44.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1009,7 +700,6 @@
 			this.materialCheckBox45.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox45.Depth = 0;
 			this.materialCheckBox45.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox45.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox45.Location = new System.Drawing.Point(347, 1641);
 			this.materialCheckBox45.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox45.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1027,7 +717,6 @@
 			this.materialCheckBox46.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox46.Depth = 0;
 			this.materialCheckBox46.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox46.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox46.Location = new System.Drawing.Point(35, 1641);
 			this.materialCheckBox46.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox46.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1041,7 +730,7 @@
 			// 
 			// pictureBox1
 			// 
-			this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
 			this.pictureBox1.Location = new System.Drawing.Point(900, 1592);
 			this.pictureBox1.Name = "pictureBox1";
@@ -1052,7 +741,7 @@
 			// 
 			// pictureBox2
 			// 
-			this.pictureBox2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
 			this.pictureBox2.Location = new System.Drawing.Point(900, 1361);
 			this.pictureBox2.Name = "pictureBox2";
@@ -1063,7 +752,7 @@
 			// 
 			// pictureBox3
 			// 
-			this.pictureBox3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.pictureBox3.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
 			this.pictureBox3.Location = new System.Drawing.Point(900, 1080);
 			this.pictureBox3.Name = "pictureBox3";
@@ -1074,7 +763,7 @@
 			// 
 			// pictureBox4
 			// 
-			this.pictureBox4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.pictureBox4.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
 			this.pictureBox4.Location = new System.Drawing.Point(900, 950);
 			this.pictureBox4.Name = "pictureBox4";
@@ -1085,7 +774,7 @@
 			// 
 			// pictureBox5
 			// 
-			this.pictureBox5.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.pictureBox5.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
 			this.pictureBox5.Location = new System.Drawing.Point(900, 814);
 			this.pictureBox5.Name = "pictureBox5";
@@ -1096,7 +785,7 @@
 			// 
 			// pictureBox6
 			// 
-			this.pictureBox6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.pictureBox6.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
 			this.pictureBox6.Location = new System.Drawing.Point(900, 595);
 			this.pictureBox6.Name = "pictureBox6";
@@ -1107,7 +796,7 @@
 			// 
 			// pictureBox7
 			// 
-			this.pictureBox7.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.pictureBox7.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
 			this.pictureBox7.Location = new System.Drawing.Point(900, 429);
 			this.pictureBox7.Name = "pictureBox7";
@@ -1118,7 +807,7 @@
 			// 
 			// pictureBox8
 			// 
-			this.pictureBox8.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.pictureBox8.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
 			this.pictureBox8.Location = new System.Drawing.Point(900, 312);
 			this.pictureBox8.Name = "pictureBox8";
@@ -1129,9 +818,9 @@
 			// 
 			// pictureBox9
 			// 
-			this.pictureBox9.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.pictureBox9.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-			this.pictureBox9.Location = new System.Drawing.Point(900, 197);
+			this.pictureBox9.Location = new System.Drawing.Point(900, 193);
 			this.pictureBox9.Name = "pictureBox9";
 			this.pictureBox9.Size = new System.Drawing.Size(30, 30);
 			this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1140,7 +829,7 @@
 			// 
 			// pictureBox10
 			// 
-			this.pictureBox10.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.pictureBox10.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
 			this.pictureBox10.Location = new System.Drawing.Point(900, 81);
 			this.pictureBox10.Name = "pictureBox10";
@@ -1162,7 +851,7 @@
 			// 
 			// pictureBox11
 			// 
-			this.pictureBox11.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.pictureBox11.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
 			this.pictureBox11.Location = new System.Drawing.Point(900, 1731);
 			this.pictureBox11.Name = "pictureBox11";
@@ -1173,7 +862,7 @@
 			// 
 			// textBox6
 			// 
-			this.textBox6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.textBox6.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox6.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox6.Location = new System.Drawing.Point(35, 1731);
@@ -1190,7 +879,6 @@
 			this.materialCheckBox1.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox1.Depth = 0;
 			this.materialCheckBox1.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox1.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox1.Location = new System.Drawing.Point(347, 1830);
 			this.materialCheckBox1.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox1.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1208,7 +896,6 @@
 			this.materialCheckBox2.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox2.Depth = 0;
 			this.materialCheckBox2.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox2.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox2.Location = new System.Drawing.Point(35, 1830);
 			this.materialCheckBox2.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox2.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1226,7 +913,6 @@
 			this.materialCheckBox3.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox3.Depth = 0;
 			this.materialCheckBox3.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox3.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox3.Location = new System.Drawing.Point(347, 1800);
 			this.materialCheckBox3.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox3.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1244,7 +930,6 @@
 			this.materialCheckBox4.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox4.Depth = 0;
 			this.materialCheckBox4.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox4.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox4.Location = new System.Drawing.Point(35, 1800);
 			this.materialCheckBox4.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox4.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1268,7 +953,7 @@
 			// 
 			// pictureBox12
 			// 
-			this.pictureBox12.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.pictureBox12.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
 			this.pictureBox12.Location = new System.Drawing.Point(900, 1963);
 			this.pictureBox12.Name = "pictureBox12";
@@ -1279,7 +964,7 @@
 			// 
 			// textBox7
 			// 
-			this.textBox7.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.textBox7.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox7.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox7.Location = new System.Drawing.Point(35, 1963);
@@ -1297,7 +982,6 @@
 			this.materialCheckBox47.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox47.Depth = 0;
 			this.materialCheckBox47.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox47.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox47.Location = new System.Drawing.Point(347, 2042);
 			this.materialCheckBox47.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox47.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1315,7 +999,6 @@
 			this.materialCheckBox48.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox48.Depth = 0;
 			this.materialCheckBox48.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox48.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox48.Location = new System.Drawing.Point(35, 2042);
 			this.materialCheckBox48.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox48.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1333,7 +1016,6 @@
 			this.materialCheckBox49.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox49.Depth = 0;
 			this.materialCheckBox49.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox49.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox49.Location = new System.Drawing.Point(347, 2012);
 			this.materialCheckBox49.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox49.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1351,7 +1033,6 @@
 			this.materialCheckBox50.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox50.Depth = 0;
 			this.materialCheckBox50.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox50.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox50.Location = new System.Drawing.Point(35, 2012);
 			this.materialCheckBox50.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox50.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1365,7 +1046,7 @@
 			// 
 			// textBox8
 			// 
-			this.textBox8.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.textBox8.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox8.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox8.Location = new System.Drawing.Point(35, 595);
@@ -1379,7 +1060,7 @@
 			// 
 			// textBox9
 			// 
-			this.textBox9.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.textBox9.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox9.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox9.Location = new System.Drawing.Point(35, 430);
@@ -1393,7 +1074,7 @@
 			// 
 			// textBox10
 			// 
-			this.textBox10.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.textBox10.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox10.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox10.Location = new System.Drawing.Point(35, 312);
@@ -1407,7 +1088,7 @@
 			// 
 			// pictureBox13
 			// 
-			this.pictureBox13.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.pictureBox13.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
 			this.pictureBox13.Location = new System.Drawing.Point(900, 2187);
 			this.pictureBox13.Name = "pictureBox13";
@@ -1418,7 +1099,7 @@
 			// 
 			// textBox11
 			// 
-			this.textBox11.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.textBox11.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox11.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox11.Location = new System.Drawing.Point(35, 2187);
@@ -1436,7 +1117,6 @@
 			this.materialCheckBox52.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox52.Depth = 0;
 			this.materialCheckBox52.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox52.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox52.Location = new System.Drawing.Point(35, 2266);
 			this.materialCheckBox52.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox52.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1454,7 +1134,6 @@
 			this.materialCheckBox54.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox54.Depth = 0;
 			this.materialCheckBox54.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox54.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox54.Location = new System.Drawing.Point(35, 2236);
 			this.materialCheckBox54.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox54.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1478,7 +1157,7 @@
 			// 
 			// pictureBox14
 			// 
-			this.pictureBox14.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.pictureBox14.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
 			this.pictureBox14.Location = new System.Drawing.Point(900, 2320);
 			this.pictureBox14.Name = "pictureBox14";
@@ -1489,7 +1168,7 @@
 			// 
 			// textBox12
 			// 
-			this.textBox12.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.textBox12.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox12.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox12.Location = new System.Drawing.Point(35, 2320);
@@ -1507,7 +1186,6 @@
 			this.materialCheckBox51.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox51.Depth = 0;
 			this.materialCheckBox51.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox51.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox51.Location = new System.Drawing.Point(35, 2399);
 			this.materialCheckBox51.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox51.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1525,7 +1203,6 @@
 			this.materialCheckBox53.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox53.Depth = 0;
 			this.materialCheckBox53.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox53.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox53.Location = new System.Drawing.Point(35, 2369);
 			this.materialCheckBox53.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox53.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1539,7 +1216,7 @@
 			// 
 			// pictureBox15
 			// 
-			this.pictureBox15.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.pictureBox15.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
 			this.pictureBox15.Location = new System.Drawing.Point(900, 2536);
 			this.pictureBox15.Name = "pictureBox15";
@@ -1550,7 +1227,7 @@
 			// 
 			// textBox13
 			// 
-			this.textBox13.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.textBox13.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox13.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox13.Location = new System.Drawing.Point(35, 2536);
@@ -1567,7 +1244,6 @@
 			this.materialCheckBox55.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox55.Depth = 0;
 			this.materialCheckBox55.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox55.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox55.Location = new System.Drawing.Point(347, 2643);
 			this.materialCheckBox55.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox55.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1585,7 +1261,6 @@
 			this.materialCheckBox56.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox56.Depth = 0;
 			this.materialCheckBox56.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox56.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox56.Location = new System.Drawing.Point(35, 2643);
 			this.materialCheckBox56.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox56.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1603,7 +1278,6 @@
 			this.materialCheckBox57.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox57.Depth = 0;
 			this.materialCheckBox57.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox57.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox57.Location = new System.Drawing.Point(347, 2613);
 			this.materialCheckBox57.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox57.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1621,7 +1295,6 @@
 			this.materialCheckBox58.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox58.Depth = 0;
 			this.materialCheckBox58.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox58.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox58.Location = new System.Drawing.Point(35, 2613);
 			this.materialCheckBox58.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox58.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1645,7 +1318,7 @@
 			// 
 			// pictureBox16
 			// 
-			this.pictureBox16.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.pictureBox16.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
 			this.pictureBox16.Location = new System.Drawing.Point(900, 2798);
 			this.pictureBox16.Name = "pictureBox16";
@@ -1656,7 +1329,7 @@
 			// 
 			// textBox14
 			// 
-			this.textBox14.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.textBox14.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox14.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox14.Location = new System.Drawing.Point(35, 2798);
@@ -1673,7 +1346,6 @@
 			this.materialCheckBox59.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox59.Depth = 0;
 			this.materialCheckBox59.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox59.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox59.Location = new System.Drawing.Point(347, 2886);
 			this.materialCheckBox59.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox59.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1691,7 +1363,6 @@
 			this.materialCheckBox60.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox60.Depth = 0;
 			this.materialCheckBox60.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox60.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox60.Location = new System.Drawing.Point(35, 2886);
 			this.materialCheckBox60.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox60.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1709,7 +1380,6 @@
 			this.materialCheckBox61.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox61.Depth = 0;
 			this.materialCheckBox61.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox61.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox61.Location = new System.Drawing.Point(347, 2856);
 			this.materialCheckBox61.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox61.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1727,7 +1397,6 @@
 			this.materialCheckBox62.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox62.Depth = 0;
 			this.materialCheckBox62.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox62.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox62.Location = new System.Drawing.Point(35, 2856);
 			this.materialCheckBox62.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox62.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1751,7 +1420,7 @@
 			// 
 			// pictureBox17
 			// 
-			this.pictureBox17.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.pictureBox17.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
 			this.pictureBox17.Location = new System.Drawing.Point(900, 2938);
 			this.pictureBox17.Name = "pictureBox17";
@@ -1762,7 +1431,7 @@
 			// 
 			// textBox15
 			// 
-			this.textBox15.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.textBox15.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox15.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox15.Location = new System.Drawing.Point(35, 2938);
@@ -1780,7 +1449,6 @@
 			this.materialCheckBox63.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox63.Depth = 0;
 			this.materialCheckBox63.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox63.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox63.Location = new System.Drawing.Point(35, 3017);
 			this.materialCheckBox63.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox63.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1798,7 +1466,6 @@
 			this.materialCheckBox64.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox64.Depth = 0;
 			this.materialCheckBox64.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox64.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox64.Location = new System.Drawing.Point(35, 2987);
 			this.materialCheckBox64.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox64.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1812,7 +1479,7 @@
 			// 
 			// pictureBox18
 			// 
-			this.pictureBox18.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.pictureBox18.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
 			this.pictureBox18.Location = new System.Drawing.Point(900, 3155);
 			this.pictureBox18.Name = "pictureBox18";
@@ -1823,7 +1490,7 @@
 			// 
 			// textBox16
 			// 
-			this.textBox16.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.textBox16.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox16.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox16.Location = new System.Drawing.Point(35, 3155);
@@ -1841,7 +1508,6 @@
 			this.materialCheckBox65.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox65.Depth = 0;
 			this.materialCheckBox65.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox65.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox65.Location = new System.Drawing.Point(347, 3243);
 			this.materialCheckBox65.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox65.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1859,7 +1525,6 @@
 			this.materialCheckBox66.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox66.Depth = 0;
 			this.materialCheckBox66.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox66.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox66.Location = new System.Drawing.Point(35, 3243);
 			this.materialCheckBox66.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox66.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1877,7 +1542,6 @@
 			this.materialCheckBox67.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox67.Depth = 0;
 			this.materialCheckBox67.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox67.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox67.Location = new System.Drawing.Point(347, 3213);
 			this.materialCheckBox67.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox67.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1895,7 +1559,6 @@
 			this.materialCheckBox68.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox68.Depth = 0;
 			this.materialCheckBox68.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox68.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox68.Location = new System.Drawing.Point(35, 3213);
 			this.materialCheckBox68.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox68.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1919,7 +1582,7 @@
 			// 
 			// pictureBox19
 			// 
-			this.pictureBox19.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.pictureBox19.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.pictureBox19.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox19.Image")));
 			this.pictureBox19.Location = new System.Drawing.Point(900, 3297);
 			this.pictureBox19.Name = "pictureBox19";
@@ -1930,7 +1593,7 @@
 			// 
 			// textBox17
 			// 
-			this.textBox17.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.textBox17.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox17.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox17.Location = new System.Drawing.Point(35, 3297);
@@ -1947,7 +1610,6 @@
 			this.materialCheckBox69.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox69.Depth = 0;
 			this.materialCheckBox69.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox69.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox69.Location = new System.Drawing.Point(347, 3385);
 			this.materialCheckBox69.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox69.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1965,7 +1627,6 @@
 			this.materialCheckBox70.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox70.Depth = 0;
 			this.materialCheckBox70.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox70.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox70.Location = new System.Drawing.Point(35, 3385);
 			this.materialCheckBox70.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox70.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1983,7 +1644,6 @@
 			this.materialCheckBox71.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox71.Depth = 0;
 			this.materialCheckBox71.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox71.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox71.Location = new System.Drawing.Point(347, 3355);
 			this.materialCheckBox71.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox71.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -2001,7 +1661,6 @@
 			this.materialCheckBox72.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox72.Depth = 0;
 			this.materialCheckBox72.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox72.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox72.Location = new System.Drawing.Point(35, 3355);
 			this.materialCheckBox72.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox72.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -2015,7 +1674,7 @@
 			// 
 			// pictureBox20
 			// 
-			this.pictureBox20.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.pictureBox20.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.pictureBox20.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox20.Image")));
 			this.pictureBox20.Location = new System.Drawing.Point(900, 3518);
 			this.pictureBox20.Name = "pictureBox20";
@@ -2026,7 +1685,7 @@
 			// 
 			// textBox18
 			// 
-			this.textBox18.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.textBox18.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox18.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox18.Location = new System.Drawing.Point(35, 3518);
@@ -2043,7 +1702,6 @@
 			this.materialCheckBox73.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox73.Depth = 0;
 			this.materialCheckBox73.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox73.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox73.Location = new System.Drawing.Point(347, 3606);
 			this.materialCheckBox73.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox73.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -2061,7 +1719,6 @@
 			this.materialCheckBox74.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox74.Depth = 0;
 			this.materialCheckBox74.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox74.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox74.Location = new System.Drawing.Point(35, 3606);
 			this.materialCheckBox74.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox74.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -2079,7 +1736,6 @@
 			this.materialCheckBox75.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox75.Depth = 0;
 			this.materialCheckBox75.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox75.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox75.Location = new System.Drawing.Point(347, 3576);
 			this.materialCheckBox75.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox75.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -2097,7 +1753,6 @@
 			this.materialCheckBox76.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox76.Depth = 0;
 			this.materialCheckBox76.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox76.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox76.Location = new System.Drawing.Point(35, 3576);
 			this.materialCheckBox76.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox76.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -2121,7 +1776,7 @@
 			// 
 			// pictureBox21
 			// 
-			this.pictureBox21.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.pictureBox21.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.pictureBox21.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox21.Image")));
 			this.pictureBox21.Location = new System.Drawing.Point(900, 3658);
 			this.pictureBox21.Name = "pictureBox21";
@@ -2132,7 +1787,7 @@
 			// 
 			// textBox19
 			// 
-			this.textBox19.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.textBox19.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.textBox19.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox19.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox19.Location = new System.Drawing.Point(35, 3658);
@@ -2151,7 +1806,6 @@
 			this.materialCheckBox77.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox77.Depth = 0;
 			this.materialCheckBox77.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox77.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox77.Location = new System.Drawing.Point(347, 3746);
 			this.materialCheckBox77.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox77.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -2169,7 +1823,6 @@
 			this.materialCheckBox78.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox78.Depth = 0;
 			this.materialCheckBox78.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox78.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox78.Location = new System.Drawing.Point(35, 3746);
 			this.materialCheckBox78.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox78.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -2187,7 +1840,6 @@
 			this.materialCheckBox79.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox79.Depth = 0;
 			this.materialCheckBox79.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox79.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox79.Location = new System.Drawing.Point(347, 3716);
 			this.materialCheckBox79.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox79.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -2205,7 +1857,6 @@
 			this.materialCheckBox80.BackColor = System.Drawing.Color.DarkOrange;
 			this.materialCheckBox80.Depth = 0;
 			this.materialCheckBox80.Font = new System.Drawing.Font("Roboto", 10F);
-			this.materialCheckBox80.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.materialCheckBox80.Location = new System.Drawing.Point(35, 3716);
 			this.materialCheckBox80.Margin = new System.Windows.Forms.Padding(0);
 			this.materialCheckBox80.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -2219,7 +1870,7 @@
 			// 
 			// textBox20
 			// 
-			this.textBox20.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.textBox20.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.textBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox20.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox20.Location = new System.Drawing.Point(35, 193);
@@ -2233,20 +1884,20 @@
 			// 
 			// textBox21
 			// 
-			this.textBox21.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.textBox21.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.textBox21.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox21.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox21.Location = new System.Drawing.Point(35, 81);
+			this.textBox21.Location = new System.Drawing.Point(31, 81);
 			this.textBox21.Multiline = true;
 			this.textBox21.Name = "textBox21";
 			this.textBox21.ReadOnly = true;
-			this.textBox21.Size = new System.Drawing.Size(851, 43);
+			this.textBox21.Size = new System.Drawing.Size(851, 32);
 			this.textBox21.TabIndex = 163;
 			this.textBox21.Text = "1) Ati efectuat un audit de informare pentru a intocmi fluxurile de date?";
 			// 
 			// textBox22
 			// 
-			this.textBox22.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.textBox22.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.textBox22.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox22.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox22.Location = new System.Drawing.Point(35, 1222);
@@ -2260,7 +1911,7 @@
 			// 
 			// pictureBox22
 			// 
-			this.pictureBox22.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.pictureBox22.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.pictureBox22.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox22.Image")));
 			this.pictureBox22.Location = new System.Drawing.Point(900, 1222);
 			this.pictureBox22.Name = "pictureBox22";
@@ -2269,14 +1920,381 @@
 			this.pictureBox22.TabIndex = 165;
 			this.pictureBox22.TabStop = false;
 			// 
+			// btnGenerateReport
+			// 
+			this.btnGenerateReport.Activecolor = System.Drawing.Color.Orange;
+			this.btnGenerateReport.BackColor = System.Drawing.Color.DarkOrange;
+			this.btnGenerateReport.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.btnGenerateReport.BorderRadius = 0;
+			this.btnGenerateReport.ButtonText = "Genereaza Raport";
+			this.btnGenerateReport.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnGenerateReport.DisabledColor = System.Drawing.Color.Gray;
+			this.btnGenerateReport.Iconcolor = System.Drawing.Color.Transparent;
+			this.btnGenerateReport.Iconimage = null;
+			this.btnGenerateReport.Iconimage_right = null;
+			this.btnGenerateReport.Iconimage_right_Selected = null;
+			this.btnGenerateReport.Iconimage_Selected = null;
+			this.btnGenerateReport.IconMarginLeft = 0;
+			this.btnGenerateReport.IconMarginRight = 0;
+			this.btnGenerateReport.IconRightVisible = true;
+			this.btnGenerateReport.IconRightZoom = 0D;
+			this.btnGenerateReport.IconVisible = true;
+			this.btnGenerateReport.IconZoom = 90D;
+			this.btnGenerateReport.IsTab = false;
+			this.btnGenerateReport.Location = new System.Drawing.Point(347, 3837);
+			this.btnGenerateReport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.btnGenerateReport.Name = "btnGenerateReport";
+			this.btnGenerateReport.Normalcolor = System.Drawing.Color.DarkOrange;
+			this.btnGenerateReport.OnHovercolor = System.Drawing.Color.Orange;
+			this.btnGenerateReport.OnHoverTextColor = System.Drawing.Color.Black;
+			this.btnGenerateReport.selected = false;
+			this.btnGenerateReport.Size = new System.Drawing.Size(321, 59);
+			this.btnGenerateReport.TabIndex = 166;
+			this.btnGenerateReport.Text = "Genereaza Raport";
+			this.btnGenerateReport.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnGenerateReport.Textcolor = System.Drawing.SystemColors.ControlDarkDark;
+			this.btnGenerateReport.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnGenerateReport.Click += new System.EventHandler(this.btnGenerateReport_Click);
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(761, 3925);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(169, 17);
+			this.label1.TabIndex = 167;
+			this.label1.Text = " LABEL PENTRU SPATIU";
+			// 
+			// bunifuProgressBar1
+			// 
+			this.bunifuProgressBar1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+			this.bunifuProgressBar1.BorderRadius = 5;
+			this.bunifuProgressBar1.Dock = System.Windows.Forms.DockStyle.Top;
+			this.bunifuProgressBar1.Location = new System.Drawing.Point(0, 0);
+			this.bunifuProgressBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.bunifuProgressBar1.MaximumValue = 100;
+			this.bunifuProgressBar1.Name = "bunifuProgressBar1";
+			this.bunifuProgressBar1.ProgressColor = System.Drawing.Color.DarkOrange;
+			this.bunifuProgressBar1.Size = new System.Drawing.Size(1017, 12);
+			this.bunifuProgressBar1.TabIndex = 169;
+			this.bunifuProgressBar1.Value = 12;
+			// 
+			// materialRadioButton9
+			// 
+			this.materialRadioButton9.AutoSize = true;
+			this.materialRadioButton9.BackColor = System.Drawing.Color.DarkOrange;
+			this.materialRadioButton9.Depth = 0;
+			this.materialRadioButton9.Font = new System.Drawing.Font("Roboto", 10F);
+			this.materialRadioButton9.Location = new System.Drawing.Point(347, 388);
+			this.materialRadioButton9.Margin = new System.Windows.Forms.Padding(0);
+			this.materialRadioButton9.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.materialRadioButton9.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialRadioButton9.Name = "materialRadioButton9";
+			this.materialRadioButton9.Ripple = true;
+			this.materialRadioButton9.Size = new System.Drawing.Size(268, 30);
+			this.materialRadioButton9.TabIndex = 181;
+			this.materialRadioButton9.TabStop = true;
+			this.materialRadioButton9.Text = "Partial implementat / planificat";
+			this.materialRadioButton9.UseVisualStyleBackColor = false;
+			// 
+			// materialRadioButton10
+			// 
+			this.materialRadioButton10.AutoSize = true;
+			this.materialRadioButton10.BackColor = System.Drawing.Color.DarkOrange;
+			this.materialRadioButton10.Depth = 0;
+			this.materialRadioButton10.Font = new System.Drawing.Font("Roboto", 10F);
+			this.materialRadioButton10.Location = new System.Drawing.Point(347, 358);
+			this.materialRadioButton10.Margin = new System.Windows.Forms.Padding(0);
+			this.materialRadioButton10.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.materialRadioButton10.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialRadioButton10.Name = "materialRadioButton10";
+			this.materialRadioButton10.Ripple = true;
+			this.materialRadioButton10.Size = new System.Drawing.Size(325, 30);
+			this.materialRadioButton10.TabIndex = 180;
+			this.materialRadioButton10.TabStop = true;
+			this.materialRadioButton10.Text = "Nu a fost inca implementat / planificat";
+			this.materialRadioButton10.UseVisualStyleBackColor = false;
+			// 
+			// materialRadioButton11
+			// 
+			this.materialRadioButton11.AutoSize = true;
+			this.materialRadioButton11.BackColor = System.Drawing.Color.DarkOrange;
+			this.materialRadioButton11.Depth = 0;
+			this.materialRadioButton11.Font = new System.Drawing.Font("Roboto", 10F);
+			this.materialRadioButton11.Location = new System.Drawing.Point(36, 388);
+			this.materialRadioButton11.Margin = new System.Windows.Forms.Padding(0);
+			this.materialRadioButton11.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.materialRadioButton11.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialRadioButton11.Name = "materialRadioButton11";
+			this.materialRadioButton11.Ripple = true;
+			this.materialRadioButton11.Size = new System.Drawing.Size(53, 30);
+			this.materialRadioButton11.TabIndex = 179;
+			this.materialRadioButton11.TabStop = true;
+			this.materialRadioButton11.Text = "DA";
+			this.materialRadioButton11.UseVisualStyleBackColor = false;
+			// 
+			// materialRadioButton12
+			// 
+			this.materialRadioButton12.AutoSize = true;
+			this.materialRadioButton12.BackColor = System.Drawing.Color.DarkOrange;
+			this.materialRadioButton12.Depth = 0;
+			this.materialRadioButton12.Font = new System.Drawing.Font("Roboto", 10F);
+			this.materialRadioButton12.Location = new System.Drawing.Point(36, 357);
+			this.materialRadioButton12.Margin = new System.Windows.Forms.Padding(0);
+			this.materialRadioButton12.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.materialRadioButton12.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialRadioButton12.Name = "materialRadioButton12";
+			this.materialRadioButton12.Ripple = true;
+			this.materialRadioButton12.Size = new System.Drawing.Size(53, 30);
+			this.materialRadioButton12.TabIndex = 178;
+			this.materialRadioButton12.TabStop = true;
+			this.materialRadioButton12.Text = "NU";
+			this.materialRadioButton12.UseVisualStyleBackColor = false;
+			// 
+			// materialRadioButton13
+			// 
+			this.materialRadioButton13.AutoSize = true;
+			this.materialRadioButton13.BackColor = System.Drawing.Color.DarkOrange;
+			this.materialRadioButton13.Depth = 0;
+			this.materialRadioButton13.Font = new System.Drawing.Font("Roboto", 10F);
+			this.materialRadioButton13.Location = new System.Drawing.Point(347, 506);
+			this.materialRadioButton13.Margin = new System.Windows.Forms.Padding(0);
+			this.materialRadioButton13.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.materialRadioButton13.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialRadioButton13.Name = "materialRadioButton13";
+			this.materialRadioButton13.Ripple = true;
+			this.materialRadioButton13.Size = new System.Drawing.Size(268, 30);
+			this.materialRadioButton13.TabIndex = 185;
+			this.materialRadioButton13.TabStop = true;
+			this.materialRadioButton13.Text = "Partial implementat / planificat";
+			this.materialRadioButton13.UseVisualStyleBackColor = false;
+			// 
+			// materialRadioButton14
+			// 
+			this.materialRadioButton14.AutoSize = true;
+			this.materialRadioButton14.BackColor = System.Drawing.Color.DarkOrange;
+			this.materialRadioButton14.Depth = 0;
+			this.materialRadioButton14.Font = new System.Drawing.Font("Roboto", 10F);
+			this.materialRadioButton14.Location = new System.Drawing.Point(347, 476);
+			this.materialRadioButton14.Margin = new System.Windows.Forms.Padding(0);
+			this.materialRadioButton14.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.materialRadioButton14.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialRadioButton14.Name = "materialRadioButton14";
+			this.materialRadioButton14.Ripple = true;
+			this.materialRadioButton14.Size = new System.Drawing.Size(325, 30);
+			this.materialRadioButton14.TabIndex = 184;
+			this.materialRadioButton14.TabStop = true;
+			this.materialRadioButton14.Text = "Nu a fost inca implementat / planificat";
+			this.materialRadioButton14.UseVisualStyleBackColor = false;
+			// 
+			// materialRadioButton15
+			// 
+			this.materialRadioButton15.AutoSize = true;
+			this.materialRadioButton15.BackColor = System.Drawing.Color.DarkOrange;
+			this.materialRadioButton15.Depth = 0;
+			this.materialRadioButton15.Font = new System.Drawing.Font("Roboto", 10F);
+			this.materialRadioButton15.Location = new System.Drawing.Point(36, 506);
+			this.materialRadioButton15.Margin = new System.Windows.Forms.Padding(0);
+			this.materialRadioButton15.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.materialRadioButton15.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialRadioButton15.Name = "materialRadioButton15";
+			this.materialRadioButton15.Ripple = true;
+			this.materialRadioButton15.Size = new System.Drawing.Size(53, 30);
+			this.materialRadioButton15.TabIndex = 183;
+			this.materialRadioButton15.TabStop = true;
+			this.materialRadioButton15.Text = "DA";
+			this.materialRadioButton15.UseVisualStyleBackColor = false;
+			// 
+			// materialRadioButton16
+			// 
+			this.materialRadioButton16.AutoSize = true;
+			this.materialRadioButton16.BackColor = System.Drawing.Color.DarkOrange;
+			this.materialRadioButton16.Depth = 0;
+			this.materialRadioButton16.Font = new System.Drawing.Font("Roboto", 10F);
+			this.materialRadioButton16.Location = new System.Drawing.Point(36, 475);
+			this.materialRadioButton16.Margin = new System.Windows.Forms.Padding(0);
+			this.materialRadioButton16.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.materialRadioButton16.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialRadioButton16.Name = "materialRadioButton16";
+			this.materialRadioButton16.Ripple = true;
+			this.materialRadioButton16.Size = new System.Drawing.Size(53, 30);
+			this.materialRadioButton16.TabIndex = 182;
+			this.materialRadioButton16.TabStop = true;
+			this.materialRadioButton16.Text = "NU";
+			this.materialRadioButton16.UseVisualStyleBackColor = false;
+			// 
+			// materialRadioButton1
+			// 
+			this.materialRadioButton1.AutoSize = true;
+			this.materialRadioButton1.BackColor = System.Drawing.Color.DarkOrange;
+			this.materialRadioButton1.Depth = 0;
+			this.materialRadioButton1.Font = new System.Drawing.Font("Roboto", 10F);
+			this.materialRadioButton1.Location = new System.Drawing.Point(347, 146);
+			this.materialRadioButton1.Margin = new System.Windows.Forms.Padding(0);
+			this.materialRadioButton1.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.materialRadioButton1.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialRadioButton1.Name = "materialRadioButton1";
+			this.materialRadioButton1.Ripple = true;
+			this.materialRadioButton1.Size = new System.Drawing.Size(268, 30);
+			this.materialRadioButton1.TabIndex = 191;
+			this.materialRadioButton1.TabStop = true;
+			this.materialRadioButton1.Text = "Partial implementat / planificat";
+			this.materialRadioButton1.UseVisualStyleBackColor = false;
+			// 
+			// materialRadioButton2
+			// 
+			this.materialRadioButton2.AutoSize = true;
+			this.materialRadioButton2.BackColor = System.Drawing.Color.DarkOrange;
+			this.materialRadioButton2.Depth = 0;
+			this.materialRadioButton2.Font = new System.Drawing.Font("Roboto", 10F);
+			this.materialRadioButton2.Location = new System.Drawing.Point(347, 116);
+			this.materialRadioButton2.Margin = new System.Windows.Forms.Padding(0);
+			this.materialRadioButton2.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.materialRadioButton2.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialRadioButton2.Name = "materialRadioButton2";
+			this.materialRadioButton2.Ripple = true;
+			this.materialRadioButton2.Size = new System.Drawing.Size(325, 30);
+			this.materialRadioButton2.TabIndex = 190;
+			this.materialRadioButton2.TabStop = true;
+			this.materialRadioButton2.Text = "Nu a fost inca implementat / planificat";
+			this.materialRadioButton2.UseVisualStyleBackColor = false;
+			// 
+			// materialRadioButton3
+			// 
+			this.materialRadioButton3.AutoSize = true;
+			this.materialRadioButton3.BackColor = System.Drawing.Color.DarkOrange;
+			this.materialRadioButton3.Depth = 0;
+			this.materialRadioButton3.Font = new System.Drawing.Font("Roboto", 10F);
+			this.materialRadioButton3.Location = new System.Drawing.Point(36, 146);
+			this.materialRadioButton3.Margin = new System.Windows.Forms.Padding(0);
+			this.materialRadioButton3.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.materialRadioButton3.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialRadioButton3.Name = "materialRadioButton3";
+			this.materialRadioButton3.Ripple = true;
+			this.materialRadioButton3.Size = new System.Drawing.Size(53, 30);
+			this.materialRadioButton3.TabIndex = 189;
+			this.materialRadioButton3.TabStop = true;
+			this.materialRadioButton3.Text = "DA";
+			this.materialRadioButton3.UseVisualStyleBackColor = false;
+			// 
+			// materialRadioButton4
+			// 
+			this.materialRadioButton4.AutoSize = true;
+			this.materialRadioButton4.BackColor = System.Drawing.Color.DarkOrange;
+			this.materialRadioButton4.Depth = 0;
+			this.materialRadioButton4.Font = new System.Drawing.Font("Roboto", 10F);
+			this.materialRadioButton4.Location = new System.Drawing.Point(36, 115);
+			this.materialRadioButton4.Margin = new System.Windows.Forms.Padding(0);
+			this.materialRadioButton4.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.materialRadioButton4.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialRadioButton4.Name = "materialRadioButton4";
+			this.materialRadioButton4.Ripple = true;
+			this.materialRadioButton4.Size = new System.Drawing.Size(53, 30);
+			this.materialRadioButton4.TabIndex = 188;
+			this.materialRadioButton4.TabStop = true;
+			this.materialRadioButton4.Text = "NU";
+			this.materialRadioButton4.UseVisualStyleBackColor = false;
+			// 
+			// materialRadioButton5
+			// 
+			this.materialRadioButton5.AutoSize = true;
+			this.materialRadioButton5.BackColor = System.Drawing.Color.DarkOrange;
+			this.materialRadioButton5.Depth = 0;
+			this.materialRadioButton5.Font = new System.Drawing.Font("Roboto", 10F);
+			this.materialRadioButton5.Location = new System.Drawing.Point(347, 258);
+			this.materialRadioButton5.Margin = new System.Windows.Forms.Padding(0);
+			this.materialRadioButton5.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.materialRadioButton5.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialRadioButton5.Name = "materialRadioButton5";
+			this.materialRadioButton5.Ripple = true;
+			this.materialRadioButton5.Size = new System.Drawing.Size(268, 30);
+			this.materialRadioButton5.TabIndex = 195;
+			this.materialRadioButton5.TabStop = true;
+			this.materialRadioButton5.Text = "Partial implementat / planificat";
+			this.materialRadioButton5.UseVisualStyleBackColor = false;
+			// 
+			// materialRadioButton6
+			// 
+			this.materialRadioButton6.AutoSize = true;
+			this.materialRadioButton6.BackColor = System.Drawing.Color.DarkOrange;
+			this.materialRadioButton6.Depth = 0;
+			this.materialRadioButton6.Font = new System.Drawing.Font("Roboto", 10F);
+			this.materialRadioButton6.Location = new System.Drawing.Point(347, 228);
+			this.materialRadioButton6.Margin = new System.Windows.Forms.Padding(0);
+			this.materialRadioButton6.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.materialRadioButton6.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialRadioButton6.Name = "materialRadioButton6";
+			this.materialRadioButton6.Ripple = true;
+			this.materialRadioButton6.Size = new System.Drawing.Size(325, 30);
+			this.materialRadioButton6.TabIndex = 194;
+			this.materialRadioButton6.TabStop = true;
+			this.materialRadioButton6.Text = "Nu a fost inca implementat / planificat";
+			this.materialRadioButton6.UseVisualStyleBackColor = false;
+			// 
+			// materialRadioButton7
+			// 
+			this.materialRadioButton7.AutoSize = true;
+			this.materialRadioButton7.BackColor = System.Drawing.Color.DarkOrange;
+			this.materialRadioButton7.Depth = 0;
+			this.materialRadioButton7.Font = new System.Drawing.Font("Roboto", 10F);
+			this.materialRadioButton7.Location = new System.Drawing.Point(36, 258);
+			this.materialRadioButton7.Margin = new System.Windows.Forms.Padding(0);
+			this.materialRadioButton7.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.materialRadioButton7.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialRadioButton7.Name = "materialRadioButton7";
+			this.materialRadioButton7.Ripple = true;
+			this.materialRadioButton7.Size = new System.Drawing.Size(53, 30);
+			this.materialRadioButton7.TabIndex = 193;
+			this.materialRadioButton7.TabStop = true;
+			this.materialRadioButton7.Text = "DA";
+			this.materialRadioButton7.UseVisualStyleBackColor = false;
+			// 
+			// materialRadioButton8
+			// 
+			this.materialRadioButton8.AutoSize = true;
+			this.materialRadioButton8.BackColor = System.Drawing.Color.DarkOrange;
+			this.materialRadioButton8.Depth = 0;
+			this.materialRadioButton8.Font = new System.Drawing.Font("Roboto", 10F);
+			this.materialRadioButton8.Location = new System.Drawing.Point(36, 227);
+			this.materialRadioButton8.Margin = new System.Windows.Forms.Padding(0);
+			this.materialRadioButton8.MouseLocation = new System.Drawing.Point(-1, -1);
+			this.materialRadioButton8.MouseState = MaterialSkin.MouseState.HOVER;
+			this.materialRadioButton8.Name = "materialRadioButton8";
+			this.materialRadioButton8.Ripple = true;
+			this.materialRadioButton8.Size = new System.Drawing.Size(53, 30);
+			this.materialRadioButton8.TabIndex = 192;
+			this.materialRadioButton8.TabStop = true;
+			this.materialRadioButton8.Text = "NU";
+			this.materialRadioButton8.UseVisualStyleBackColor = false;
+			// 
 			// Audit_Procesator
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoScroll = true;
+			this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+			this.Controls.Add(this.materialRadioButton5);
+			this.Controls.Add(this.materialRadioButton6);
+			this.Controls.Add(this.materialRadioButton7);
+			this.Controls.Add(this.materialRadioButton8);
+			this.Controls.Add(this.materialRadioButton1);
+			this.Controls.Add(this.materialRadioButton2);
+			this.Controls.Add(this.materialRadioButton3);
+			this.Controls.Add(this.materialRadioButton4);
+			this.Controls.Add(this.textBox21);
+			this.Controls.Add(this.materialRadioButton13);
+			this.Controls.Add(this.materialRadioButton14);
+			this.Controls.Add(this.materialRadioButton15);
+			this.Controls.Add(this.materialRadioButton16);
+			this.Controls.Add(this.materialRadioButton9);
+			this.Controls.Add(this.materialRadioButton10);
+			this.Controls.Add(this.materialRadioButton11);
+			this.Controls.Add(this.materialRadioButton12);
+			this.Controls.Add(this.bunifuProgressBar1);
+			this.Controls.Add(this.label1);
+			this.Controls.Add(this.btnGenerateReport);
 			this.Controls.Add(this.pictureBox22);
 			this.Controls.Add(this.textBox22);
-			this.Controls.Add(this.textBox21);
 			this.Controls.Add(this.textBox20);
 			this.Controls.Add(this.pictureBox21);
 			this.Controls.Add(this.textBox19);
@@ -2391,22 +2409,6 @@
 			this.Controls.Add(this.materialCheckBox21);
 			this.Controls.Add(this.materialCheckBox22);
 			this.Controls.Add(this.bunifuCustomLabel7);
-			this.Controls.Add(this.materialCheckBox17);
-			this.Controls.Add(this.materialCheckBox18);
-			this.Controls.Add(this.materialCheckBox19);
-			this.Controls.Add(this.materialCheckBox20);
-			this.Controls.Add(this.materialCheckBox13);
-			this.Controls.Add(this.materialCheckBox14);
-			this.Controls.Add(this.materialCheckBox15);
-			this.Controls.Add(this.materialCheckBox16);
-			this.Controls.Add(this.materialCheckBox9);
-			this.Controls.Add(this.materialCheckBox10);
-			this.Controls.Add(this.materialCheckBox11);
-			this.Controls.Add(this.materialCheckBox12);
-			this.Controls.Add(this.materialCheckBox5);
-			this.Controls.Add(this.materialCheckBox6);
-			this.Controls.Add(this.materialCheckBox7);
-			this.Controls.Add(this.materialCheckBox8);
 			this.Controls.Add(this.bunifuCustomLabel2);
 			this.Name = "Audit_Procesator";
 			this.Size = new System.Drawing.Size(1017, 661);
@@ -2440,22 +2442,6 @@
 
         #endregion
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
-        private MaterialSkin.Controls.MaterialCheckBox materialCheckBox5;
-        private MaterialSkin.Controls.MaterialCheckBox materialCheckBox6;
-        private MaterialSkin.Controls.MaterialCheckBox materialCheckBox7;
-        private MaterialSkin.Controls.MaterialCheckBox materialCheckBox8;
-        private MaterialSkin.Controls.MaterialCheckBox materialCheckBox9;
-        private MaterialSkin.Controls.MaterialCheckBox materialCheckBox10;
-        private MaterialSkin.Controls.MaterialCheckBox materialCheckBox11;
-        private MaterialSkin.Controls.MaterialCheckBox materialCheckBox12;
-        private MaterialSkin.Controls.MaterialCheckBox materialCheckBox13;
-        private MaterialSkin.Controls.MaterialCheckBox materialCheckBox14;
-        private MaterialSkin.Controls.MaterialCheckBox materialCheckBox15;
-        private MaterialSkin.Controls.MaterialCheckBox materialCheckBox16;
-        private MaterialSkin.Controls.MaterialCheckBox materialCheckBox17;
-        private MaterialSkin.Controls.MaterialCheckBox materialCheckBox18;
-        private MaterialSkin.Controls.MaterialCheckBox materialCheckBox19;
-        private MaterialSkin.Controls.MaterialCheckBox materialCheckBox20;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
         private MaterialSkin.Controls.MaterialCheckBox materialCheckBox21;
         private MaterialSkin.Controls.MaterialCheckBox materialCheckBox22;
@@ -2573,5 +2559,24 @@
 		private System.Windows.Forms.TextBox textBox21;
 		private System.Windows.Forms.TextBox textBox22;
 		private System.Windows.Forms.PictureBox pictureBox22;
+		private Bunifu.Framework.UI.BunifuFlatButton btnGenerateReport;
+		private System.Windows.Forms.Label label1;
+		private Bunifu.Framework.UI.BunifuProgressBar bunifuProgressBar1;
+		private MaterialSkin.Controls.MaterialRadioButton materialRadioButton9;
+		private MaterialSkin.Controls.MaterialRadioButton materialRadioButton10;
+		private MaterialSkin.Controls.MaterialRadioButton materialRadioButton11;
+		private MaterialSkin.Controls.MaterialRadioButton materialRadioButton12;
+		private MaterialSkin.Controls.MaterialRadioButton materialRadioButton13;
+		private MaterialSkin.Controls.MaterialRadioButton materialRadioButton14;
+		private MaterialSkin.Controls.MaterialRadioButton materialRadioButton15;
+		private MaterialSkin.Controls.MaterialRadioButton materialRadioButton16;
+		private MaterialSkin.Controls.MaterialRadioButton materialRadioButton1;
+		private MaterialSkin.Controls.MaterialRadioButton materialRadioButton2;
+		private MaterialSkin.Controls.MaterialRadioButton materialRadioButton3;
+		private MaterialSkin.Controls.MaterialRadioButton materialRadioButton4;
+		private MaterialSkin.Controls.MaterialRadioButton materialRadioButton5;
+		private MaterialSkin.Controls.MaterialRadioButton materialRadioButton6;
+		private MaterialSkin.Controls.MaterialRadioButton materialRadioButton7;
+		private MaterialSkin.Controls.MaterialRadioButton materialRadioButton8;
 	}
 }
