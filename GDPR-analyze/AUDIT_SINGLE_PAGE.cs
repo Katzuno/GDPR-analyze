@@ -128,26 +128,29 @@ namespace GDPR_analyze
 		private void GeneratePDF(string nume_fisier)
 		{
 			int i;
-			string Path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\" + nume_fisier + ".pdf";
+			string data_text = "_"+ DateTime.Now.Day.ToString() + "_" + DateTime.Now.Month.ToString() + "_" + DateTime.Now.Year.ToString() + "_" + DateTime.Now.Minute.ToString();
+			string Path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\" + nume_fisier + data_text+ ".pdf";
 
 			Document pdfDoc = new Document();
 			FileStream fs = File.Create(Path);
 			PdfWriter.GetInstance(pdfDoc, fs);
 
-			string textPDF = "";
-
-			Paragraph text;
 			Paragraph title;
 			title = new Paragraph("Rezultatele obtinute in urma auditului");
 			title.Alignment = Element.ALIGN_CENTER;
+			title.Font = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 40);
 
 			
 
 			pdfDoc.Open();
 			pdfDoc.Add(title);
+			pdfDoc.Add(new Paragraph("\r\n"));
+			pdfDoc.Add(new Paragraph("\r\n"));
 			for (i = 0; i < lstQuestions.Count; i++)
 			{
-				pdfDoc.Add( new Paragraph(lstQuestions[i] + "\r\n") );
+				Paragraph textQ = new Paragraph(lstQuestions[i] + "\r\n");
+				textQ.Font = FontFactory.GetFont(FontFactory.COURIER_BOLD, 15, BaseColor.RED);
+				pdfDoc.Add(textQ);
 				pdfDoc.Add(new Paragraph(selectAnswer(i) + "\r\n"));
 				pdfDoc.Add(new Paragraph("Recomandarea noastra este: \r\n") );
 				pdfDoc.Add(new Paragraph(ourRecommendation(i) + "\r\n"));
