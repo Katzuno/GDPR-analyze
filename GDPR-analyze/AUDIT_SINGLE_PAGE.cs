@@ -77,10 +77,10 @@ namespace GDPR_analyze
 
 					Questions.Add(FormatareParagraf(values[0]));
 					Details.Add(FormatareParagraf(values[1]));
-					RecommendNo.Add(values[2]);
-					RecommendPartial.Add(values[3]);
-					Yes.Add(values[4]);
-					Categories.Add(values[5]);
+					RecommendNo.Add(FormatareParagraf(values[2]));
+					RecommendPartial.Add(FormatareParagraf(values[3]));
+					Yes.Add(FormatareParagraf(values[4]));
+					Categories.Add(FormatareParagraf(values[5]));
 				}
 			}
 		}
@@ -132,13 +132,21 @@ namespace GDPR_analyze
 			string Path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\" + nume_fisier + data_text+ ".pdf";
 
 			Document pdfDoc = new Document();
-			FileStream fs = File.Create(Path);
-			PdfWriter.GetInstance(pdfDoc, fs);
+			// set the page size, set the orientation
+			pdfDoc.SetPageSize(PageSize.A4);
+			// create a writer instance
+			PdfWriter pdfWriter = PdfWriter.GetInstance(pdfDoc, new FileStream(Path, FileMode.Create));
+
+
+			iTextSharp.text.Font titleFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 22, BaseColor.BLACK);
+			iTextSharp.text.Font questionFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 14, BaseColor.BLACK);
+			iTextSharp.text.Font answerFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLDOBLIQUE, 12, BaseColor.BLACK);
+			iTextSharp.text.Font recommendFont = FontFactory.GetFont(FontFactory.HELVETICA_OBLIQUE, 12, BaseColor.BLACK);
 
 			Paragraph title;
-			title = new Paragraph("Rezultatele obtinute in urma auditului");
+			title = new Paragraph("Rezultatele obtinute in urma auditului", titleFont);
 			title.Alignment = Element.ALIGN_CENTER;
-			title.Font = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 40);
+			//title.Font = titleFont;
 
 			
 
@@ -148,17 +156,18 @@ namespace GDPR_analyze
 			pdfDoc.Add(new Paragraph("\r\n"));
 			for (i = 0; i < lstQuestions.Count; i++)
 			{
-				Paragraph textQ = new Paragraph(lstQuestions[i] + "\r\n");
+				Paragraph textQ = new Paragraph(lstQuestions[i] + "\r\n", questionFont);
 				textQ.Font = FontFactory.GetFont(FontFactory.COURIER_BOLD, 15, BaseColor.RED);
 				pdfDoc.Add(textQ);
-				pdfDoc.Add(new Paragraph(selectAnswer(i) + "\r\n"));
-				pdfDoc.Add(new Paragraph("Recomandarea noastra este: \r\n") );
-				pdfDoc.Add(new Paragraph(ourRecommendation(i) + "\r\n"));
+				pdfDoc.Add(new Paragraph(selectAnswer(i) + "\r\n", answerFont));
+				pdfDoc.Add(new Paragraph("Recomandarea noastra este: \r\n", recommendFont) );
+				pdfDoc.Add(new Paragraph(ourRecommendation(i) + "\r\n", recommendFont));
 				pdfDoc.Add(new Paragraph("\r\n"));
 			}
 			
 			pdfDoc.Close();
 
+			System.Diagnostics.Process.Start(Path);
 		}
 
 		private void bunifuFlatButton3_Click(object sender, EventArgs e)
@@ -286,7 +295,7 @@ namespace GDPR_analyze
 			{
 				answers[count, 0] = false;
 				answers[count, 1] = false;
-				answers[count, 2] = true;
+				answers[count, 2] = false;
 				answers[count, 3] = true;
 			}
 

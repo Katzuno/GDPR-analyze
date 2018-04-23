@@ -36,31 +36,31 @@
 			this.chkYes = new MaterialSkin.Controls.MaterialRadioButton();
 			this.chkPartial = new MaterialSkin.Controls.MaterialRadioButton();
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.panel6 = new System.Windows.Forms.Panel();
+			this.panel10 = new System.Windows.Forms.Panel();
+			this.panel9 = new System.Windows.Forms.Panel();
+			this.panel3 = new System.Windows.Forms.Panel();
+			this.textBox2 = new System.Windows.Forms.TextBox();
 			this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
 			this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
 			this.btnGenerateReport = new Bunifu.Framework.UI.BunifuFlatButton();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-			this.panel3 = new System.Windows.Forms.Panel();
 			this.panel4 = new System.Windows.Forms.Panel();
-			this.panel5 = new System.Windows.Forms.Panel();
-			this.panel7 = new System.Windows.Forms.Panel();
 			this.panel8 = new System.Windows.Forms.Panel();
-			this.panel6 = new System.Windows.Forms.Panel();
-			this.panel9 = new System.Windows.Forms.Panel();
-			this.panel10 = new System.Windows.Forms.Panel();
-			this.textBox2 = new System.Windows.Forms.TextBox();
+			this.panel7 = new System.Windows.Forms.Panel();
+			this.panel5 = new System.Windows.Forms.Panel();
 			this.panel1.SuspendLayout();
-			this.panel2.SuspendLayout();
-			this.panel3.SuspendLayout();
-			this.panel4.SuspendLayout();
-			this.panel5.SuspendLayout();
-			this.panel7.SuspendLayout();
-			this.panel8.SuspendLayout();
 			this.panel6.SuspendLayout();
-			this.panel9.SuspendLayout();
 			this.panel10.SuspendLayout();
+			this.panel9.SuspendLayout();
+			this.panel3.SuspendLayout();
+			this.panel2.SuspendLayout();
+			this.panel4.SuspendLayout();
+			this.panel8.SuspendLayout();
+			this.panel7.SuspendLayout();
+			this.panel5.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// txtQAudit
@@ -164,6 +164,60 @@
 			this.panel1.Size = new System.Drawing.Size(1213, 829);
 			this.panel1.TabIndex = 229;
 			// 
+			// panel6
+			// 
+			this.panel6.Controls.Add(this.panel10);
+			this.panel6.Controls.Add(this.panel9);
+			this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+			this.panel6.Location = new System.Drawing.Point(0, 234);
+			this.panel6.Name = "panel6";
+			this.panel6.Size = new System.Drawing.Size(1213, 147);
+			this.panel6.TabIndex = 232;
+			// 
+			// panel10
+			// 
+			this.panel10.Controls.Add(this.chkNoImplement);
+			this.panel10.Controls.Add(this.chkPartial);
+			this.panel10.Dock = System.Windows.Forms.DockStyle.Right;
+			this.panel10.Location = new System.Drawing.Point(644, 0);
+			this.panel10.Name = "panel10";
+			this.panel10.Size = new System.Drawing.Size(569, 147);
+			this.panel10.TabIndex = 217;
+			// 
+			// panel9
+			// 
+			this.panel9.Controls.Add(this.chkNo);
+			this.panel9.Controls.Add(this.chkYes);
+			this.panel9.Dock = System.Windows.Forms.DockStyle.Left;
+			this.panel9.Location = new System.Drawing.Point(0, 0);
+			this.panel9.Name = "panel9";
+			this.panel9.Size = new System.Drawing.Size(452, 147);
+			this.panel9.TabIndex = 216;
+			// 
+			// panel3
+			// 
+			this.panel3.Controls.Add(this.textBox2);
+			this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+			this.panel3.Location = new System.Drawing.Point(0, 0);
+			this.panel3.Name = "panel3";
+			this.panel3.Size = new System.Drawing.Size(1213, 45);
+			this.panel3.TabIndex = 231;
+			// 
+			// textBox2
+			// 
+			this.textBox2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+			this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.textBox2.Cursor = System.Windows.Forms.Cursors.Default;
+			this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBox2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.textBox2.Location = new System.Drawing.Point(0, 0);
+			this.textBox2.Name = "textBox2";
+			this.textBox2.Size = new System.Drawing.Size(1213, 37);
+			this.textBox2.TabIndex = 226;
+			this.textBox2.Text = "LEGALITATE, ECHITATE SI TRANSPARENTA";
+			this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+			// 
 			// bunifuFlatButton3
 			// 
 			this.bunifuFlatButton3.Activecolor = System.Drawing.Color.Orange;
@@ -261,7 +315,7 @@
 			this.btnGenerateReport.IconZoom = 90D;
 			this.btnGenerateReport.IsTab = false;
 			this.btnGenerateReport.Location = new System.Drawing.Point(0, 67);
-			this.btnGenerateReport.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+			this.btnGenerateReport.Margin = new System.Windows.Forms.Padding(7);
 			this.btnGenerateReport.Name = "btnGenerateReport";
 			this.btnGenerateReport.Normalcolor = System.Drawing.Color.DarkOrange;
 			this.btnGenerateReport.OnHovercolor = System.Drawing.Color.Orange;
@@ -303,15 +357,6 @@
 			this.contextMenuStrip1.Name = "contextMenuStrip1";
 			this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
 			// 
-			// panel3
-			// 
-			this.panel3.Controls.Add(this.textBox2);
-			this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panel3.Location = new System.Drawing.Point(0, 0);
-			this.panel3.Name = "panel3";
-			this.panel3.Size = new System.Drawing.Size(1213, 45);
-			this.panel3.TabIndex = 231;
-			// 
 			// panel4
 			// 
 			this.panel4.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -324,16 +369,15 @@
 			this.panel4.Size = new System.Drawing.Size(1213, 144);
 			this.panel4.TabIndex = 216;
 			// 
-			// panel5
+			// panel8
 			// 
-			this.panel5.BackColor = System.Drawing.SystemColors.ActiveBorder;
-			this.panel5.Controls.Add(this.bunifuFlatButton2);
-			this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
-			this.panel5.Location = new System.Drawing.Point(0, 0);
-			this.panel5.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-			this.panel5.Name = "panel5";
-			this.panel5.Size = new System.Drawing.Size(400, 144);
-			this.panel5.TabIndex = 229;
+			this.panel8.BackColor = System.Drawing.SystemColors.ActiveBorder;
+			this.panel8.Controls.Add(this.btnGenerateReport);
+			this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.panel8.Location = new System.Drawing.Point(400, 0);
+			this.panel8.Name = "panel8";
+			this.panel8.Size = new System.Drawing.Size(413, 144);
+			this.panel8.TabIndex = 233;
 			// 
 			// panel7
 			// 
@@ -346,60 +390,16 @@
 			this.panel7.Size = new System.Drawing.Size(400, 144);
 			this.panel7.TabIndex = 232;
 			// 
-			// panel8
+			// panel5
 			// 
-			this.panel8.BackColor = System.Drawing.SystemColors.ActiveBorder;
-			this.panel8.Controls.Add(this.btnGenerateReport);
-			this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.panel8.Location = new System.Drawing.Point(400, 0);
-			this.panel8.Name = "panel8";
-			this.panel8.Size = new System.Drawing.Size(413, 144);
-			this.panel8.TabIndex = 233;
-			// 
-			// panel6
-			// 
-			this.panel6.Controls.Add(this.panel10);
-			this.panel6.Controls.Add(this.panel9);
-			this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panel6.Location = new System.Drawing.Point(0, 234);
-			this.panel6.Name = "panel6";
-			this.panel6.Size = new System.Drawing.Size(1213, 147);
-			this.panel6.TabIndex = 232;
-			// 
-			// panel9
-			// 
-			this.panel9.Controls.Add(this.chkNo);
-			this.panel9.Controls.Add(this.chkYes);
-			this.panel9.Dock = System.Windows.Forms.DockStyle.Left;
-			this.panel9.Location = new System.Drawing.Point(0, 0);
-			this.panel9.Name = "panel9";
-			this.panel9.Size = new System.Drawing.Size(452, 147);
-			this.panel9.TabIndex = 216;
-			// 
-			// panel10
-			// 
-			this.panel10.Controls.Add(this.chkNoImplement);
-			this.panel10.Controls.Add(this.chkPartial);
-			this.panel10.Dock = System.Windows.Forms.DockStyle.Right;
-			this.panel10.Location = new System.Drawing.Point(644, 0);
-			this.panel10.Name = "panel10";
-			this.panel10.Size = new System.Drawing.Size(569, 147);
-			this.panel10.TabIndex = 217;
-			// 
-			// textBox2
-			// 
-			this.textBox2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-			this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.textBox2.Cursor = System.Windows.Forms.Cursors.Default;
-			this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox2.Location = new System.Drawing.Point(0, 0);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(1213, 37);
-			this.textBox2.TabIndex = 226;
-			this.textBox2.Text = "LEGALITATE, ECHITATE SI TRANSPARENTA";
-			this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+			this.panel5.BackColor = System.Drawing.SystemColors.ActiveBorder;
+			this.panel5.Controls.Add(this.bunifuFlatButton2);
+			this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
+			this.panel5.Location = new System.Drawing.Point(0, 0);
+			this.panel5.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+			this.panel5.Name = "panel5";
+			this.panel5.Size = new System.Drawing.Size(400, 144);
+			this.panel5.TabIndex = 229;
 			// 
 			// AUDIT_SINGLE_PAGE
 			// 
@@ -413,18 +413,18 @@
 			this.Size = new System.Drawing.Size(1213, 829);
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
-			this.panel2.ResumeLayout(false);
-			this.panel2.PerformLayout();
-			this.panel3.ResumeLayout(false);
-			this.panel3.PerformLayout();
-			this.panel4.ResumeLayout(false);
-			this.panel5.ResumeLayout(false);
-			this.panel7.ResumeLayout(false);
-			this.panel8.ResumeLayout(false);
 			this.panel6.ResumeLayout(false);
-			this.panel9.ResumeLayout(false);
 			this.panel10.ResumeLayout(false);
 			this.panel10.PerformLayout();
+			this.panel9.ResumeLayout(false);
+			this.panel3.ResumeLayout(false);
+			this.panel3.PerformLayout();
+			this.panel2.ResumeLayout(false);
+			this.panel2.PerformLayout();
+			this.panel4.ResumeLayout(false);
+			this.panel8.ResumeLayout(false);
+			this.panel7.ResumeLayout(false);
+			this.panel5.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}
