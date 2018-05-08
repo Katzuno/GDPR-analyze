@@ -21,7 +21,7 @@ namespace GDPR_analyze
 		//liste pentru graficele finale
 		public List<int> lstNrQPerCty;
 		public List<string> lstUniqueCategories;
-		public List<int> lstYesNumber;
+		public List<int> lstYesNumberPerCty;
 
 		//
 		protected uint count = 0;
@@ -40,7 +40,7 @@ namespace GDPR_analyze
 
 			lstNrQPerCty = new List<int>();
 			lstUniqueCategories = new List<string>();
-			lstYesNumber = new List<int>();
+			lstYesNumberPerCty = new List<int>();
 			lstAnswer = new List<bool>();
 
 			lstDetails = new List<string>();
@@ -57,6 +57,7 @@ namespace GDPR_analyze
 
 			ReadCsv(lstQuestions, lstDetails, lstRecommendNo, lstRecommendPartial, lstYes, lstCategories);
 
+			//iau categoriile si nr de intrebari pe categorie
 			var q = from x in lstCategories
 					group x by x into g
 					let count = g.Count()
