@@ -40,12 +40,12 @@
 			this.panel10 = new System.Windows.Forms.Panel();
 			this.panel9 = new System.Windows.Forms.Panel();
 			this.panel3 = new System.Windows.Forms.Panel();
-			this.textBox2 = new System.Windows.Forms.TextBox();
+			this.txtCategoryQ = new System.Windows.Forms.TextBox();
 			this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
 			this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
 			this.btnGenerateReport = new Bunifu.Framework.UI.BunifuFlatButton();
 			this.panel2 = new System.Windows.Forms.Panel();
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.txtDetailsAudit = new System.Windows.Forms.TextBox();
 			this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
 			this.panel4 = new System.Windows.Forms.Panel();
 			this.panel8 = new System.Windows.Forms.Panel();
@@ -75,7 +75,7 @@
 			this.txtQAudit.Multiline = true;
 			this.txtQAudit.Name = "txtQAudit";
 			this.txtQAudit.ReadOnly = true;
-			this.txtQAudit.Size = new System.Drawing.Size(1213, 189);
+			this.txtQAudit.Size = new System.Drawing.Size(1213, 211);
 			this.txtQAudit.TabIndex = 203;
 			// 
 			// chkNoImplement
@@ -83,7 +83,7 @@
 			this.chkNoImplement.AutoSize = true;
 			this.chkNoImplement.BackColor = System.Drawing.Color.DarkOrange;
 			this.chkNoImplement.Depth = 0;
-			this.chkNoImplement.Font = new System.Drawing.Font("Roboto", 10F);
+			this.chkNoImplement.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.chkNoImplement.ForeColor = System.Drawing.Color.DarkOrange;
 			this.chkNoImplement.Location = new System.Drawing.Point(11, 25);
 			this.chkNoImplement.Margin = new System.Windows.Forms.Padding(0);
@@ -101,7 +101,7 @@
 			// 
 			this.chkNo.BackColor = System.Drawing.Color.DarkOrange;
 			this.chkNo.Depth = 0;
-			this.chkNo.Font = new System.Drawing.Font("Roboto", 10F);
+			this.chkNo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.chkNo.ForeColor = System.Drawing.Color.DarkOrange;
 			this.chkNo.Location = new System.Drawing.Point(183, 25);
 			this.chkNo.Margin = new System.Windows.Forms.Padding(0);
@@ -119,7 +119,7 @@
 			// 
 			this.chkYes.BackColor = System.Drawing.Color.DarkOrange;
 			this.chkYes.Depth = 0;
-			this.chkYes.Font = new System.Drawing.Font("Roboto", 10F);
+			this.chkYes.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.chkYes.ForeColor = System.Drawing.Color.DarkOrange;
 			this.chkYes.Location = new System.Drawing.Point(183, 83);
 			this.chkYes.Margin = new System.Windows.Forms.Padding(0);
@@ -138,7 +138,7 @@
 			this.chkPartial.AutoSize = true;
 			this.chkPartial.BackColor = System.Drawing.Color.DarkOrange;
 			this.chkPartial.Depth = 0;
-			this.chkPartial.Font = new System.Drawing.Font("Roboto", 10F);
+			this.chkPartial.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.chkPartial.ForeColor = System.Drawing.Color.DarkOrange;
 			this.chkPartial.Location = new System.Drawing.Point(11, 83);
 			this.chkPartial.Margin = new System.Windows.Forms.Padding(0);
@@ -169,7 +169,7 @@
 			this.panel6.Controls.Add(this.panel10);
 			this.panel6.Controls.Add(this.panel9);
 			this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panel6.Location = new System.Drawing.Point(0, 234);
+			this.panel6.Location = new System.Drawing.Point(0, 256);
 			this.panel6.Name = "panel6";
 			this.panel6.Size = new System.Drawing.Size(1213, 147);
 			this.panel6.TabIndex = 232;
@@ -196,27 +196,26 @@
 			// 
 			// panel3
 			// 
-			this.panel3.Controls.Add(this.textBox2);
+			this.panel3.Controls.Add(this.txtCategoryQ);
 			this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
 			this.panel3.Location = new System.Drawing.Point(0, 0);
 			this.panel3.Name = "panel3";
 			this.panel3.Size = new System.Drawing.Size(1213, 45);
 			this.panel3.TabIndex = 231;
 			// 
-			// textBox2
+			// txtCategoryQ
 			// 
-			this.textBox2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-			this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.textBox2.Cursor = System.Windows.Forms.Cursors.Default;
-			this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox2.Location = new System.Drawing.Point(0, 0);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(1213, 37);
-			this.textBox2.TabIndex = 226;
-			this.textBox2.Text = "LEGALITATE, ECHITATE SI TRANSPARENTA";
-			this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+			this.txtCategoryQ.BackColor = System.Drawing.SystemColors.ActiveBorder;
+			this.txtCategoryQ.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.txtCategoryQ.Cursor = System.Windows.Forms.Cursors.Default;
+			this.txtCategoryQ.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.txtCategoryQ.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtCategoryQ.Location = new System.Drawing.Point(0, 0);
+			this.txtCategoryQ.Name = "txtCategoryQ";
+			this.txtCategoryQ.Size = new System.Drawing.Size(1213, 37);
+			this.txtCategoryQ.TabIndex = 226;
+			this.txtCategoryQ.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.txtCategoryQ.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
 			// 
 			// bunifuFlatButton3
 			// 
@@ -228,6 +227,7 @@
 			this.bunifuFlatButton3.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.bunifuFlatButton3.DisabledColor = System.Drawing.Color.Gray;
 			this.bunifuFlatButton3.Dock = System.Windows.Forms.DockStyle.Top;
+			this.bunifuFlatButton3.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.bunifuFlatButton3.Iconcolor = System.Drawing.Color.Transparent;
 			this.bunifuFlatButton3.Iconimage = null;
 			this.bunifuFlatButton3.Iconimage_right = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton3.Iconimage_right")));
@@ -265,6 +265,7 @@
 			this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.bunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray;
 			this.bunifuFlatButton2.Dock = System.Windows.Forms.DockStyle.Top;
+			this.bunifuFlatButton2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.bunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent;
 			this.bunifuFlatButton2.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton2.Iconimage")));
 			this.bunifuFlatButton2.Iconimage_right = null;
@@ -302,6 +303,7 @@
 			this.btnGenerateReport.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnGenerateReport.DisabledColor = System.Drawing.Color.Gray;
 			this.btnGenerateReport.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.btnGenerateReport.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnGenerateReport.Iconcolor = System.Drawing.Color.Transparent;
 			this.btnGenerateReport.Iconimage = null;
 			this.btnGenerateReport.Iconimage_right = null;
@@ -331,25 +333,25 @@
 			// 
 			// panel2
 			// 
-			this.panel2.Controls.Add(this.textBox1);
+			this.panel2.Controls.Add(this.txtDetailsAudit);
 			this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
 			this.panel2.Location = new System.Drawing.Point(0, 619);
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(1213, 210);
 			this.panel2.TabIndex = 230;
 			// 
-			// textBox1
+			// txtDetailsAudit
 			// 
-			this.textBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-			this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.textBox1.Cursor = System.Windows.Forms.Cursors.Default;
-			this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox1.Location = new System.Drawing.Point(0, 0);
-			this.textBox1.Multiline = true;
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(1213, 210);
-			this.textBox1.TabIndex = 0;
+			this.txtDetailsAudit.BackColor = System.Drawing.SystemColors.ActiveBorder;
+			this.txtDetailsAudit.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.txtDetailsAudit.Cursor = System.Windows.Forms.Cursors.Default;
+			this.txtDetailsAudit.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.txtDetailsAudit.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtDetailsAudit.Location = new System.Drawing.Point(0, 0);
+			this.txtDetailsAudit.Multiline = true;
+			this.txtDetailsAudit.Name = "txtDetailsAudit";
+			this.txtDetailsAudit.Size = new System.Drawing.Size(1213, 210);
+			this.txtDetailsAudit.TabIndex = 0;
 			// 
 			// contextMenuStrip1
 			// 
@@ -440,7 +442,7 @@
 		private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
 		private Bunifu.Framework.UI.BunifuFlatButton btnGenerateReport;
 		private System.Windows.Forms.Panel panel2;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox txtDetailsAudit;
 		private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
 		private System.Windows.Forms.Panel panel3;
 		private System.Windows.Forms.Panel panel4;
@@ -450,6 +452,6 @@
 		private System.Windows.Forms.Panel panel6;
 		private System.Windows.Forms.Panel panel10;
 		private System.Windows.Forms.Panel panel9;
-		private System.Windows.Forms.TextBox textBox2;
+		private System.Windows.Forms.TextBox txtCategoryQ;
 	}
 }

@@ -14,8 +14,16 @@ using System.Net;
 
 namespace GDPR_analyze
 {
+	
+
 	public partial class AUDIT_SINGLE_PAGE : UserControl
 	{
+		//liste pentru graficele finale
+		public List<int> lstNrQPerCty;
+		public List<string> lstUniqueCategories;
+		public List<int> lstYesNumber;
+
+		//
 		protected uint count = 0;
 		private Boolean[,] answers;
 		private List<string> lstDetails;
@@ -24,11 +32,16 @@ namespace GDPR_analyze
 		private List<string> lstRecommendPartial;
 		private List<string> lstYes;
 		private List<string> lstCategories;
+		private List<bool> lstAnswer;
 
 		public AUDIT_SINGLE_PAGE()
 		{
 			InitializeComponent();
 
+			lstNrQPerCty = new List<int>();
+			lstUniqueCategories = new List<string>();
+			lstYesNumber = new List<int>();
+			lstAnswer = new List<bool>();
 
 			lstDetails = new List<string>();
 			lstQuestions = new List<string>();
@@ -44,20 +57,25 @@ namespace GDPR_analyze
 
 			ReadCsv(lstQuestions, lstDetails, lstRecommendNo, lstRecommendPartial, lstYes, lstCategories);
 
+			var q = from x in lstCategories
+					group x by x into g
+					let count = g.Count()
+					//orderby count descending
+					select new { Value = g.Key, Count = count };
+			foreach (var x in q)
+			{
+				lstUniqueCategories.Add(x.Value);
+				lstNrQPerCty.Add(x.Count);
+			}
+
+
+
 			answers = new Boolean[lstQuestions.Count, 4];
 			Array.Clear(answers, 0, answers.Length);
-			/*
-			lstDetails.Add(text1);
-			lstDetails.Add("Dupa finalizarea auditului informatiilor, ar trebui sa documentati constatarile intr-un registru de informatii. Acest lucru va va ajuta, de asemenea, sa va conformati principiului responsabilitatii din GDPR, care impune companiei dvs. sa demonstreze modul in care respecta principiile GDPR." + Environment.NewLine + "Daca aveti mai putin de 250 de angajati, trebuie sa tineti evidenta activitatilor de prelucrare care: nu sunt ocazionale; ar putea duce la un risc pentru drepturile si libertatile persoanelor; sau implica prelucrarea unor categorii speciale de date sau date privind condamnari penala si infracțiuni." + Environment.NewLine + "Daca aveti peste 250 de angajati, trebuie să înregistrați informațiile de mai sus și unele suplimentare, așa cum se prevede în GDPR.");
-			lstDetails.Add("sdfghjkl");
-
-			lstQuestions.Add("1) Ati efectuat un audit de informare pentru a intocmi fluxurile de date?");
-			lstQuestions.Add("2) Ati documentat ce date personale detineti, de unde provin, cu cine le impartiti si ce faceti cu ele?");
-			lstQuestions.Add("3) Aveti o evidenta scrisa a tuturor categoriilor de date cu caracter personal pe care compania dvs. le proceseaza? " + Environment.NewLine + "Categoriile de date cu caracter personal includ detalii de contact(nume, adresa, e - mail etc.), detalii pentru angajare(functia, gradul, locatia, evaluarile performantei etc.), detalii financiare(salariul și beneficiile, detalii despre contul bancar), precum si date cu caracter sensibil referitoare la sanatatea fizica si psihica sau condamnarile penale ?");
-			*/
+			
 			txtQAudit.Text = lstQuestions[0];
-			textBox1.Text = lstDetails[0];
-			textBox2.Text = lstCategories[0];
+			txtDetailsAudit.Text = lstDetails[0];
+			txtCategoryQ.Text = lstCategories[0];
 		}
 
 		private string FormatareParagraf(string paragraf)
@@ -87,7 +105,34 @@ namespace GDPR_analyze
 
 		private void btnGenerateReport_Click(object sender, EventArgs e)
 		{
-			GeneratePDF("testPDFblablabla");	
+			GeneratePDF("testPDFblablabla");
+			
+			UserControl graphicReport = new GraphicReportUC();
+			graphicReport.Anchor = ((AnchorStyles)((((AnchorStyles.Top | AnchorStyles.Bottom) | AnchorStyles.Left) | AnchorStyles.Right)));
+			graphicReport.Dock = DockStyle.Fill;
+
+			//Form main_menu = new NewMainForm();
+			//Panel main_pnl = new Panel();
+
+			Panel main_pnl = this.Parent as Panel;
+			//((NewMainForm)this.Parent).
+			main_pnl.Controls.Clear();
+			main_pnl.Controls.Add(graphicReport);
+
+			//cautare Da in raspunsuri /categorie
+			//?????? nu sunt sigur inca
+			for (int i = 0; i < lstNrQPerCty.Count; i++)
+			{
+				var q = from x in lstAnswer
+						//where x.count < lstNrQPerCty[i]
+						group x by x into g
+						let count = lstNrQPerCty[i]
+						select new { Count = count };
+				foreach (var x in q)
+				{
+
+				}
+			}
 		}
 		private string selectAnswer(int id_question)
 		{
@@ -224,8 +269,8 @@ namespace GDPR_analyze
 				if (count < lstQuestions.Count - 1)
 				{
 					txtQAudit.Text = lstQuestions[(int)count + 1];
-					textBox1.Text = lstDetails[(int)count + 1];
-					textBox2.Text = lstCategories[(int)count + 1];
+					txtDetailsAudit.Text = lstDetails[(int)count + 1];
+					txtCategoryQ.Text = lstCategories[(int)count + 1];
 
 					//pun informatia in butoane de la intrebarea la care trec
 
@@ -250,8 +295,8 @@ namespace GDPR_analyze
 					btnGenerateReport.Visible = true;
 
 					txtQAudit.Text = "Felicitari, ati rezolvat auditul. Scorul dvs este X";
-					textBox1.Text = " ";
-					textBox2.Text = " ";
+					txtDetailsAudit.Text = " ";
+					txtCategoryQ.Text = " ";
 				}
 
 					count++;
@@ -311,8 +356,8 @@ namespace GDPR_analyze
 			if (count < lstQuestions.Count)
 			{
 				txtQAudit.Text = lstQuestions[(int)count-1];
-				textBox1.Text = lstDetails[(int)count-1];
-				textBox2.Text = lstCategories[(int)count - 1];
+				txtDetailsAudit.Text = lstDetails[(int)count-1];
+				txtCategoryQ.Text = lstCategories[(int)count - 1];
 			}
 
 
