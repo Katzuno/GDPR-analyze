@@ -35,9 +35,13 @@ namespace GDPR_analyze
 			main_pnl.Width = main_pnl.Width + meniuPanel;
 
 			text = textBox1.Text;
-            //Hidden = false;
+			//Hidden = false;
 
-            
+			//buton home page
+			UserControl home = new Home_UC();
+			home.Anchor = ((AnchorStyles)((((AnchorStyles.Top | AnchorStyles.Bottom) | AnchorStyles.Left) | AnchorStyles.Right)));
+			home.Dock = DockStyle.Fill;
+			main_pnl.Controls.Add(home);
 		}
 
 
@@ -99,6 +103,7 @@ namespace GDPR_analyze
 			
 		}
 
+		//menu button
 		private void button1_Click(object sender, EventArgs e)
 		{
 			//timer1.Start();
@@ -142,8 +147,16 @@ namespace GDPR_analyze
 				main_pnl.Width = main_pnl.Width + meniuPanel;
 			}
 
+			//buton home page
+			UserControl home = new Home_UC();
+			home.Anchor = ((AnchorStyles)((((AnchorStyles.Top | AnchorStyles.Bottom) | AnchorStyles.Left) | AnchorStyles.Right)));
+			home.Dock = DockStyle.Fill;
+			main_pnl.Controls.Clear();
+			main_pnl.Controls.Add(home);
+
 		}
 
+		//Audit button
 		private void button3_Click(object sender, EventArgs e)
 		{
 			foreach (Control ctrl in main_pnl.Controls)
@@ -157,10 +170,12 @@ namespace GDPR_analyze
 			UserControl audit = new AUDIT_SINGLE_PAGE();
 			audit.Anchor = ((AnchorStyles)((((AnchorStyles.Top | AnchorStyles.Bottom) | AnchorStyles.Left) | AnchorStyles.Right)));
 			audit.Dock = DockStyle.Fill;
+			main_pnl.Controls.Clear();
 			main_pnl.Controls.Add(audit);
 			
 		}
 
+		//formulare button
         private void button4_Click(object sender, EventArgs e)
         {
             foreach (Control ctrl in main_pnl.Controls)
@@ -172,6 +187,7 @@ namespace GDPR_analyze
             main_pnl.Controls.Add(formulare);
         }
 
+		//solicita acces button
         private void button8_Click(object sender, EventArgs e)
         {
             foreach (Control ctrl in main_pnl.Controls)
