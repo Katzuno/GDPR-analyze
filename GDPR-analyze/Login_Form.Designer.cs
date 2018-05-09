@@ -106,6 +106,7 @@
 			this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
 			this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
 			// 
 			// bunifuMaterialTextbox2
 			// 
@@ -239,7 +240,7 @@
 			this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.DarkOrange;
 			this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.White;
 			this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.White;
-			this.bunifuThinButton21.Location = new System.Drawing.Point(68, 370);
+			this.bunifuThinButton21.Location = new System.Drawing.Point(68, 374);
 			this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
 			this.bunifuThinButton21.Name = "bunifuThinButton21";
 			this.bunifuThinButton21.Size = new System.Drawing.Size(255, 58);

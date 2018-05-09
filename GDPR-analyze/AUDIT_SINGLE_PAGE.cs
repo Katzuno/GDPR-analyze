@@ -14,7 +14,6 @@ using System.Net;
 
 namespace GDPR_analyze
 {
-	
 
 	public partial class AUDIT_SINGLE_PAGE : UserControl
 	{
@@ -134,6 +133,7 @@ namespace GDPR_analyze
                     {
                         i++;
                         nrCurrentCty = nrCurrentCty + lstNrQPerCty[i];
+						lstYesNumberPerCty.Add(0);
                         //nrCurrentCty = nrCurrentCty + nrCurrentQuestion;
                         
                     }

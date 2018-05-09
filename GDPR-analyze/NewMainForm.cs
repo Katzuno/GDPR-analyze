@@ -13,8 +13,8 @@ namespace GDPR_analyze
 	
 	public partial class NewMainForm : Form
 	{
-		int panelWidth;
-		int panelHeigth;
+		public static int panelWidth;
+		public static int panelHeigth;
 		int meniuPanel;
 		string text = "";
 
@@ -72,6 +72,7 @@ namespace GDPR_analyze
 		private void button5_Click(object sender, EventArgs e)
 		{
 			this.Close();
+
 		}
 
 		private void button6_Click(object sender, EventArgs e)

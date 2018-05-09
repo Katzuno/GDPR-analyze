@@ -21,7 +21,7 @@ namespace GDPR_analyze
             bunifuCustomLabel1.Visible = true;
             bunifuCustomLabel3.Visible = true;
             string connetionString = null;
-            
+            /*
             connetionString = "Data Source=ServerName;Initial Catalog=DatabaseName;User ID=UserName;Password=Password";
             dbConnection = new SqlConnection(connetionString);
             try
@@ -33,7 +33,7 @@ namespace GDPR_analyze
             catch (Exception ex)
             {
                 MessageBox.Show("Conexiune esuata!\n" + ex);
-            }
+            }*/
 
         }
 
@@ -78,9 +78,12 @@ namespace GDPR_analyze
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-
-        }
-
+			NewMainForm main_menu = new NewMainForm();
+			this.Hide();
+			main_menu.ShowDialog();
+			this.Close();
+		}
+		/*
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
             if (dbConnection.State == ConnectionState.Open)
@@ -108,5 +111,13 @@ namespace GDPR_analyze
                 bunifuCustomLabel6.Text = "Nu s-a putut efectua conexiunea la baza de date";
             }
         }
-    }
+		*/
+		private void bunifuFlatButton1_Click(object sender, EventArgs e)
+		{
+			NewMainForm main_menu = new NewMainForm();
+			this.Hide();
+			main_menu.ShowDialog();
+			this.Close();
+		}
+	}
 }
