@@ -124,6 +124,12 @@
     <Compile Include="Formulare.Designer.cs">
       <DependentUpon>Formulare.cs</DependentUpon>
     </Compile>
+    <Compile Include="GeneralDiagramUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GeneralDiagramUC.Designer.cs">
+      <DependentUpon>GeneralDiagramUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="GraphicReportUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -173,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formulare.resx">
       <DependentUpon>Formulare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralDiagramUC.resx">
+      <DependentUpon>GeneralDiagramUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GraphicReportUC.resx">
       <DependentUpon>GraphicReportUC.cs</DependentUpon>

@@ -26,7 +26,7 @@ namespace GDPR_analyze
 		protected uint count = 0;
 		private Boolean[,] answers;
 		private List<string> lstDetails;
-		private List<string> lstQuestions;
+		public static List<string> lstQuestions;
 		private List<string> lstRecommendNo;
 		private List<string> lstRecommendPartial;
 		private List<string> lstYes;
@@ -140,12 +140,13 @@ namespace GDPR_analyze
                 }
                 nrCurrentQuestion++;
             }
+
             Panel main_pnl = this.Parent as Panel;
-            UserControl graphicReport = new GraphicReportUC();
-            graphicReport.Anchor = ((AnchorStyles)((((AnchorStyles.Top | AnchorStyles.Bottom) | AnchorStyles.Left) | AnchorStyles.Right)));
-            graphicReport.Dock = DockStyle.Fill;
+            UserControl generalDiagram = new GeneralDiagramUC();
+			generalDiagram.Anchor = ((AnchorStyles)((((AnchorStyles.Top | AnchorStyles.Bottom) | AnchorStyles.Left) | AnchorStyles.Right)));
+			generalDiagram.Dock = DockStyle.Fill;
             main_pnl.Controls.Clear();
-            main_pnl.Controls.Add(graphicReport);
+            main_pnl.Controls.Add(generalDiagram);
         }
 		private string selectAnswer(int id_question)
 		{

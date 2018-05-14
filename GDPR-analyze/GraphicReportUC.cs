@@ -57,5 +57,20 @@ namespace GDPR_analyze
 			panel7.Width = panel8.Width = panel9.Width = panelW / 3;
 			//}
 		}
+
+		private void panel1_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
+
+		private void bunifuFlatButton1_Click(object sender, EventArgs e)
+		{
+			Panel main_pnl = this.Parent as Panel;
+			UserControl generalDiagram = new GeneralDiagramUC();
+			generalDiagram.Anchor = ((AnchorStyles)((((AnchorStyles.Top | AnchorStyles.Bottom) | AnchorStyles.Left) | AnchorStyles.Right)));
+			generalDiagram.Dock = DockStyle.Fill;
+			main_pnl.Controls.Clear();
+			main_pnl.Controls.Add(generalDiagram);
+		}
 	}
 }
