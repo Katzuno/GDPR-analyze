@@ -114,18 +114,19 @@ namespace GDPR_analyze
             //lstNrQperCty = nr de intrebari pe categorie ; lstUniqueCateg = categorii unice
             int i = 0;
             int nrCurrentQuestion = 0, nrCurrentCty = lstNrQPerCty[i];
+            lstYesNumberPerCty.Add(0);
             while (nrCurrentQuestion < nrCurrentCty)
             {
                 if (answers[nrCurrentQuestion, 1] == true)
                 {
-                    if (i < lstYesNumberPerCty.Count)
-                    {
+                   // if (i < lstYesNumberPerCty.Count)
+                   // {
                         lstYesNumberPerCty[i]++;
-                    }
-                    else
+                   // }
+                    /*else
                     {
                         lstYesNumberPerCty.Add(1);
-                    }
+                    }*/
                 }
                 if (nrCurrentQuestion == nrCurrentCty - 1)
                 {
@@ -135,7 +136,6 @@ namespace GDPR_analyze
                         nrCurrentCty = nrCurrentCty + lstNrQPerCty[i];
 						lstYesNumberPerCty.Add(0);
                         //nrCurrentCty = nrCurrentCty + nrCurrentQuestion;
-                        
                     }
                 }
                 nrCurrentQuestion++;
