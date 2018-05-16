@@ -29,6 +29,7 @@ namespace GDPR_analyze
             percentage = value * 100 / total;
             return percentage;
         }
+
         private void legalGrf_Load(object sender, EventArgs e)
         {
 

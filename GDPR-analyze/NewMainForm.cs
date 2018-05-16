@@ -72,8 +72,8 @@ namespace GDPR_analyze
 		private void button5_Click(object sender, EventArgs e)
 		{
 			this.Close();
-
-		}
+            Environment.Exit(1);
+        }
 
 		private void button6_Click(object sender, EventArgs e)
 		{
