@@ -212,7 +212,7 @@
 			// 
 			// button11
 			// 
-			this.button11.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.button11.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.button11.Dock = System.Windows.Forms.DockStyle.Right;
 			this.button11.FlatAppearance.BorderSize = 0;
 			this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -225,10 +225,10 @@
 			// 
 			// textBox1
 			// 
-			this.textBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.textBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.textBox1.ForeColor = System.Drawing.Color.Black;
 			this.textBox1.Location = new System.Drawing.Point(16, 15);
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(229, 29);
@@ -281,7 +281,7 @@
 			// 
 			// panel2
 			// 
-			this.panel2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.panel2.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.panel2.Controls.Add(this.btn_minimize);
 			this.panel2.Controls.Add(this.btn_maximize);
 			this.panel2.Controls.Add(this.btn_exit);
@@ -294,7 +294,7 @@
 			// 
 			// main_pnl
 			// 
-			this.main_pnl.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.main_pnl.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.main_pnl.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.main_pnl.Location = new System.Drawing.Point(76, 65);
 			this.main_pnl.Name = "main_pnl";

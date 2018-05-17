@@ -71,14 +71,25 @@ namespace GDPR_analyze
 
 			answers = new Boolean[lstQuestions.Count, 4];
 			Array.Clear(answers, 0, answers.Length);
-			
+
 			txtQAudit.Text = lstQuestions[0];
 			txtDetailsAudit.Text = lstDetails[0];
 			txtCategoryQ.Text = lstCategories[0];
+
+			if (lstRecommendPartial[0].Equals(null) || lstRecommendPartial[0].Equals(" ") || lstRecommendPartial[0].Equals(""))
+			{
+				chkNoImplement.Visible = false;
+				chkPartial.Visible = false;
+			}
+			else
+			{
+				chkNoImplement.Visible = true;
+				chkPartial.Visible = true;
+			}
 		}
 
 		private string FormatareParagraf(string paragraf)
-		{			
+		{
 			paragraf = paragraf.Replace("@", "\r\n");
 			return paragraf;
 		}
@@ -110,44 +121,44 @@ namespace GDPR_analyze
 			//((NewMainForm)this.Parent).
 
 
-            //cautare Da in raspunsuri /categorie
-            //lstNrQperCty = nr de intrebari pe categorie ; lstUniqueCateg = categorii unice
-            int i = 0;
-            int nrCurrentQuestion = 0, nrCurrentCty = lstNrQPerCty[i];
-            lstYesNumberPerCty.Add(0);
-            while (nrCurrentQuestion < nrCurrentCty)
-            {
-                if (answers[nrCurrentQuestion, 1] == true)
-                {
-                   // if (i < lstYesNumberPerCty.Count)
-                   // {
-                        lstYesNumberPerCty[i]++;
-                   // }
-                    /*else
+			//cautare Da in raspunsuri /categorie
+			//lstNrQperCty = nr de intrebari pe categorie ; lstUniqueCateg = categorii unice
+			int i = 0;
+			int nrCurrentQuestion = 0, nrCurrentCty = lstNrQPerCty[i];
+			lstYesNumberPerCty.Add(0);
+			while (nrCurrentQuestion < nrCurrentCty)
+			{
+				if (answers[nrCurrentQuestion, 1] == true)
+				{
+					// if (i < lstYesNumberPerCty.Count)
+					// {
+					lstYesNumberPerCty[i]++;
+					// }
+					/*else
                     {
                         lstYesNumberPerCty.Add(1);
                     }*/
-                }
-                if (nrCurrentQuestion == nrCurrentCty - 1)
-                {
-                    if (i + 1 < lstNrQPerCty.Count)
-                    {
-                        i++;
-                        nrCurrentCty = nrCurrentCty + lstNrQPerCty[i];
+				}
+				if (nrCurrentQuestion == nrCurrentCty - 1)
+				{
+					if (i + 1 < lstNrQPerCty.Count)
+					{
+						i++;
+						nrCurrentCty = nrCurrentCty + lstNrQPerCty[i];
 						lstYesNumberPerCty.Add(0);
-                        //nrCurrentCty = nrCurrentCty + nrCurrentQuestion;
-                    }
-                }
-                nrCurrentQuestion++;
-            }
+						//nrCurrentCty = nrCurrentCty + nrCurrentQuestion;
+					}
+				}
+				nrCurrentQuestion++;
+			}
 
-            Panel main_pnl = this.Parent as Panel;
-            UserControl generalDiagram = new GeneralDiagramUC();
+			Panel main_pnl = this.Parent as Panel;
+			UserControl generalDiagram = new GeneralDiagramUC();
 			generalDiagram.Anchor = ((AnchorStyles)((((AnchorStyles.Top | AnchorStyles.Bottom) | AnchorStyles.Left) | AnchorStyles.Right)));
 			generalDiagram.Dock = DockStyle.Fill;
-            main_pnl.Controls.Clear();
-            main_pnl.Controls.Add(generalDiagram);
-        }
+			main_pnl.Controls.Clear();
+			main_pnl.Controls.Add(generalDiagram);
+		}
 		private string selectAnswer(int id_question)
 		{
 			int j;
@@ -187,8 +198,8 @@ namespace GDPR_analyze
 		private void GeneratePDF(string nume_fisier)
 		{
 			int i;
-			string data_text = "_"+ DateTime.Now.Day.ToString() + "_" + DateTime.Now.Month.ToString() + "_" + DateTime.Now.Year.ToString() + "_" + DateTime.Now.Minute.ToString();
-			string Path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\" + nume_fisier + data_text+ ".pdf";
+			string data_text = "_" + DateTime.Now.Day.ToString() + "_" + DateTime.Now.Month.ToString() + "_" + DateTime.Now.Year.ToString() + "_" + DateTime.Now.Minute.ToString();
+			string Path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\TesteGDPR\\" + nume_fisier + data_text + ".pdf";
 
 			Document pdfDoc = new Document();
 			// set the page size, set the orientation
@@ -207,7 +218,7 @@ namespace GDPR_analyze
 			title.Alignment = Element.ALIGN_CENTER;
 			//title.Font = titleFont;
 
-			
+
 
 			pdfDoc.Open();
 			pdfDoc.Add(title);
@@ -219,11 +230,11 @@ namespace GDPR_analyze
 				textQ.Font = FontFactory.GetFont(FontFactory.COURIER_BOLD, 15, BaseColor.RED);
 				pdfDoc.Add(textQ);
 				pdfDoc.Add(new Paragraph(selectAnswer(i) + "\r\n", answerFont));
-				pdfDoc.Add(new Paragraph("Recomandarea noastra este: \r\n", recommendFont) );
+				pdfDoc.Add(new Paragraph("Recomandarea noastra este: \r\n", recommendFont));
 				pdfDoc.Add(new Paragraph(ourRecommendation(i) + "\r\n", recommendFont));
 				pdfDoc.Add(new Paragraph("\r\n"));
 			}
-			
+
 			pdfDoc.Close();
 
 			System.Diagnostics.Process.Start(Path);
@@ -231,7 +242,22 @@ namespace GDPR_analyze
 
 		private void bunifuFlatButton3_Click(object sender, EventArgs e)
 		{
+			if (count < lstQuestions.Count - 1)
+			{
+				if (lstRecommendPartial[(int)count + 1].Equals(null) || lstRecommendPartial[(int)count + 1].Equals(" ") || lstRecommendPartial[(int)count + 1].Equals(""))
+				{
+					chkNoImplement.Visible = false;
+					chkPartial.Visible = false;
+				}
+				else
+				{
+					chkNoImplement.Visible = true;
+					chkPartial.Visible = true;
+				}
+			}
+
 			//verific daca a bifat	
+
 			if (chkNo.Checked == false && chkNoImplement.Checked == false && chkPartial.Checked == false && chkYes.Checked == false)
 			{
 				MessageBox.Show("Trebuie sa alegeti unul din raspunsurile afisate", "ATENTIE!",
@@ -247,6 +273,7 @@ namespace GDPR_analyze
 				{
 					bunifuFlatButton2.Visible = false;
 				}
+
 				//colectez informatia de la intrebarea precedenta (mai ales daca a fost schimbata)
 				// 0 = NU ; 1 = DA ; 2 = NU inca ; 3 = Partial
 				if (chkNo.Checked)
@@ -274,7 +301,7 @@ namespace GDPR_analyze
 				{
 					answers[count, 0] = false;
 					answers[count, 1] = false;
-					answers[count, 2] = true;
+					answers[count, 2] = false;
 					answers[count, 3] = true;
 				}
 
@@ -292,6 +319,8 @@ namespace GDPR_analyze
 					chkYes.Checked = answers[count + 1, 1];
 					chkNoImplement.Checked = answers[count + 1, 2];
 					chkPartial.Checked = answers[count + 1, 3];
+
+
 				}
 				else
 				{
@@ -313,19 +342,32 @@ namespace GDPR_analyze
 					txtCategoryQ.Text = " ";
 				}
 
-					count++;
-				
+				count++;
+
 			}
 		}
 
 		private void bunifuFlatButton2_Click(object sender, EventArgs e)
 		{
+			if (count >= 0)
+			{
+				if (lstRecommendPartial[(int)count - 1].Equals(null) || lstRecommendPartial[(int)count - 1].Equals(" ") || lstRecommendPartial[(int)count - 1].Equals(""))
+				{
+					chkNoImplement.Visible = false;
+					chkPartial.Visible = false;
+				}
+				else
+				{
+					chkNoImplement.Visible = true;
+					chkPartial.Visible = true;
+				}
+			}
 
 			if (count == 1)
 			{
 				bunifuFlatButton2.Visible = false;
 			}
-			
+
 
 			//colectez informatia de la intrebarea precedenta (mai ales daca a fost schimbata)
 			// 0 = NU ; 1 = DA ; 2 = NU inca ; 3 = Partial
@@ -359,18 +401,18 @@ namespace GDPR_analyze
 			}
 
 			//repun informatia precedenta
-			chkNo.Checked = answers[count-1, 0];
-			chkYes.Checked = answers[count-1, 1];
-			chkNoImplement.Checked = answers[count-1, 2];
-			chkPartial.Checked = answers[count-1, 3];
+			chkNo.Checked = answers[count - 1, 0];
+			chkYes.Checked = answers[count - 1, 1];
+			chkNoImplement.Checked = answers[count - 1, 2];
+			chkPartial.Checked = answers[count - 1, 3];
 
 
 
 			//Trec la intrebarea urmatoare, schimb intrebare + detalii
 			if (count < lstQuestions.Count)
 			{
-				txtQAudit.Text = lstQuestions[(int)count-1];
-				txtDetailsAudit.Text = lstDetails[(int)count-1];
+				txtQAudit.Text = lstQuestions[(int)count - 1];
+				txtDetailsAudit.Text = lstDetails[(int)count - 1];
 				txtCategoryQ.Text = lstCategories[(int)count - 1];
 			}
 
