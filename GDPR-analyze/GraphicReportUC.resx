@@ -186,7 +186,7 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANDAycl/Ad5Je6x9PC67AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuGauge5.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bunifuGauge6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAS8AAADYCAYAAAC6PmXNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAv7SURBVHhe7d0tlBRJFgbQliORLVsiRyJbtkQikciWLXEt
@@ -243,7 +243,7 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANDAycl/Ad5Je6x9PC67AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuGauge6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bunifuGauge5.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAS8AAADYCAYAAAC6PmXNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAv7SURBVHhe7d0tlBRJFgbQliORLVsiRyJbtkQikciWLXEt
@@ -357,7 +357,7 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANDAycl/Ad5Je6x9PC67AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuGauge2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="legalGrf.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAS8AAADYCAYAAAC6PmXNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAv7SURBVHhe7d0tlBRJFgbQliORLVsiRyJbtkQikciWLXEt
@@ -414,7 +414,7 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANDAycl/Ad5Je6x9PC67AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="legalGrf.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bunifuGauge2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAS8AAADYCAYAAAC6PmXNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAv7SURBVHhe7d0tlBRJFgbQliORLVsiRyJbtkQikciWLXEt

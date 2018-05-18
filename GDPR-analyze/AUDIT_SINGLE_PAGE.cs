@@ -11,6 +11,7 @@ using iTextSharp.text;
 using System.IO;
 using iTextSharp.text.pdf;
 using System.Net;
+using System.Data.SqlClient;
 
 namespace GDPR_analyze
 {
@@ -31,6 +32,7 @@ namespace GDPR_analyze
 		private List<string> lstRecommendPartial;
 		private List<string> lstYes;
 		private List<string> lstCategories;
+        private SqlConnection dbConnection;
 
 		public AUDIT_SINGLE_PAGE()
 		{
@@ -53,7 +55,7 @@ namespace GDPR_analyze
 			//string text1 = "Ar trebui sa efectuati un audit al informatiilor la nivel de companie sau in anumite domenii specifice de activitate. Acest audit ar trebui efectuat de o persoana ce cunoaste bine activitatea si modul de lucru al societatii.  Un audit al informatiilor este o evidenta a fluxurilor de date si a activelor pe care compania le gestioneaza."+ Environment.NewLine+ "Un inventar al datelor este in mod normal organizat in functie de ciclul de viata al datelor colectate, prelucrate, transferate, stocate, protejate si pastrate." + Environment.NewLine + "Un flux de informatii poate include un transfer de informatii dintr-o locatie in alta. De exemplu, informatiile pot ramane in compania dvs., pe cand un transfer are loc deoarece un departament sau alt birou este situat in alta parte (in afara sediului)." + Environment.NewLine+ "Dupa ce ati efectuat auditul informatiilor dvs., ar trebui sa puteti identifica eventualele riscuri.";
 			//textBox1.Text = text1;
 
-			ReadCsv(lstQuestions, lstDetails, lstRecommendNo, lstRecommendPartial, lstYes, lstCategories);
+			ReadSQL(lstQuestions, lstDetails, lstRecommendNo, lstRecommendPartial, lstYes, lstCategories);
 
 			//iau categoriile si nr de intrebari pe categorie
 			var q = from x in lstCategories
@@ -112,8 +114,59 @@ namespace GDPR_analyze
 				}
 			}
 		}
+        private void openDbConnection ()
+        {
+            string connectionString = Login_Form.connectionString;
+            dbConnection = new SqlConnection(connectionString);
+            try
+            {
+                dbConnection.Open();
+                //MessageBox.Show("Conexiune reusita!");
 
-		private void btnGenerateReport_Click(object sender, EventArgs e)
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Conexiune esuata!\n" + ex);
+            }
+        }
+        private void ReadSQL(List<string> Questions, List<string> Details, List<string> RecommendNo, List<string> RecommendPartial, List<string> Yes, List<string> Categories)
+        {
+            openDbConnection();
+            Boolean go = false;
+            if (dbConnection.State == ConnectionState.Open)
+            {
+                string sqlQuery = "SELECT * FROM Audit ORDER BY Id";
+                SqlCommand command = new SqlCommand(sqlQuery, dbConnection);
+                using (SqlDataReader dataReader = command.ExecuteReader())
+                {
+                    while (dataReader.Read())
+                    {
+                        go = true;
+                        string id = dataReader["Id"].ToString() + ". ";
+                        Questions.Add(id + FormatareParagraf(dataReader["question"].ToString()));
+                        Details.Add(FormatareParagraf(dataReader["details"].ToString()));
+                        RecommendNo.Add(FormatareParagraf(dataReader["recommendNo"].ToString()));
+                        RecommendPartial.Add(FormatareParagraf(dataReader["recommendPartial"].ToString()));
+                        Yes.Add(FormatareParagraf(dataReader["recommendYes"].ToString()));
+                        Categories.Add(FormatareParagraf(dataReader["questionCategory"].ToString()));
+                    }
+                    if (go == false)
+                    {
+                        MessageBox.Show("Email sau parola gresita");
+                        //bunifuCustomLabel6.Text = "Email sau parola gresita";
+                    }
+                }
+                //dataReader.Close();
+                command.Dispose();
+                dbConnection.Close();
+            }
+            else
+            {
+                MessageBox.Show("Nu s-a putut efectua conexiunea la baza de date");
+            }
+        }
+
+        private void btnGenerateReport_Click(object sender, EventArgs e)
 		{
 			GeneratePDF("testPDFblablabla");
 			//Form main_menu = new NewMainForm();
@@ -425,5 +478,10 @@ namespace GDPR_analyze
 		{
 
 		}
-	}
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+    }
 }

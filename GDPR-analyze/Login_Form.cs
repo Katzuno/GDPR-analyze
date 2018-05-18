@@ -15,17 +15,17 @@ namespace GDPR_analyze
     {
         private SqlConnection dbConnection;
         public static string logged_in_email;
+        public static string connectionString = null;
         public Login_Form()
         {
             InitializeComponent();
             panel1.Visible = false;
             bunifuCustomLabel1.Visible = true;
             bunifuCustomLabel3.Visible = true;
-            string connetionString = null;
             
-            connetionString =
+            connectionString =
                 "Data Source='carbox.database.windows.net';Initial Catalog='GDPR';User ID='carbox@carbox';Password='GDCBnpsf0517'";
-            dbConnection = new SqlConnection(connetionString);
+            dbConnection = new SqlConnection(connectionString);
             try
             {
                 dbConnection.Open();
@@ -109,7 +109,7 @@ namespace GDPR_analyze
                         main_menu.ShowDialog();
                         this.Close();
                     command.Dispose();
-                    //dbConnection.Close();
+                    dbConnection.Close();
                 }
                 else
                 {
@@ -121,58 +121,31 @@ namespace GDPR_analyze
                 bunifuCustomLabel6.Text = "Nu s-a putut efectua conexiunea la baza de date";
             }
         }
-        /*
-        private void bunifuFlatButton1_Click(object sender, EventArgs e)
-        {
-            if (dbConnection.State == ConnectionState.Open)
-            {
-                string sqlQuery = "SELECT email, password WHERE email = '" + bunifuMaterialTextbox1 + "' AND password = '" + bunifuMaterialTextbox2 + "'";
-                SqlCommand command = new SqlCommand(sqlQuery, dbConnection);
-                SqlDataReader dataReader = command.ExecuteReader();
-                if (dataReader.Read())
-                {
-                    NewMainForm main_menu= new NewMainForm();
-                    this.Hide();
-                    main_menu.ShowDialog();
-                    this.Close();
-                }
-                else
-                {
-                    bunifuCustomLabel6.Text = "Email sau parola gresita";
-                }
-                dataReader.Close();
-                command.Dispose();
-                dbConnection.Close();
-            }
-            else
-            {
-                bunifuCustomLabel6.Text = "Nu s-a putut efectua conexiunea la baza de date";
-            }
-        }
-		*/
-        
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
 		{
             if (dbConnection.State == ConnectionState.Open)
             {
+                bool go_on = false;
                 string sqlQuery = "SELECT email, password FROM Users WHERE email = '" + bunifuMaterialTextbox1.Text + "' AND password = '" + bunifuMaterialTextbox2.Text + "';";
                 SqlCommand command = new SqlCommand(sqlQuery, dbConnection);
                 SqlDataReader dataReader = command.ExecuteReader();
                 if (dataReader.Read())
                 {
+                    go_on = true;
                     NewMainForm main_menu = new NewMainForm();
                     this.Hide();
                     main_menu.ShowDialog();
                     this.Close();
+                    dbConnection.Close();
                 }
-                else
+                else if (go_on == false)
                 {
                     MessageBox.Show("Email sau parola gresita");
                     //bunifuCustomLabel6.Text = "Email sau parola gresita";
                 }
                 dataReader.Close();
                 command.Dispose();
-                //dbConnection.Close();
+
             }
             else
             {

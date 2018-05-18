@@ -125,7 +125,7 @@
             this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
             this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(253, 42);
             this.bunifuMaterialTextbox2.TabIndex = 13;
-            this.bunifuMaterialTextbox2.Text = "Parola";
+            this.bunifuMaterialTextbox2.Text = "test123";
             this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // pictureBox3
@@ -155,7 +155,7 @@
             this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
             this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(253, 42);
             this.bunifuMaterialTextbox1.TabIndex = 11;
-            this.bunifuMaterialTextbox1.Text = "Nume de utilizator";
+            this.bunifuMaterialTextbox1.Text = "test@test.com";
             this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // panel1

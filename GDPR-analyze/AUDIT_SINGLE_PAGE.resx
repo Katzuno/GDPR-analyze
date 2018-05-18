@@ -118,17 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="bunifuFlatButton3.Iconimage_right" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAABGdBTUEAALGPC/xhBQAAAS9JREFUaEPt
-        mEsKwkAQRHMkFUQF8XMmN+YOeo5kcraIRnStNdADMmQk2Wj3UA9qYUhDvahMk4IQQggBzrmyqqqFfLRN
-        XddnCL2QJ6R2ctkmkDiJTMjDrFSPjF0plE7JhNiRaprm2CPQlyv+X3MZ0wuEJijbRuVTsfFNjZXC/VsZ
-        1UuWUvg5TVH2EpVPhVJ/Y6wUspFRvVDKuQ7n1FJG9YKSM5SllIzqhVKZSt3US40UuuPgXcuoPvzTRsku
-        Kp3KxcvLqD7wpFcomY3MFiX9NtBXPg5lfkZWMtjjdig5WMbvfTKqD8poJSsZFNwjQ2VaCzLPj8LfQpmf
-        grNm6Kvgzq8/MqYblD1E5eO0kJnI7TZA6ZSUPZkAysdSdmUCH1L2ZQKQKbFo6n8fQAgh5H8UxRsJhqwo
-        CL2c6gAAAABJRU5ErkJggg==
-</value>
-  </data>
   <data name="bunifuFlatButton2.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAABGdBTUEAALGPC/xhBQAAATBJREFUaEPt
@@ -140,7 +129,21 @@
         Im8QfG8AAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="bunifuFlatButton3.Iconimage_right" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAABGdBTUEAALGPC/xhBQAAAS9JREFUaEPt
+        mEsKwkAQRHMkFUQF8XMmN+YOeo5kcraIRnStNdADMmQk2Wj3UA9qYUhDvahMk4IQQggBzrmyqqqFfLRN
+        XddnCL2QJ6R2ctkmkDiJTMjDrFSPjF0plE7JhNiRaprm2CPQlyv+X3MZ0wuEJijbRuVTsfFNjZXC/VsZ
+        1UuWUvg5TVH2EpVPhVJ/Y6wUspFRvVDKuQ7n1FJG9YKSM5SllIzqhVKZSt3US40UuuPgXcuoPvzTRsku
+        Kp3KxcvLqD7wpFcomY3MFiX9NtBXPg5lfkZWMtjjdig5WMbvfTKqD8poJSsZFNwjQ2VaCzLPj8LfQpmf
+        grNm6Kvgzq8/MqYblD1E5eO0kJnI7TZA6ZSUPZkAysdSdmUCH1L2ZQKQKbFo6n8fQAgh5H8UxRsJhqwo
+        CL2c6gAAAABJRU5ErkJggg==
+</value>
+  </data>
   <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
   </metadata>
 </root>
