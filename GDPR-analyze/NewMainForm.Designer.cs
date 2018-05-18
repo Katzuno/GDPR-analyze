@@ -160,6 +160,7 @@
 			this.btn_reqacc.Text = "SOLICITA ACCES";
 			this.btn_reqacc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.btn_reqacc.UseVisualStyleBackColor = false;
+			this.btn_reqacc.Visible = false;
 			this.btn_reqacc.Click += new System.EventHandler(this.button8_Click);
 			// 
 			// btn_form
@@ -178,6 +179,7 @@
 			this.btn_form.Text = "FORMULARE";
 			this.btn_form.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.btn_form.UseVisualStyleBackColor = false;
+			this.btn_form.Visible = false;
 			this.btn_form.Click += new System.EventHandler(this.button4_Click);
 			this.btn_form.MouseEnter += new System.EventHandler(this.button4_MouseEnter);
 			this.btn_form.MouseLeave += new System.EventHandler(this.button4_MouseLeave);
