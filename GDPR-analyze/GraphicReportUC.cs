@@ -18,9 +18,23 @@ namespace GDPR_analyze
 		{
 			InitializeComponent();
 
-			legalGrf.Value = displayAsPercentage(AUDIT_SINGLE_PAGE.lstNrQPerCty[0], AUDIT_SINGLE_PAGE.lstYesNumberPerCty[0]);
-			bunifuGauge2.Value = displayAsPercentage(AUDIT_SINGLE_PAGE.lstNrQPerCty[1], AUDIT_SINGLE_PAGE.lstYesNumberPerCty[1]);
-			bunifuGauge3.Value = displayAsPercentage(AUDIT_SINGLE_PAGE.lstNrQPerCty[2], AUDIT_SINGLE_PAGE.lstYesNumberPerCty[2]);
+
+			//rand 1
+			grfBazaLegala.Value = displayAsPercentage(AUDIT_SINGLE_PAGE.lstNrQPerCty[0], AUDIT_SINGLE_PAGE.lstYesNumberPerCty[0]);
+			grfLegalitate.Value = displayAsPercentage(AUDIT_SINGLE_PAGE.lstNrQPerCty[1], AUDIT_SINGLE_PAGE.lstYesNumberPerCty[1]);
+			grfConsimtamant.Value = displayAsPercentage(AUDIT_SINGLE_PAGE.lstNrQPerCty[2], AUDIT_SINGLE_PAGE.lstYesNumberPerCty[2]);
+
+			//rand 2
+			grfDrepturiPViz.Value = displayAsPercentage(AUDIT_SINGLE_PAGE.lstNrQPerCty[3], AUDIT_SINGLE_PAGE.lstYesNumberPerCty[3]);
+			grfImputernicit.Value = displayAsPercentage(AUDIT_SINGLE_PAGE.lstNrQPerCty[4], AUDIT_SINGLE_PAGE.lstYesNumberPerCty[4]);
+			grfRiscuri.Value = displayAsPercentage(AUDIT_SINGLE_PAGE.lstNrQPerCty[5], AUDIT_SINGLE_PAGE.lstYesNumberPerCty[5]);
+
+			//rand 3
+			grfResponsabil.Value = displayAsPercentage(AUDIT_SINGLE_PAGE.lstNrQPerCty[6], AUDIT_SINGLE_PAGE.lstYesNumberPerCty[6]);
+			grfSecuritate.Value = displayAsPercentage(AUDIT_SINGLE_PAGE.lstNrQPerCty[7], AUDIT_SINGLE_PAGE.lstYesNumberPerCty[7]);
+			grfIncalcare.Value = displayAsPercentage(AUDIT_SINGLE_PAGE.lstNrQPerCty[8], AUDIT_SINGLE_PAGE.lstYesNumberPerCty[8]);
+
+
 		}
 
         private int displayAsPercentage(int total, int value)
