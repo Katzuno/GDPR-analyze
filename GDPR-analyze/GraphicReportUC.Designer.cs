@@ -431,6 +431,8 @@
 			// 
 			// grfIncalcare
 			// 
+			this.grfIncalcare.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
 			this.grfIncalcare.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("grfIncalcare.BackgroundImage")));
 			this.grfIncalcare.Font = new System.Drawing.Font("Century Gothic", 15.75F);
 			this.grfIncalcare.ForeColor = System.Drawing.SystemColors.ActiveBorder;
@@ -469,10 +471,12 @@
 			// 
 			// grfSecuritate
 			// 
+			this.grfSecuritate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
 			this.grfSecuritate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("grfSecuritate.BackgroundImage")));
 			this.grfSecuritate.Font = new System.Drawing.Font("Century Gothic", 15.75F);
 			this.grfSecuritate.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-			this.grfSecuritate.Location = new System.Drawing.Point(53, 9);
+			this.grfSecuritate.Location = new System.Drawing.Point(44, 9);
 			this.grfSecuritate.Margin = new System.Windows.Forms.Padding(6);
 			this.grfSecuritate.Name = "grfSecuritate";
 			this.grfSecuritate.ProgressBgColor = System.Drawing.Color.Red;
