@@ -30,6 +30,15 @@
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GraphicReportUC));
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.panel6 = new System.Windows.Forms.Panel();
+			this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
+			this.grfIncalcare = new Bunifu.Framework.UI.BunifuGauge();
+			this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
+			this.grfSecuritate = new Bunifu.Framework.UI.BunifuGauge();
+			this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
+			this.panel14 = new System.Windows.Forms.Panel();
+			this.grfResponsabil = new Bunifu.Framework.UI.BunifuGauge();
+			this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
 			this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.panel9 = new System.Windows.Forms.Panel();
@@ -53,18 +62,11 @@
 			this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
 			this.panel10 = new System.Windows.Forms.Panel();
 			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.panel6 = new System.Windows.Forms.Panel();
-			this.panel12 = new System.Windows.Forms.Panel();
-			this.grfIncalcare = new Bunifu.Framework.UI.BunifuGauge();
-			this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
 			this.panel13 = new System.Windows.Forms.Panel();
-			this.grfSecuritate = new Bunifu.Framework.UI.BunifuGauge();
-			this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
-			this.panel14 = new System.Windows.Forms.Panel();
-			this.grfResponsabil = new Bunifu.Framework.UI.BunifuGauge();
-			this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
-			this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
+			this.panel12 = new System.Windows.Forms.Panel();
 			this.panel1.SuspendLayout();
+			this.panel6.SuspendLayout();
+			this.panel14.SuspendLayout();
 			this.panel3.SuspendLayout();
 			this.panel9.SuspendLayout();
 			this.panel7.SuspendLayout();
@@ -74,10 +76,8 @@
 			this.panel2.SuspendLayout();
 			this.panel4.SuspendLayout();
 			this.panel10.SuspendLayout();
-			this.panel6.SuspendLayout();
-			this.panel12.SuspendLayout();
 			this.panel13.SuspendLayout();
-			this.panel14.SuspendLayout();
+			this.panel12.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// panel1
@@ -94,6 +94,122 @@
 			this.panel1.Size = new System.Drawing.Size(1213, 829);
 			this.panel1.TabIndex = 0;
 			this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+			// 
+			// panel6
+			// 
+			this.panel6.Controls.Add(this.panel12);
+			this.panel6.Controls.Add(this.panel13);
+			this.panel6.Controls.Add(this.panel14);
+			this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+			this.panel6.Location = new System.Drawing.Point(0, 513);
+			this.panel6.Name = "panel6";
+			this.panel6.Size = new System.Drawing.Size(1213, 230);
+			this.panel6.TabIndex = 38;
+			// 
+			// bunifuCustomLabel10
+			// 
+			this.bunifuCustomLabel10.AutoSize = true;
+			this.bunifuCustomLabel10.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.bunifuCustomLabel10.ForeColor = System.Drawing.Color.Black;
+			this.bunifuCustomLabel10.Location = new System.Drawing.Point(143, 207);
+			this.bunifuCustomLabel10.Name = "bunifuCustomLabel10";
+			this.bunifuCustomLabel10.Size = new System.Drawing.Size(132, 19);
+			this.bunifuCustomLabel10.TabIndex = 26;
+			this.bunifuCustomLabel10.Text = "caracter personal";
+			// 
+			// grfIncalcare
+			// 
+			this.grfIncalcare.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("grfIncalcare.BackgroundImage")));
+			this.grfIncalcare.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+			this.grfIncalcare.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.grfIncalcare.Location = new System.Drawing.Point(55, 5);
+			this.grfIncalcare.Margin = new System.Windows.Forms.Padding(6);
+			this.grfIncalcare.Name = "grfIncalcare";
+			this.grfIncalcare.ProgressBgColor = System.Drawing.Color.Red;
+			this.grfIncalcare.ProgressColor1 = System.Drawing.Color.Red;
+			this.grfIncalcare.ProgressColor2 = System.Drawing.Color.Lime;
+			this.grfIncalcare.Size = new System.Drawing.Size(290, 190);
+			this.grfIncalcare.Suffix = "";
+			this.grfIncalcare.TabIndex = 24;
+			this.grfIncalcare.Thickness = 50;
+			this.grfIncalcare.Value = 0;
+			// 
+			// bunifuCustomLabel7
+			// 
+			this.bunifuCustomLabel7.AutoSize = true;
+			this.bunifuCustomLabel7.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.bunifuCustomLabel7.ForeColor = System.Drawing.Color.Black;
+			this.bunifuCustomLabel7.Location = new System.Drawing.Point(88, 190);
+			this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
+			this.bunifuCustomLabel7.Size = new System.Drawing.Size(234, 19);
+			this.bunifuCustomLabel7.TabIndex = 25;
+			this.bunifuCustomLabel7.Text = "Incalcarea securitatii datelor cu ";
+			// 
+			// grfSecuritate
+			// 
+			this.grfSecuritate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("grfSecuritate.BackgroundImage")));
+			this.grfSecuritate.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+			this.grfSecuritate.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.grfSecuritate.Location = new System.Drawing.Point(53, 5);
+			this.grfSecuritate.Margin = new System.Windows.Forms.Padding(6);
+			this.grfSecuritate.Name = "grfSecuritate";
+			this.grfSecuritate.ProgressBgColor = System.Drawing.Color.Red;
+			this.grfSecuritate.ProgressColor1 = System.Drawing.Color.Red;
+			this.grfSecuritate.ProgressColor2 = System.Drawing.Color.Lime;
+			this.grfSecuritate.Size = new System.Drawing.Size(290, 190);
+			this.grfSecuritate.Suffix = "";
+			this.grfSecuritate.TabIndex = 20;
+			this.grfSecuritate.Thickness = 50;
+			this.grfSecuritate.Value = 0;
+			// 
+			// bunifuCustomLabel8
+			// 
+			this.bunifuCustomLabel8.AutoSize = true;
+			this.bunifuCustomLabel8.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.bunifuCustomLabel8.ForeColor = System.Drawing.Color.Black;
+			this.bunifuCustomLabel8.Location = new System.Drawing.Point(151, 196);
+			this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
+			this.bunifuCustomLabel8.Size = new System.Drawing.Size(95, 21);
+			this.bunifuCustomLabel8.TabIndex = 21;
+			this.bunifuCustomLabel8.Text = "Securitate";
+			// 
+			// panel14
+			// 
+			this.panel14.Controls.Add(this.grfResponsabil);
+			this.panel14.Controls.Add(this.bunifuCustomLabel9);
+			this.panel14.Dock = System.Windows.Forms.DockStyle.Left;
+			this.panel14.Location = new System.Drawing.Point(0, 0);
+			this.panel14.Name = "panel14";
+			this.panel14.Size = new System.Drawing.Size(404, 230);
+			this.panel14.TabIndex = 33;
+			// 
+			// grfResponsabil
+			// 
+			this.grfResponsabil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("grfResponsabil.BackgroundImage")));
+			this.grfResponsabil.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+			this.grfResponsabil.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+			this.grfResponsabil.Location = new System.Drawing.Point(59, 5);
+			this.grfResponsabil.Margin = new System.Windows.Forms.Padding(6);
+			this.grfResponsabil.Name = "grfResponsabil";
+			this.grfResponsabil.ProgressBgColor = System.Drawing.Color.Red;
+			this.grfResponsabil.ProgressColor1 = System.Drawing.Color.Red;
+			this.grfResponsabil.ProgressColor2 = System.Drawing.Color.Lime;
+			this.grfResponsabil.Size = new System.Drawing.Size(290, 190);
+			this.grfResponsabil.Suffix = "";
+			this.grfResponsabil.TabIndex = 22;
+			this.grfResponsabil.Thickness = 50;
+			this.grfResponsabil.Value = 0;
+			// 
+			// bunifuCustomLabel9
+			// 
+			this.bunifuCustomLabel9.AutoSize = true;
+			this.bunifuCustomLabel9.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.bunifuCustomLabel9.ForeColor = System.Drawing.Color.Black;
+			this.bunifuCustomLabel9.Location = new System.Drawing.Point(65, 196);
+			this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
+			this.bunifuCustomLabel9.Size = new System.Drawing.Size(297, 21);
+			this.bunifuCustomLabel9.TabIndex = 23;
+			this.bunifuCustomLabel9.Text = "Responsabilul cu protectia datelor";
 			// 
 			// bunifuFlatButton1
 			// 
@@ -119,7 +235,7 @@
 			this.bunifuFlatButton1.IconVisible = true;
 			this.bunifuFlatButton1.IconZoom = 90D;
 			this.bunifuFlatButton1.IsTab = false;
-			this.bunifuFlatButton1.Location = new System.Drawing.Point(457, 763);
+			this.bunifuFlatButton1.Location = new System.Drawing.Point(454, 759);
 			this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.bunifuFlatButton1.Name = "bunifuFlatButton1";
 			this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.DarkOrange;
@@ -407,16 +523,15 @@
 			this.textBox1.Text = "Vizualizarea grafica a rezultatelor dumneavoastra in detaliu";
 			this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
-			// panel6
+			// panel13
 			// 
-			this.panel6.Controls.Add(this.panel12);
-			this.panel6.Controls.Add(this.panel13);
-			this.panel6.Controls.Add(this.panel14);
-			this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panel6.Location = new System.Drawing.Point(0, 513);
-			this.panel6.Name = "panel6";
-			this.panel6.Size = new System.Drawing.Size(1213, 243);
-			this.panel6.TabIndex = 38;
+			this.panel13.Controls.Add(this.bunifuCustomLabel8);
+			this.panel13.Controls.Add(this.grfSecuritate);
+			this.panel13.Dock = System.Windows.Forms.DockStyle.Left;
+			this.panel13.Location = new System.Drawing.Point(404, 0);
+			this.panel13.Name = "panel13";
+			this.panel13.Size = new System.Drawing.Size(404, 230);
+			this.panel13.TabIndex = 34;
 			// 
 			// panel12
 			// 
@@ -426,127 +541,8 @@
 			this.panel12.Dock = System.Windows.Forms.DockStyle.Right;
 			this.panel12.Location = new System.Drawing.Point(808, 0);
 			this.panel12.Name = "panel12";
-			this.panel12.Size = new System.Drawing.Size(405, 243);
-			this.panel12.TabIndex = 34;
-			// 
-			// grfIncalcare
-			// 
-			this.grfIncalcare.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.grfIncalcare.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("grfIncalcare.BackgroundImage")));
-			this.grfIncalcare.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-			this.grfIncalcare.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-			this.grfIncalcare.Location = new System.Drawing.Point(55, 9);
-			this.grfIncalcare.Margin = new System.Windows.Forms.Padding(6);
-			this.grfIncalcare.Name = "grfIncalcare";
-			this.grfIncalcare.ProgressBgColor = System.Drawing.Color.Red;
-			this.grfIncalcare.ProgressColor1 = System.Drawing.Color.Red;
-			this.grfIncalcare.ProgressColor2 = System.Drawing.Color.Lime;
-			this.grfIncalcare.Size = new System.Drawing.Size(290, 190);
-			this.grfIncalcare.Suffix = "";
-			this.grfIncalcare.TabIndex = 24;
-			this.grfIncalcare.Thickness = 50;
-			this.grfIncalcare.Value = 0;
-			// 
-			// bunifuCustomLabel7
-			// 
-			this.bunifuCustomLabel7.AutoSize = true;
-			this.bunifuCustomLabel7.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.bunifuCustomLabel7.ForeColor = System.Drawing.Color.Black;
-			this.bunifuCustomLabel7.Location = new System.Drawing.Point(87, 196);
-			this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
-			this.bunifuCustomLabel7.Size = new System.Drawing.Size(234, 19);
-			this.bunifuCustomLabel7.TabIndex = 25;
-			this.bunifuCustomLabel7.Text = "Incalcarea securitatii datelor cu ";
-			// 
-			// panel13
-			// 
-			this.panel13.Controls.Add(this.grfSecuritate);
-			this.panel13.Controls.Add(this.bunifuCustomLabel8);
-			this.panel13.Dock = System.Windows.Forms.DockStyle.Left;
-			this.panel13.Location = new System.Drawing.Point(404, 0);
-			this.panel13.Name = "panel13";
-			this.panel13.Size = new System.Drawing.Size(404, 243);
-			this.panel13.TabIndex = 32;
-			// 
-			// grfSecuritate
-			// 
-			this.grfSecuritate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.grfSecuritate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("grfSecuritate.BackgroundImage")));
-			this.grfSecuritate.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-			this.grfSecuritate.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-			this.grfSecuritate.Location = new System.Drawing.Point(44, 9);
-			this.grfSecuritate.Margin = new System.Windows.Forms.Padding(6);
-			this.grfSecuritate.Name = "grfSecuritate";
-			this.grfSecuritate.ProgressBgColor = System.Drawing.Color.Red;
-			this.grfSecuritate.ProgressColor1 = System.Drawing.Color.Red;
-			this.grfSecuritate.ProgressColor2 = System.Drawing.Color.Lime;
-			this.grfSecuritate.Size = new System.Drawing.Size(290, 190);
-			this.grfSecuritate.Suffix = "";
-			this.grfSecuritate.TabIndex = 20;
-			this.grfSecuritate.Thickness = 50;
-			this.grfSecuritate.Value = 0;
-			// 
-			// bunifuCustomLabel8
-			// 
-			this.bunifuCustomLabel8.AutoSize = true;
-			this.bunifuCustomLabel8.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.bunifuCustomLabel8.ForeColor = System.Drawing.Color.Black;
-			this.bunifuCustomLabel8.Location = new System.Drawing.Point(152, 196);
-			this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
-			this.bunifuCustomLabel8.Size = new System.Drawing.Size(95, 21);
-			this.bunifuCustomLabel8.TabIndex = 21;
-			this.bunifuCustomLabel8.Text = "Securitate";
-			// 
-			// panel14
-			// 
-			this.panel14.Controls.Add(this.grfResponsabil);
-			this.panel14.Controls.Add(this.bunifuCustomLabel9);
-			this.panel14.Dock = System.Windows.Forms.DockStyle.Left;
-			this.panel14.Location = new System.Drawing.Point(0, 0);
-			this.panel14.Name = "panel14";
-			this.panel14.Size = new System.Drawing.Size(404, 243);
-			this.panel14.TabIndex = 33;
-			// 
-			// grfResponsabil
-			// 
-			this.grfResponsabil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("grfResponsabil.BackgroundImage")));
-			this.grfResponsabil.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-			this.grfResponsabil.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-			this.grfResponsabil.Location = new System.Drawing.Point(59, 9);
-			this.grfResponsabil.Margin = new System.Windows.Forms.Padding(6);
-			this.grfResponsabil.Name = "grfResponsabil";
-			this.grfResponsabil.ProgressBgColor = System.Drawing.Color.Red;
-			this.grfResponsabil.ProgressColor1 = System.Drawing.Color.Red;
-			this.grfResponsabil.ProgressColor2 = System.Drawing.Color.Lime;
-			this.grfResponsabil.Size = new System.Drawing.Size(290, 190);
-			this.grfResponsabil.Suffix = "";
-			this.grfResponsabil.TabIndex = 22;
-			this.grfResponsabil.Thickness = 50;
-			this.grfResponsabil.Value = 0;
-			// 
-			// bunifuCustomLabel9
-			// 
-			this.bunifuCustomLabel9.AutoSize = true;
-			this.bunifuCustomLabel9.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.bunifuCustomLabel9.ForeColor = System.Drawing.Color.Black;
-			this.bunifuCustomLabel9.Location = new System.Drawing.Point(65, 196);
-			this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
-			this.bunifuCustomLabel9.Size = new System.Drawing.Size(297, 21);
-			this.bunifuCustomLabel9.TabIndex = 23;
-			this.bunifuCustomLabel9.Text = "Responsabilul cu protectia datelor";
-			// 
-			// bunifuCustomLabel10
-			// 
-			this.bunifuCustomLabel10.AutoSize = true;
-			this.bunifuCustomLabel10.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.bunifuCustomLabel10.ForeColor = System.Drawing.Color.Black;
-			this.bunifuCustomLabel10.Location = new System.Drawing.Point(143, 217);
-			this.bunifuCustomLabel10.Name = "bunifuCustomLabel10";
-			this.bunifuCustomLabel10.Size = new System.Drawing.Size(132, 19);
-			this.bunifuCustomLabel10.TabIndex = 26;
-			this.bunifuCustomLabel10.Text = "caracter personal";
+			this.panel12.Size = new System.Drawing.Size(405, 230);
+			this.panel12.TabIndex = 32;
 			// 
 			// GraphicReportUC
 			// 
@@ -557,6 +553,9 @@
 			this.Size = new System.Drawing.Size(1213, 829);
 			this.SizeChanged += new System.EventHandler(this.GraphicReportUC_SizeChanged);
 			this.panel1.ResumeLayout(false);
+			this.panel6.ResumeLayout(false);
+			this.panel14.ResumeLayout(false);
+			this.panel14.PerformLayout();
 			this.panel3.ResumeLayout(false);
 			this.panel9.ResumeLayout(false);
 			this.panel9.PerformLayout();
@@ -573,13 +572,10 @@
 			this.panel4.PerformLayout();
 			this.panel10.ResumeLayout(false);
 			this.panel10.PerformLayout();
-			this.panel6.ResumeLayout(false);
-			this.panel12.ResumeLayout(false);
-			this.panel12.PerformLayout();
 			this.panel13.ResumeLayout(false);
 			this.panel13.PerformLayout();
-			this.panel14.ResumeLayout(false);
-			this.panel14.PerformLayout();
+			this.panel12.ResumeLayout(false);
+			this.panel12.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
@@ -611,15 +607,15 @@
 		private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
 		private System.Windows.Forms.TextBox textBox1;
 		private System.Windows.Forms.Panel panel6;
-		private System.Windows.Forms.Panel panel12;
 		private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel10;
 		private Bunifu.Framework.UI.BunifuGauge grfIncalcare;
 		private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
-		private System.Windows.Forms.Panel panel13;
 		private Bunifu.Framework.UI.BunifuGauge grfSecuritate;
 		private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel8;
 		private System.Windows.Forms.Panel panel14;
 		private Bunifu.Framework.UI.BunifuGauge grfResponsabil;
 		private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel9;
+		private System.Windows.Forms.Panel panel12;
+		private System.Windows.Forms.Panel panel13;
 	}
 }

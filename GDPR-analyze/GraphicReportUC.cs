@@ -70,7 +70,9 @@ namespace GDPR_analyze
 			panel2.Width = panel4.Width = panel5.Width = panelW / 3;
 			//randul 2
 			panel7.Width = panel8.Width = panel9.Width = panelW / 3;
-			//}
+			//
+			//randul 3
+			panel14.Width = panel13.Width = panel12.Width = panelW / 3;
 		}
 
 		private void panel1_Paint(object sender, PaintEventArgs e)
