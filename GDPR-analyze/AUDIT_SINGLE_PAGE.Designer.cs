@@ -36,25 +36,25 @@
             this.chkYes = new MaterialSkin.Controls.MaterialRadioButton();
             this.chkPartial = new MaterialSkin.Controls.MaterialRadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.btnGenerateReport = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel5 = new System.Windows.Forms.Panel();
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel7 = new System.Windows.Forms.Panel();
             this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.txtDetailsAudit = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtCategoryQ = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.txtDetailsAudit = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtQAudit
@@ -108,6 +108,7 @@
             this.chkNo.TabStop = true;
             this.chkNo.Text = "NU";
             this.chkNo.UseVisualStyleBackColor = false;
+            this.chkNo.CheckedChanged += new System.EventHandler(this.chkNo_CheckedChanged);
             // 
             // chkYes
             // 
@@ -160,6 +161,29 @@
             this.panel1.Size = new System.Drawing.Size(1657, 1037);
             this.panel1.TabIndex = 229;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.chkNo);
+            this.panel4.Controls.Add(this.chkNoImplement);
+            this.panel4.Controls.Add(this.chkPartial);
+            this.panel4.Controls.Add(this.chkYes);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(0, 519);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1657, 72);
+            this.panel4.TabIndex = 235;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.panel8);
+            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Controls.Add(this.panel7);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 591);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1657, 128);
+            this.panel2.TabIndex = 234;
             // 
             // panel8
             // 
@@ -307,6 +331,19 @@
             this.bunifuFlatButton3.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButton3.Click += new System.EventHandler(this.bunifuFlatButton3_Click);
             // 
+            // txtDetailsAudit
+            // 
+            this.txtDetailsAudit.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.txtDetailsAudit.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDetailsAudit.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txtDetailsAudit.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.txtDetailsAudit.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDetailsAudit.Location = new System.Drawing.Point(0, 719);
+            this.txtDetailsAudit.Multiline = true;
+            this.txtDetailsAudit.Name = "txtDetailsAudit";
+            this.txtDetailsAudit.Size = new System.Drawing.Size(1657, 318);
+            this.txtDetailsAudit.TabIndex = 0;
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.txtCategoryQ);
@@ -336,42 +373,6 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // txtDetailsAudit
-            // 
-            this.txtDetailsAudit.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.txtDetailsAudit.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDetailsAudit.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txtDetailsAudit.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.txtDetailsAudit.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDetailsAudit.Location = new System.Drawing.Point(0, 719);
-            this.txtDetailsAudit.Multiline = true;
-            this.txtDetailsAudit.Name = "txtDetailsAudit";
-            this.txtDetailsAudit.Size = new System.Drawing.Size(1657, 318);
-            this.txtDetailsAudit.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.panel8);
-            this.panel2.Controls.Add(this.panel5);
-            this.panel2.Controls.Add(this.panel7);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 591);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1657, 128);
-            this.panel2.TabIndex = 234;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.chkNo);
-            this.panel4.Controls.Add(this.chkNoImplement);
-            this.panel4.Controls.Add(this.chkPartial);
-            this.panel4.Controls.Add(this.chkYes);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 519);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1657, 72);
-            this.panel4.TabIndex = 235;
-            // 
             // AUDIT_SINGLE_PAGE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -382,14 +383,14 @@
             this.Size = new System.Drawing.Size(1657, 1037);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
 		}

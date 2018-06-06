@@ -15,6 +15,7 @@ namespace GDPR_analyze
     {
         private SqlConnection dbConnection;
         public static string logged_in_email;
+        public static int user_id;
         public static string connectionString = null;
         public Login_Form()
         {
@@ -22,9 +23,11 @@ namespace GDPR_analyze
             panel1.Visible = false;
             bunifuCustomLabel1.Visible = true;
             bunifuCustomLabel3.Visible = true;
-            
+            //connectionString =
+            //    "Data Source='37.251.139.87';Initial Catalog='gdpr';User ID='gdpr_app';Password='t96HjklmZ'";
+
             connectionString =
-                "Data Source='carbox.database.windows.net';Initial Catalog='GDPR';User ID='carbox@carbox';Password='GDCBnpsf0517'";
+               "Data Source='carbox.database.windows.net';Initial Catalog='GDPR';User ID='carbox@carbox';Password='GDCBnpsf0517'";
             dbConnection = new SqlConnection(connectionString);
             try
             {
@@ -126,12 +129,14 @@ namespace GDPR_analyze
             if (dbConnection.State == ConnectionState.Open)
             {
                 bool go_on = false;
-                string sqlQuery = "SELECT email, password FROM Users WHERE email = '" + bunifuMaterialTextbox1.Text + "' AND password = '" + bunifuMaterialTextbox2.Text + "';";
+                string sqlQuery = "SELECT id, email, password FROM Users WHERE email = '" + bunifuMaterialTextbox1.Text + "' AND password = '" + bunifuMaterialTextbox2.Text + "';";
                 SqlCommand command = new SqlCommand(sqlQuery, dbConnection);
                 SqlDataReader dataReader = command.ExecuteReader();
                 if (dataReader.Read())
                 {
                     go_on = true;
+                    logged_in_email = dataReader["email"].ToString();
+                    user_id = Convert.ToInt32(dataReader["id"].ToString() );
                     NewMainForm main_menu = new NewMainForm();
                     this.Hide();
                     main_menu.ShowDialog();
@@ -143,6 +148,7 @@ namespace GDPR_analyze
                     MessageBox.Show("Email sau parola gresita");
                     //bunifuCustomLabel6.Text = "Email sau parola gresita";
                 }
+                //logged_in_email =
                 dataReader.Close();
                 command.Dispose();
 

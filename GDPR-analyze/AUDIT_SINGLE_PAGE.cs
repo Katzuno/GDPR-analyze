@@ -25,13 +25,16 @@ namespace GDPR_analyze
 
 		//
 		protected uint count = 0;
-		private Boolean[,] answers;
+        private Boolean[,] answers;
 		private List<string> lstDetails;
 		public static List<string> lstQuestions;
 		private List<string> lstRecommendNo;
 		private List<string> lstRecommendPartial;
 		private List<string> lstYes;
 		private List<string> lstCategories;
+
+        private string[] currentAnswers;
+        private string[] oldAnswers;
         private SqlConnection dbConnection;
 
 		public AUDIT_SINGLE_PAGE()
@@ -113,6 +116,7 @@ namespace GDPR_analyze
 					Categories.Add(FormatareParagraf(values[5]));
 				}
 			}
+            
 		}
         private void openDbConnection ()
         {
@@ -152,11 +156,32 @@ namespace GDPR_analyze
                     }
                     if (go == false)
                     {
-                        MessageBox.Show("Email sau parola gresita");
+                        MessageBox.Show("Nu ar trebui sa se ajunga aici");
                         //bunifuCustomLabel6.Text = "Email sau parola gresita";
                     }
                 }
-                //dataReader.Close();
+                currentAnswers = new string[Questions.Count + 1];
+                oldAnswers = new string[Questions.Count + 1];
+
+                go = true;
+                sqlQuery = "SELECT * FROM UsersLastAnswers WHERE id_user = " + Login_Form.user_id + " ORDER BY id_question";
+                command = new SqlCommand(sqlQuery, dbConnection);
+                using (SqlDataReader dataReader = command.ExecuteReader())
+                {
+                    while (dataReader.Read())
+                    {
+                        go = true;
+                        //string id = dataReader["Id"].ToString() + ". ";
+                        int id_question = Convert.ToInt32(dataReader["id_question"].ToString());
+                        oldAnswers[id_question] = dataReader["question_answer"].ToString();
+                    }
+                    if (go == false)
+                    {
+                        MessageBox.Show("Nu ar trebui sa se ajunga aici");
+                        //bunifuCustomLabel6.Text = "Email sau parola gresita";
+                    }
+                }
+               // dataReader.Close();
                 command.Dispose();
                 dbConnection.Close();
             }
@@ -166,6 +191,29 @@ namespace GDPR_analyze
             }
         }
 
+        private bool recordExistInSQL(int id, int id2, string checkedField, string tableName)
+        {
+            //openDbConnection();
+            if (tableName == "UsersLastAnswers")
+            {
+                string sqlQuery = "SELECT " + checkedField +  ", id_question FROM " + tableName + " WHERE " + checkedField + "=" + id + " AND id_question=" + id2;
+                SqlCommand command = new SqlCommand(sqlQuery, dbConnection);
+                using (SqlDataReader dataReader = command.ExecuteReader())
+                {
+                    return dataReader.HasRows;
+                }
+            }
+            else
+            {
+                string sqlQuery = "SELECT " + checkedField + " FROM " + tableName + " WHERE " + checkedField + "=" + id;
+                SqlCommand command = new SqlCommand(sqlQuery, dbConnection);
+                using (SqlDataReader dataReader = command.ExecuteReader())
+                {
+                    return dataReader.HasRows;
+                }
+            }
+            
+        }
         private void btnGenerateReport_Click(object sender, EventArgs e)
 		{
 			GeneratePDF("testPDFblablabla");
@@ -220,18 +268,35 @@ namespace GDPR_analyze
 			for (j = 0; j < 4; j++)
 				if (answers[id_question, j] == true)
 				{
-					if (j == 0)
-						return polite + "Nu";
-					else if (j == 1)
-						return polite + "Da";
-					else if (j == 2)
-						return polite + "Nu a fost inca implementat / planificat";
-					else if (j == 3)
-						return polite + "Partial implementat / planificat";
+                    if (j == 0)
+                    {
+                        currentAnswers[id_question+1] = "Nu";
+                        return polite + "Nu";
+                    }
+                    else if (j == 1)
+                    {
+                        currentAnswers[id_question+1] = "Da";
+                        return polite + "Da";
+                    }
+                    else if (j == 2)
+                    {
+                        currentAnswers[id_question+1] = "Nu a fost inca implementat / planificat";
+                        return polite + "Nu a fost inca implementat / planificat";
+                    }
+                    else if (j == 3)
+                    {
+                        currentAnswers[id_question+1] = "Partial implementat / planificat";
+                        return polite + "Partial implementat / planificat";
+                    }
 				}
 			return "Nu s-a raspuns";
 		}
-		private string ourRecommendation(int id_question)
+        private string getLastAnswer(int id_question)
+        {
+
+            return "Nu s-a raspuns";
+        }
+        private string ourRecommendation(int id_question)
 		{
 			int j;
 			// 0 = NU ; 1 = DA ; 2 = NU inca ; 3 = Partial
@@ -289,11 +354,60 @@ namespace GDPR_analyze
 			}
 
 			pdfDoc.Close();
-
-			System.Diagnostics.Process.Start(Path);
+            for (i = 1; i < currentAnswers.Length; i++)
+            {
+                int id_user = Login_Form.user_id;
+                insertToSQL("UsersLastAnswers", id_user, i, currentAnswers[i]);
+            }
+            System.Diagnostics.Process.Start(Path);
 		}
+        private void insertToSQL(string table, int id_user, int id_question, string data)
+        {
+            openDbConnection();
+            if (dbConnection.State == ConnectionState.Open)
+            {
+                if (id_user != 0 && id_question != 0)
+                {
+                    if (recordExistInSQL(id_user, id_question, "id_user", table) == false)
+                    {
+                        //string sqlQuery = "INSERT INTO Users VALUES ('" + email + "', " + "'" + password + "', " + "'" + role + "', " + "'" + name + "', " + "'" + first_name + "'" + ")";
+                        string sqlQuery = "INSERT INTO " + table + " VALUES (@id_user, @id_question, @data)";
+                        SqlCommand command = new SqlCommand(sqlQuery, dbConnection);
+                        command.Parameters.Add("@id_user", id_user);
+                        command.Parameters.Add("@id_question", id_question);
+                        command.Parameters.Add("@data", data);
 
-		private void bunifuFlatButton3_Click(object sender, EventArgs e)
+                        command.ExecuteNonQuery();
+
+                        command.Dispose();
+                        dbConnection.Close();
+                    }
+                    else
+                    {
+                        //MessageBox.Show("Intra in Update");
+                        string sqlQuery = "UPDATE " + table + " SET id_question=@id_question, question_answer=@data WHERE id_user=@id_user AND id_question=@id_question";
+                        SqlCommand command = new SqlCommand(sqlQuery, dbConnection);
+                        command.Parameters.AddWithValue("@id_user", id_user);
+                        command.Parameters.AddWithValue("@id_question", id_question);
+                        command.Parameters.AddWithValue("@data", data);
+
+                        command.ExecuteNonQuery();
+
+                        command.Dispose();
+                        dbConnection.Close();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Inserare generala");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Nu s-a putut efectua conexiunea la baza de date");
+            }
+        }
+        private void bunifuFlatButton3_Click(object sender, EventArgs e)
 		{
 			if (count < lstQuestions.Count - 1)
 			{
@@ -480,6 +594,11 @@ namespace GDPR_analyze
 		}
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void chkNo_CheckedChanged(object sender, EventArgs e)
         {
 
         }
