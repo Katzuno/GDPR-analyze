@@ -33,8 +33,8 @@ namespace GDPR_analyze
 		private List<string> lstYes;
 		private List<string> lstCategories;
 
-        private string[] currentAnswers;
-        private string[] oldAnswers;
+        public static string[] currentAnswers;
+        public static string[] oldAnswers;
         private SqlConnection dbConnection;
 
 		public AUDIT_SINGLE_PAGE()
@@ -139,7 +139,7 @@ namespace GDPR_analyze
             Boolean go = false;
             if (dbConnection.State == ConnectionState.Open)
             {
-                string sqlQuery = "SELECT * FROM Audit ORDER BY Id";
+                string sqlQuery = "SELECT TOP 10 * FROM Audit ORDER BY Id";
                 SqlCommand command = new SqlCommand(sqlQuery, dbConnection);
                 using (SqlDataReader dataReader = command.ExecuteReader())
                 {
@@ -164,7 +164,7 @@ namespace GDPR_analyze
                 oldAnswers = new string[Questions.Count + 1];
 
                 go = true;
-                sqlQuery = "SELECT * FROM UsersLastAnswers WHERE id_user = " + Login_Form.user_id + " ORDER BY id_question";
+                sqlQuery = "SELECT TOP 10 * FROM UsersLastAnswers WHERE id_user = " + Login_Form.user_id + " ORDER BY id_question";
                 command = new SqlCommand(sqlQuery, dbConnection);
                 using (SqlDataReader dataReader = command.ExecuteReader())
                 {
@@ -196,7 +196,7 @@ namespace GDPR_analyze
             //openDbConnection();
             if (tableName == "UsersLastAnswers")
             {
-                string sqlQuery = "SELECT " + checkedField +  ", id_question FROM " + tableName + " WHERE " + checkedField + "=" + id + " AND id_question=" + id2;
+                string sqlQuery = "SELECT TOP 10 " + checkedField +  ", id_question FROM " + tableName + " WHERE " + checkedField + "=" + id + " AND id_question=" + id2;
                 SqlCommand command = new SqlCommand(sqlQuery, dbConnection);
                 using (SqlDataReader dataReader = command.ExecuteReader())
                 {
@@ -205,7 +205,7 @@ namespace GDPR_analyze
             }
             else
             {
-                string sqlQuery = "SELECT " + checkedField + " FROM " + tableName + " WHERE " + checkedField + "=" + id;
+                string sqlQuery = "SELECT TOP 10 " + checkedField + " FROM " + tableName + " WHERE " + checkedField + "=" + id;
                 SqlCommand command = new SqlCommand(sqlQuery, dbConnection);
                 using (SqlDataReader dataReader = command.ExecuteReader())
                 {
@@ -254,11 +254,13 @@ namespace GDPR_analyze
 			}
 
 			Panel main_pnl = this.Parent as Panel;
-			UserControl generalDiagram = new GeneralDiagramUC();
-			generalDiagram.Anchor = ((AnchorStyles)((((AnchorStyles.Top | AnchorStyles.Bottom) | AnchorStyles.Left) | AnchorStyles.Right)));
-			generalDiagram.Dock = DockStyle.Fill;
+			UserControl historicCompare = new HistoricCompareAudit();
+            historicCompare.Anchor = ((AnchorStyles)((((AnchorStyles.Top | AnchorStyles.Bottom) | AnchorStyles.Left) | AnchorStyles.Right)));
+            historicCompare.Dock = DockStyle.Fill;
 			main_pnl.Controls.Clear();
-			main_pnl.Controls.Add(generalDiagram);
+			main_pnl.Controls.Add(historicCompare);
+
+
 		}
 		private string selectAnswer(int id_question)
 		{
