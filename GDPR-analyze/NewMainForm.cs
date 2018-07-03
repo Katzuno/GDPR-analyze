@@ -201,5 +201,16 @@ namespace GDPR_analyze
             main_pnl.Controls.Add(acces);
         }
 
+		private void btnLegislatie_Click(object sender, EventArgs e)
+		{
+			foreach (Control ctrl in main_pnl.Controls)
+			{
+				ctrl.Dispose();//Inchide controale deja existente
+			}
+			panel5.Width = 0;
+			Control acces = new LegislatieUC();
+
+			main_pnl.Controls.Add(acces);
+		}
 	}
 }

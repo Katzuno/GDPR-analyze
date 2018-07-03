@@ -24,10 +24,10 @@ namespace GDPR_analyze
             bunifuCustomLabel1.Visible = true;
             bunifuCustomLabel3.Visible = true;
             //connectionString =
-            //    "Data Source='37.251.139.87';Initial Catalog='gdpr';User ID='gdpr_app';Password='t96HjklmZ'";
+            //    "Data Source='37.251.139.87';Initial Catalog='gdpr';User ID='gdpr_app';Password='t96HjklmZ'"
 
             connectionString =
-               "Data Source='carbox.database.windows.net';Initial Catalog='GDPR';User ID='carbox@carbox';Password='GDCBnpsf0517'";
+               "Data Source='SOFT1-SRV';Initial Catalog='GDPR';User ID='sa';Password='Softone17'";
             dbConnection = new SqlConnection(connectionString);
             try
             {

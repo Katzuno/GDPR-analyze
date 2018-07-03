@@ -148,6 +148,12 @@
     <Compile Include="Home_UC.Designer.cs">
       <DependentUpon>Home_UC.cs</DependentUpon>
     </Compile>
+    <Compile Include="LegislatieUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LegislatieUC.Designer.cs">
+      <DependentUpon>LegislatieUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,6 +203,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Home_UC.resx">
       <DependentUpon>Home_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegislatieUC.resx">
+      <DependentUpon>LegislatieUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>

@@ -173,6 +173,15 @@
         TkSuQmCC
 </value>
   </data>
+  <data name="btnLegislatie.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAN5JREFUaEPt
+        mkEKwjAURHNCN1Jc6AV6bbF6gTSLIup8+IugFLczYR78jcniPUiFkhZjiFjX9YC5xrTWTvmzHghYMO+c
+        Z631nEtaQP7ehejG4DhNIT9KzBHy21fMCzPnFh0cw4pjWHEMK45hxTGsOIYVx7AyVAxewi4Q/3k5Q+SU
+        W3TYibnlsg47IUsuazDE0YLwjImHu4/Y4k8gt/ADYUdQAGFHUABhR1AAYUdQAGFHUABhR1AAYUdQAGH9
+        CMiOcRkK6f6eXTMigHh/zy79wUB8wvGIwTHT/YTDmH+U8gGXDzuYboTTrgAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="btn_reqacc.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAN5JREFUaEPt

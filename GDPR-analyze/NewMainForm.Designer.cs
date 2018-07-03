@@ -48,6 +48,7 @@
 			this.btn_exit = new System.Windows.Forms.Button();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.main_pnl = new System.Windows.Forms.Panel();
+			this.btnLegislatie = new System.Windows.Forms.Button();
 			this.panel1.SuspendLayout();
 			this.panel4.SuspendLayout();
 			this.panel5.SuspendLayout();
@@ -135,6 +136,7 @@
 			// panel5
 			// 
 			this.panel5.BackColor = System.Drawing.SystemColors.ActiveBorder;
+			this.panel5.Controls.Add(this.btnLegislatie);
 			this.panel5.Controls.Add(this.btn_reqacc);
 			this.panel5.Controls.Add(this.btn_form);
 			this.panel5.Controls.Add(this.btn_audit);
@@ -303,6 +305,24 @@
 			this.main_pnl.Size = new System.Drawing.Size(1657, 1037);
 			this.main_pnl.TabIndex = 5;
 			// 
+			// btnLegislatie
+			// 
+			this.btnLegislatie.BackColor = System.Drawing.SystemColors.ActiveBorder;
+			this.btnLegislatie.Dock = System.Windows.Forms.DockStyle.Top;
+			this.btnLegislatie.FlatAppearance.BorderSize = 0;
+			this.btnLegislatie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnLegislatie.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnLegislatie.Image = ((System.Drawing.Image)(resources.GetObject("btnLegislatie.Image")));
+			this.btnLegislatie.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.btnLegislatie.Location = new System.Drawing.Point(0, 216);
+			this.btnLegislatie.Name = "btnLegislatie";
+			this.btnLegislatie.Size = new System.Drawing.Size(300, 72);
+			this.btnLegislatie.TabIndex = 5;
+			this.btnLegislatie.Text = "LEGISLATIE";
+			this.btnLegislatie.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnLegislatie.UseVisualStyleBackColor = false;
+			this.btnLegislatie.Click += new System.EventHandler(this.btnLegislatie_Click);
+			// 
 			// NewMainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -347,5 +367,6 @@
 		private System.Windows.Forms.Button button11;
 		private System.Windows.Forms.Panel panel2;
 		private System.Windows.Forms.Panel main_pnl;
+		private System.Windows.Forms.Button btnLegislatie;
 	}
 }
