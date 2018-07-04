@@ -20,7 +20,14 @@ namespace GDPR_analyze
 			int nrTotalYes = AUDIT_SINGLE_PAGE.lstYesNumberPerCty.Sum();
 
 			generalDiagram.Value = displayAsPercentage(nrQuestions, nrTotalYes);
-		}
+            /*
+            Bitmap bmp = new Bitmap(panel6.Width, this.panel.Height);
+
+            this.panel.DrawToBitmap(bmp, new Rectangle(0, 0, this.panel.Width, this.panel.Height));
+
+            bmp.Save("panel.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
+            */
+        }
 
 		private void bunifuFlatButton1_Click(object sender, EventArgs e)
 		{
