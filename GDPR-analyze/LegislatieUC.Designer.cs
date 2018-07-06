@@ -189,6 +189,7 @@
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 16;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // pictureBox8
             // 
@@ -203,6 +204,7 @@
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 15;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // pictureBox9
             // 
@@ -214,6 +216,7 @@
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 14;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
             // linkLabel1
             // 
@@ -294,6 +297,7 @@
             this.linkLabel6.TabIndex = 24;
             this.linkLabel6.TabStop = true;
             this.linkLabel6.Text = "Regulamentul UE 679_2016_RO";
+            this.linkLabel6.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel6_LinkClicked);
             // 
             // linkLabel7
             // 
@@ -308,6 +312,7 @@
             this.linkLabel7.TabIndex = 23;
             this.linkLabel7.TabStop = true;
             this.linkLabel7.Text = "WP_Orientari pentru identificarea Autoritatii de Supraveghere_RO";
+            this.linkLabel7.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel7_LinkClicked);
             // 
             // linkLabel8
             // 
@@ -319,6 +324,7 @@
             this.linkLabel8.TabIndex = 22;
             this.linkLabel8.TabStop = true;
             this.linkLabel8.Text = "Regulament_organizare_si_functionare_ANSPDCP_RO_pdf";
+            this.linkLabel8.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel8_LinkClicked);
             // 
             // linkLabel9
             // 
@@ -331,6 +337,7 @@
             this.linkLabel9.TabIndex = 30;
             this.linkLabel9.TabStop = true;
             this.linkLabel9.Text = "Orientari privind dreptul la portabilitatea datelor";
+            this.linkLabel9.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel9_LinkClicked);
             // 
             // linkLabel10
             // 
@@ -345,6 +352,7 @@
             this.linkLabel10.TabIndex = 29;
             this.linkLabel10.TabStop = true;
             this.linkLabel10.Text = "Opinia_1_-2017_Regulament_E_privacy";
+            this.linkLabel10.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel10_LinkClicked);
             // 
             // linkLabel11
             // 
@@ -356,6 +364,7 @@
             this.linkLabel11.TabIndex = 28;
             this.linkLabel11.TabStop = true;
             this.linkLabel11.Text = "Dreptul la portabilitatea datelor_intrebari frecvente_annex_RO";
+            this.linkLabel11.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel11_LinkClicked);
             // 
             // pictureBox10
             // 
@@ -368,6 +377,7 @@
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox10.TabIndex = 27;
             this.pictureBox10.TabStop = false;
+            this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
             // pictureBox11
             // 
@@ -382,6 +392,7 @@
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 26;
             this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
             // 
             // pictureBox12
             // 
@@ -393,6 +404,7 @@
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox12.TabIndex = 25;
             this.pictureBox12.TabStop = false;
+            this.pictureBox12.Click += new System.EventHandler(this.pictureBox12_Click);
             // 
             // linkLabel12
             // 
@@ -405,6 +417,7 @@
             this.linkLabel12.TabIndex = 36;
             this.linkLabel12.TabStop = true;
             this.linkLabel12.Text = "Orientari privind dreptul la portabilitatea datelor";
+            this.linkLabel12.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel12_LinkClicked);
             // 
             // linkLabel13
             // 
@@ -419,6 +432,7 @@
             this.linkLabel13.TabIndex = 35;
             this.linkLabel13.TabStop = true;
             this.linkLabel13.Text = "Orientari prvind aplicarea si stabilirea unor amenzi administrative";
+            this.linkLabel13.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel13_LinkClicked);
             // 
             // linkLabel14
             // 
@@ -430,6 +444,7 @@
             this.linkLabel14.TabIndex = 34;
             this.linkLabel14.TabStop = true;
             this.linkLabel14.Text = "Dreptul la portabilitatea datelor_intrebari frecvente_annex_RO";
+            this.linkLabel14.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel14_LinkClicked);
             // 
             // pictureBox13
             // 
@@ -442,6 +457,7 @@
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox13.TabIndex = 33;
             this.pictureBox13.TabStop = false;
+            this.pictureBox13.Click += new System.EventHandler(this.pictureBox13_Click);
             // 
             // pictureBox14
             // 
@@ -456,6 +472,7 @@
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox14.TabIndex = 32;
             this.pictureBox14.TabStop = false;
+            this.pictureBox14.Click += new System.EventHandler(this.pictureBox14_Click);
             // 
             // pictureBox15
             // 
@@ -467,6 +484,7 @@
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox15.TabIndex = 31;
             this.pictureBox15.TabStop = false;
+            this.pictureBox15.Click += new System.EventHandler(this.pictureBox15_Click);
             // 
             // linkLabel15
             // 
@@ -479,6 +497,7 @@
             this.linkLabel15.TabIndex = 42;
             this.linkLabel15.TabStop = true;
             this.linkLabel15.Text = "Orientari pentru identificarea Autoritatii de Supraveghere";
+            this.linkLabel15.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel15_LinkClicked);
             // 
             // linkLabel16
             // 
@@ -493,6 +512,7 @@
             this.linkLabel16.TabIndex = 41;
             this.linkLabel16.TabStop = true;
             this.linkLabel16.Text = "Orientari privind responsabilii cu protectia datelor_DPO";
+            this.linkLabel16.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel16_LinkClicked);
             // 
             // linkLabel17
             // 
@@ -504,6 +524,7 @@
             this.linkLabel17.TabIndex = 40;
             this.linkLabel17.TabStop = true;
             this.linkLabel17.Text = "Orientari privind evaluarea impactului asupra protectiei datelor(DPIA)";
+            this.linkLabel17.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel17_LinkClicked);
             // 
             // pictureBox16
             // 
@@ -516,6 +537,7 @@
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox16.TabIndex = 39;
             this.pictureBox16.TabStop = false;
+            this.pictureBox16.Click += new System.EventHandler(this.pictureBox16_Click);
             // 
             // pictureBox17
             // 
@@ -530,6 +552,7 @@
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox17.TabIndex = 38;
             this.pictureBox17.TabStop = false;
+            this.pictureBox17.Click += new System.EventHandler(this.pictureBox17_Click);
             // 
             // pictureBox18
             // 
@@ -541,6 +564,7 @@
             this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox18.TabIndex = 37;
             this.pictureBox18.TabStop = false;
+            this.pictureBox18.Click += new System.EventHandler(this.pictureBox18_Click);
             // 
             // LegislatieUC
             // 
