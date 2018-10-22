@@ -23,11 +23,9 @@ namespace GDPR_analyze
             panel1.Visible = false;
             bunifuCustomLabel1.Visible = true;
             bunifuCustomLabel3.Visible = true;
-            //connectionString =
-            //    "Data Source='37.251.139.87';Initial Catalog='gdpr';User ID='gdpr_app';Password='t96HjklmZ'"
 
             connectionString =
-               "Data Source='SOFT1-SRV';Initial Catalog='GDPR';User ID='sa';Password='Softone17'";
+               "Data Source='#####';Initial Catalog='GDPR';User ID='#';Password='#####'";
             dbConnection = new SqlConnection(connectionString);
             try
             {
